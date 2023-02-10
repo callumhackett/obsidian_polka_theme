@@ -36,12 +36,12 @@
 
 .theme-dark {
   /* Background Color Definitions */
-  --background-primary: rgb(22, 28, 47);
+  --background-primary: rgb(22, 29, 44);
   --background-secondary: rgb(33, 43, 61);
   --background-dark: rgb(0, 13, 22);
   
   /* Accent Color Definitions */
-  --accent-main: 0, 185, 225;
+  --accent-main: 0, 195, 235;
   --accent-soft: 180, 205, 255;
   --accent-main-foreground: rgb(var(--accent-main));
   --accent-main-background: rgba(var(--accent-main), 0.05);
