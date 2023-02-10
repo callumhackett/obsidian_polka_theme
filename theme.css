@@ -15,8 +15,14 @@
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary);
+  --interactive-normal: var(--accent-soft-background);
+  --interactive-hover: var(--accent-soft-foreground);
   --interactive-accent: var(--accent-main-foreground);
   --interactive-accent-hover: var(--accent-main-foreground);
+  --prompt-border-color: var(--accent-soft-foreground);
+  --modal-border-color: var(--accent-soft-foreground);
+  --code-background: var(--background-dark);
+  --background-modifier-form-field: var(--accent-soft-background);
 
   /* Font Colors */
   --text-main: 0, 0, 0;
@@ -25,10 +31,14 @@
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--background-primary);
   --text-on-accent: var(--text-white) !important;
+  --code-normal: var(--text-white);
+  --text-error: rgb(240, 20, 50);
 
   /* Kanban Plugin Colors */
       /* background-modifier-border also applies to menus */
   --background-modifier-border: var(--accent-soft-foreground);
+  --background-modifier-border-hover: var(--accent-soft-foreground);
+  --background-modifier-border-focus: var(--accent-soft-foreground);
   --kanban-button-text: var(--text-normal);
   --kanban-button-text-hover: var(--text-white);
   --kanban-checkbox-border: var(--accent-soft-foreground);
@@ -36,12 +46,12 @@
 
 .theme-dark {
   /* Background Color Definitions */
-  --background-primary: rgb(22, 29, 45);
+  --background-primary: rgb(22, 29, 44);
   --background-secondary: rgb(33, 43, 61);
   --background-dark: rgb(0, 13, 22);
   
   /* Accent Color Definitions */
-  --accent-main: 0, 202, 235;
+  --accent-main: 40, 202, 235;
   --accent-soft: 180, 205, 255;
   --accent-main-foreground: rgb(var(--accent-main));
   --accent-main-background: rgba(var(--accent-main), 0.05);
@@ -51,8 +61,14 @@
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary);
+  --interactive-normal: var(--background-dark);
+  --interactive-hover: var(--background-dark);
   --interactive-accent: var(--accent-main-foreground);
   --interactive-accent-hover: var(--accent-main-foreground);
+  --prompt-border-color: var(--accent-soft-foreground);
+  --modal-border-color: var(--accent-soft-foreground);
+  --code-background: var(--background-dark);
+  --background-modifier-form-field: var(--background-dark);
 
   /* Font Colors */
   --text-main: 250, 250, 250;
@@ -61,10 +77,14 @@
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
   --text-on-accent: var(--background-primary) !important;
+  --code-normal: var(--text-white);
+  --text-error: rgb(240, 20, 50);
 
   /* Kanban Plugin Colors */
       /* background-modifier-border also applies to menus */
   --background-modifier-border: var(--accent-soft-foreground);
+  --background-modifier-border-hover: var(--accent-soft-foreground);
+  --background-modifier-border-focus: var(--accent-soft-foreground);
   --kanban-button-text: var(--text-normal);
   --kanban-button-text-hover: var(--background-primary);
   --kanban-checkbox-border: var(--background-primary);
@@ -98,7 +118,6 @@
   --table-header-font: var(--font-text), sans-serif;
   --table-body-font: var(--font-monospace), monospace;
   --nav-item-color: var(--text-normal);
-  --code-normal: var(--text-white);
   --status-bar-text-color: var(--text-normal);
   --vault-name-font-weight: bold;
 
@@ -125,18 +144,15 @@
   --checkbox-border-color: var(--list-elements);
   --table-border-color: var(--list-elements);
   --table-header-border-color: var(--list-elements);
-  --code-background: var(--background-dark);
-  --background-modifier-form-field: var(--background-primary);
 
   /* Page Element Styles */
   --border-radius: 2px;
+  --border-radius-large: 4px;
   --checkbox-radius: var(--border-radius);
   --input-radius: var(--border-radius);
-  --tag-radius: 4px;
+  --tag-radius: var(border-radius-large);
 
   /* Kanban Plugin Styles */
-  --background-modifier-border-hover: var(--accent-soft-foreground);
-  --background-modifier-border-focus: var(--accent-soft-foreground);
   --button-radius: var(--border-radius);
   --button-shadow: rgba(var(--accent-soft), 1);
 }
@@ -166,10 +182,38 @@ table {
 .cm-hashtag {
   line-height: 2em;
 }
+.canvas-node-container {
+  border: 2px solid var(--text-normal);
+  border-radius: var(--border-radius-large);
+}
 
-/* Menu Backgrounds */
+/* Menu Settings */
 .menu, .vertical-tab-header {
   background-color: var(--background-primary);
+}
+select, .dropdown, select:focus,
+.dropdown:focus {
+  box-shadow: 0 0 0px 1px var(--background-modifier-border-focus);
+}
+textarea:active,
+input[type='text']:active,
+input[type='search']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='number']:active,
+textarea:focus,
+input[type='text']:focus,
+input[type='search']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='number']:focus,
+textarea:focus-visible,
+input[type='text']:focus-visible,
+input[type='search']:focus-visible,
+input[type='email']:focus-visible,
+input[type='password']:focus-visible,
+input[type='number']:focus-visible {
+  box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
 }
 
 /* Ribbon Background  */
