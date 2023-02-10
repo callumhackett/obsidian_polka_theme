@@ -1,219 +1,219 @@
 .theme-light {
-    /* Background Color Definitions */
-    --background-primary: rgb(255, 253, 253);
-    --background-secondary: rgb(251, 247, 247);
-    --background-dark: rgb(25, 32, 62);
-    
-    /* Accent Color Definitions */
-    --accent-main: 225, 40, 40;
-    --accent-soft: 75, 30, 30;
-    --accent-main-foreground: rgb(var(--accent-main));
-    --accent-main-background: rgba(var(--accent-main), 0.075);
-    --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
-    --accent-soft-background: rgba(var(--accent-soft), 0.05);
+  /* Background Color Definitions */
+  --background-primary: rgb(255, 253, 253);
+  --background-secondary: rgb(251, 247, 247);
+  --background-dark: rgb(25, 32, 62);
   
-    /* Interface Colors */
-    --titlebar-background: var(--background-secondary);
-    --titlebar-background-focused: var(--background-secondary);
-    --interactive-accent: var(--accent-main-foreground);
-    --interactive-accent-hover: var(--accent-main-foreground);
+  /* Accent Color Definitions */
+  --accent-main: 225, 40, 40;
+  --accent-soft: 75, 30, 30;
+  --accent-main-foreground: rgb(var(--accent-main));
+  --accent-main-background: rgba(var(--accent-main), 0.075);
+  --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
+  --accent-soft-background: rgba(var(--accent-soft), 0.05);
+
+  /* Interface Colors */
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --interactive-accent: var(--accent-main-foreground);
+  --interactive-accent-hover: var(--accent-main-foreground);
+
+  /* Font Colors */
+  --text-main: 0, 0, 0;
+  --text-normal: rgba(var(--text-main), 1);
+  --text-muted: rgba(var(--text-main), 1);
+  --text-faint: rgba(var(--text-main), 1);
+  --text-white: var(--background-primary);
+  --text-on-accent: var(--text-white) !important;
+
+  /* Kanban Plugin Colors */
+      /* background-modifier-border also applies to menus */
+  --background-modifier-border: var(--accent-soft-foreground);
+  --kanban-button-text: var(--text-normal);
+  --kanban-button-text-hover: var(--text-white);
+  --kanban-checkbox-border: var(--accent-soft-foreground);
+}
+
+.theme-dark {
+  /* Background Color Definitions */
+  --background-primary: rgb(22, 28, 47);
+  --background-secondary: rgb(33, 43, 61);
+  --background-dark: rgb(0, 13, 22);
   
-    /* Font Colors */
-    --text-main: 0, 0, 0;
-    --text-normal: rgba(var(--text-main), 1);
-    --text-muted: rgba(var(--text-main), 1);
-    --text-faint: rgba(var(--text-main), 1);
-    --text-white: var(--background-primary);
-    --text-on-accent: var(--text-white) !important;
-  
-    /* Kanban Plugin Colors */
-        /* background-modifier-border also applies to menus */
-    --background-modifier-border: var(--accent-soft-foreground);
-    --kanban-button-text: var(--text-normal);
-    --kanban-button-text-hover: var(--text-white);
-    --kanban-checkbox-border: var(--accent-soft-foreground);
-  }
-  
-  .theme-dark {
-    /* Background Color Definitions */
-    --background-primary: rgb(22, 28, 47);
-    --background-secondary: rgb(33, 43, 61);
-    --background-dark: rgb(0, 13, 22);
-    
-    /* Accent Color Definitions */
-    --accent-main: 0, 185, 225;
-    --accent-soft: 180, 205, 255;
-    --accent-main-foreground: rgb(var(--accent-main));
-    --accent-main-background: rgba(var(--accent-main), 0.05);
-    --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
-    --accent-soft-background: rgba(var(--accent-soft), 0.05);
-  
-    /* Interface Colors */
-    --titlebar-background: var(--background-secondary);
-    --titlebar-background-focused: var(--background-secondary);
-    --interactive-accent: var(--accent-main-foreground);
-    --interactive-accent-hover: var(--accent-main-foreground);
-  
-    /* Font Colors */
-    --text-main: 250, 250, 250;
-    --text-normal: rgba(var(--text-main), 1);
-    --text-muted: rgba(var(--text-main), 1);
-    --text-faint: rgba(var(--text-main), 1);
-    --text-white: var(--text-normal);
-    --text-on-accent: var(--background-primary) !important;
-  
-    /* Kanban Plugin Colors */
-        /* background-modifier-border also applies to menus */
-    --background-modifier-border: var(--accent-soft-foreground);
-    --kanban-button-text: var(--text-normal);
-    --kanban-button-text-hover: var(--background-primary);
-    --kanban-checkbox-border: var(--background-primary);
-  }
-  
-  /* Main Content, Light & Dark */
-  .workspace {
-    /* Interface Colors */
-    --ribbon-background: var(--background-secondary);
-    --scrollbar-thumb-bg: var(--accent-soft-background);
-    --scrollbar-active-thumb-bg: var(--accent-soft-foreground);
-    --divider-color: transparent;
-  
-    /* Navigation Colors */
-    --nav-item-background-hover: var(--accent-soft-background);
-    --nav-item-background-active: var(--accent-soft-background);
-    --nav-indentation-guide-color: var(--accent-main-foreground);
-    --nav-collapse-icon-color: var(--accent-main-foreground);
-    --nav-collapse-icon-color-collapsed: var(--accent-main-foreground);
-  
-    /* Font Styles */
-    --h1-color: var(--text-normal);
-    --h2-color: var(--text-normal);
-    --h3-color: var(--text-normal);
-    --h4-color: var(--text-normal);
-    --h5-color: var(--text-normal);
-    --h6-color: var(--text-normal);
-    --heading-formatting: var(--text-normal);
-    --list-elements: var(--text-normal);
-    --list-marker-color: var(--list-elements);
-    --table-header-font: var(--font-text), sans-serif;
-    --table-body-font: var(--font-monospace), monospace;
-    --nav-item-color: var(--text-normal);
-    --code-normal: var(--text-white);
-    --status-bar-text-color: var(--text-normal);
-    --vault-name-font-weight: bold;
-  
-    /* Link Colors */
-    --link-color: var(--accent-main-foreground);
-    --link-color-hover: var(--accent-main-foreground);
-    --link-external-color: var(--accent-main-foreground);
-    --link-external-color-hover: var(--accent-main-foreground);
-    --tag-color: var(--accent-main-foreground);
-  
-    /* Icon Colors */
-    --icon-color: var(--text-normal);
-    --icon-color-hover: var(--text-normal);
-    --icon-color-focused: var(--text-normal);
-    --icon-color-active: var(--text-normal);
-    --collapse-icon-color: var(--accent-main-foreground);
-    --background-modifier-hover: var(--accent-soft-background);
-    --background-modifier-active-hover: var(--accent-soft-background);
-  
-    /* Page Element Colors */
-    --tab-background-active: var(--background-primary);
-    --tab-outline-color: var(--accent-main-foreground);
-    --tag-background: var(--accent-main-background);
-    --checkbox-border-color: var(--list-elements);
-    --table-border-color: var(--list-elements);
-    --table-header-border-color: var(--list-elements);
-    --code-background: var(--background-dark);
-    --background-modifier-form-field: var(--background-primary);
-  
-    /* Page Element Styles */
-    --border-radius: 2px;
-    --checkbox-radius: var(--border-radius);
-    --input-radius: var(--border-radius);
-    --tag-radius: 4px;
-  
-    /* Kanban Plugin Styles */
-    --background-modifier-border-hover: var(--accent-soft-foreground);
-    --background-modifier-border-focus: var(--accent-soft-foreground);
-    --button-radius: var(--border-radius);
-    --button-shadow: rgba(var(--accent-soft), 1);
-  }
-  
+  /* Accent Color Definitions */
+  --accent-main: 0, 185, 225;
+  --accent-soft: 180, 205, 255;
+  --accent-main-foreground: rgb(var(--accent-main));
+  --accent-main-background: rgba(var(--accent-main), 0.05);
+  --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
+  --accent-soft-background: rgba(var(--accent-soft), 0.05);
+
+  /* Interface Colors */
+  --titlebar-background: var(--background-secondary);
+  --titlebar-background-focused: var(--background-secondary);
+  --interactive-accent: var(--accent-main-foreground);
+  --interactive-accent-hover: var(--accent-main-foreground);
+
+  /* Font Colors */
+  --text-main: 250, 250, 250;
+  --text-normal: rgba(var(--text-main), 1);
+  --text-muted: rgba(var(--text-main), 1);
+  --text-faint: rgba(var(--text-main), 1);
+  --text-white: var(--text-normal);
+  --text-on-accent: var(--background-primary) !important;
+
+  /* Kanban Plugin Colors */
+      /* background-modifier-border also applies to menus */
+  --background-modifier-border: var(--accent-soft-foreground);
+  --kanban-button-text: var(--text-normal);
+  --kanban-button-text-hover: var(--background-primary);
+  --kanban-checkbox-border: var(--background-primary);
+}
+
+/* Main Content, Light & Dark */
+.workspace {
+  /* Interface Colors */
+  --ribbon-background: var(--background-secondary);
+  --scrollbar-thumb-bg: var(--accent-soft-background);
+  --scrollbar-active-thumb-bg: var(--accent-soft-foreground);
+  --divider-color: transparent;
+
+  /* Navigation Colors */
+  --nav-item-background-hover: var(--accent-soft-background);
+  --nav-item-background-active: var(--accent-soft-background);
+  --nav-indentation-guide-color: var(--accent-main-foreground);
+  --nav-collapse-icon-color: var(--accent-main-foreground);
+  --nav-collapse-icon-color-collapsed: var(--accent-main-foreground);
+
+  /* Font Styles */
+  --h1-color: var(--text-normal);
+  --h2-color: var(--text-normal);
+  --h3-color: var(--text-normal);
+  --h4-color: var(--text-normal);
+  --h5-color: var(--text-normal);
+  --h6-color: var(--text-normal);
+  --heading-formatting: var(--text-normal);
+  --list-elements: var(--text-normal);
+  --list-marker-color: var(--list-elements);
+  --table-header-font: var(--font-text), sans-serif;
+  --table-body-font: var(--font-monospace), monospace;
+  --nav-item-color: var(--text-normal);
+  --code-normal: var(--text-white);
+  --status-bar-text-color: var(--text-normal);
+  --vault-name-font-weight: bold;
+
+  /* Link Colors */
+  --link-color: var(--accent-main-foreground);
+  --link-color-hover: var(--accent-main-foreground);
+  --link-external-color: var(--accent-main-foreground);
+  --link-external-color-hover: var(--accent-main-foreground);
+  --tag-color: var(--accent-main-foreground);
+
+  /* Icon Colors */
+  --icon-color: var(--text-normal);
+  --icon-color-hover: var(--text-normal);
+  --icon-color-focused: var(--text-normal);
+  --icon-color-active: var(--text-normal);
+  --collapse-icon-color: var(--accent-main-foreground);
+  --background-modifier-hover: var(--accent-soft-background);
+  --background-modifier-active-hover: var(--accent-soft-background);
+
+  /* Page Element Colors */
+  --tab-background-active: var(--background-primary);
+  --tab-outline-color: var(--accent-main-foreground);
+  --tag-background: var(--accent-main-background);
+  --checkbox-border-color: var(--list-elements);
+  --table-border-color: var(--list-elements);
+  --table-header-border-color: var(--list-elements);
+  --code-background: var(--background-dark);
+  --background-modifier-form-field: var(--background-primary);
+
   /* Page Element Styles */
-  .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
-    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
-  }
-  .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-    border-radius: 0px 0px var(--border-radius) var(--border-radius);
-  }
-  .callout {
-    border-radius: var(--border-radius);
-    border: 2px dashed var(--text-normal);
-    background: transparent;
-    padding: 1em;
-  }
-  .callout p:last-child {
-    margin-bottom: 0;
-  }
-  .callout-title, .callout-icon .svg-icon {
-    color: var(--text-normal);
-  }
-  table {
-    font-family: var(--table-body-font);
-    font-size: var(--table-body-font-size);
-    font-feature-settings: 'zero';
-  }
-  
-  /* Menu Backgrounds */
-  .menu, .vertical-tab-header {
-    background-color: var(--background-primary);
-  }
-  
-  /* Ribbon Background  */
-  .workspace-ribbon {
-    background-image: 
-      radial-gradient(var(--accent-main-foreground) 20%, transparent 25%),
-      radial-gradient(var(--accent-main-foreground) 20%, transparent 30%);
-    background-position: 0px 0px, 3px 3px;
-    background-size: 6px 6px;
-  }
-  .side-dock-ribbon-action, .side-dock-ribbon-action:hover {
-    background: var(--background-secondary);
-  }
-  
+  --border-radius: 2px;
+  --checkbox-radius: var(--border-radius);
+  --input-radius: var(--border-radius);
+  --tag-radius: 4px;
+
   /* Kanban Plugin Styles */
-  .kanban-plugin__lane {
-    border-radius: var(--border-radius);
-    background: var(--main-background);
-  }
-  .kanban-plugin__lane .task-list-item-checkbox {
-    background: var(--background-primary);
-    border: 1px solid var(--kanban-checkbox-border) !important;
-    filter: none !important;
-  }
-  .kanban-plugin__item-title-wrapper {
-    background: var(--background-secondary);
-  }
-  .kanban-plugin__item-tag {
-    border-radius: var(--border-radius) !important;
-  }
-  button:not(.clickable-icon) {
-    background: var(--accent-soft-background);
-    color: var(--kanban-button-text);
-  }
-  button:not(.clickable-icon):hover {
-    background: var(--accent-main-foreground);
-    color: var(--kanban-button-text-hover);
-  }
-  button:not(.clickable-icon), button:not(.clickable-icon):hover {
-    box-shadow: 0px 0px 1px 0px var(--button-shadow);
-    transition: 0s;
-  }
-  
-  /* Status Bar */
-  .status-bar {
-    background-color: var(--background-secondary);
-  }
+  --background-modifier-border-hover: var(--accent-soft-foreground);
+  --background-modifier-border-focus: var(--accent-soft-foreground);
+  --button-radius: var(--border-radius);
+  --button-shadow: rgba(var(--accent-soft), 1);
+}
+
+/* Page Element Styles */
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+}
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+}
+.callout {
+  border-radius: var(--border-radius);
+  border: 2px dashed var(--text-normal);
+  background: transparent;
+  padding: 1em;
+}
+.callout p:last-child {
+  margin-bottom: 0;
+}
+.callout-title, .callout-icon .svg-icon {
+  color: var(--text-normal);
+}
+table {
+  font-family: var(--table-body-font);
+  font-size: var(--table-body-font-size);
+  font-feature-settings: 'zero';
+}
+
+/* Menu Backgrounds */
+.menu, .vertical-tab-header {
+  background-color: var(--background-primary);
+}
+
+/* Ribbon Background  */
+.workspace-ribbon {
+  background-image: 
+    radial-gradient(var(--accent-main-foreground) 20%, transparent 25%),
+    radial-gradient(var(--accent-main-foreground) 20%, transparent 30%);
+  background-position: 0px 0px, 3px 3px;
+  background-size: 6px 6px;
+}
+.side-dock-ribbon-action, .side-dock-ribbon-action:hover {
+  background: var(--background-secondary);
+}
+
+/* Kanban Plugin Styles */
+.kanban-plugin__lane {
+  border-radius: var(--border-radius);
+  background: var(--main-background);
+}
+.kanban-plugin__lane .task-list-item-checkbox {
+  background: var(--background-primary);
+  border: 1px solid var(--kanban-checkbox-border) !important;
+  filter: none !important;
+}
+.kanban-plugin__item-title-wrapper {
+  background: var(--background-secondary);
+}
+.kanban-plugin__item-tag {
+  border-radius: var(--border-radius) !important;
+}
+button:not(.clickable-icon) {
+  background: var(--accent-soft-background);
+  color: var(--kanban-button-text);
+}
+button:not(.clickable-icon):hover {
+  background: var(--accent-main-foreground);
+  color: var(--kanban-button-text-hover);
+}
+button:not(.clickable-icon), button:not(.clickable-icon):hover {
+  box-shadow: 0px 0px 1px 0px var(--button-shadow);
+  transition: 0s;
+}
+
+/* Status Bar */
+.status-bar {
+  background-color: var(--background-secondary);
+}
   
