@@ -27,6 +27,7 @@
   /* Font Colors */
   --text-main: 0, 0, 0;
   --text-normal: rgba(var(--text-main), 1);
+  --text-accent: var(--accent-main-foreground);
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--background-primary);
@@ -73,6 +74,7 @@
   /* Font Colors */
   --text-main: 250, 250, 250;
   --text-normal: rgba(var(--text-main), 1);
+  --text-accent: var(--accent-main-foreground);
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
