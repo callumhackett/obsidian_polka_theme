@@ -5,7 +5,7 @@
   --background-dark: rgb(25, 32, 62);
   
   /* Accent Color Definitions */
-  --accent-main: 225, 40, 55;
+  --accent-main: 225, 40, 40;
   --accent-soft: 75, 30, 30;
   --accent-main-foreground: rgb(var(--accent-main));
   --accent-main-background: rgba(var(--accent-main), 0.075);
