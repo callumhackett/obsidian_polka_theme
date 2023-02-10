@@ -162,8 +162,6 @@
 }
 table {
   font-family: var(--table-body-font);
-  font-size: var(--table-body-font-size);
-  font-feature-settings: 'zero';
 }
 
 /* Menu Backgrounds */
