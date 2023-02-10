@@ -2,7 +2,7 @@
   /* Background Color Definitions */
   --background-primary: rgb(255, 253, 253);
   --background-secondary: rgb(251, 247, 247);
-  --background-dark: rgb(23, 32, 58);
+  --background-dark: rgb(22, 32, 58);
   
   /* Accent Color Definitions */
   --accent-main: 225, 40, 40;
@@ -45,10 +45,10 @@
   /* Syntax Highlighting */
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
-  --code-peripheral: 255, 230, 230;
+  --code-peripheral: 255, 237, 237;
   --code-comment: rgba(var(--code-peripheral), 0.6);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.25);
-  --color-yellow: rgb(225, 225, 50);
+  --color-yellow: rgb(250, 225, 50);
   --color-orange: rgb(225, 80, 0);
   --color-pink: rgb(240, 110, 255);
   --color-red: rgb(255, 60, 60);
@@ -109,9 +109,9 @@
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
   --code-peripheral: 190, 210, 255;
-  --code-comment: rgba(var(--code-peripheral), 0.67);
+  --code-comment: rgba(var(--code-peripheral), 0.5);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.2);
-  --color-yellow: rgb(225, 225, 50);
+  --color-yellow: rgb(240, 215, 50);
   --color-orange: rgb(225, 80, 0);
   --color-pink: rgb(240, 110, 255);
   --color-red: rgb(255, 60, 60);
