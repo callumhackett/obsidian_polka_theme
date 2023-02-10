@@ -37,7 +37,6 @@
   --text-white: var(--background-primary);
   --text-on-accent: var(--text-white) !important;
   --text-selection: var(--accent-main-selection);
-  --code-normal: var(--text-white);
   --text-error: rgb(240, 20, 50);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
