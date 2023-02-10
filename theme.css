@@ -163,6 +163,9 @@
 table {
   font-family: var(--table-body-font);
 }
+.cm-hashtag {
+  line-height: 2em;
+}
 
 /* Menu Backgrounds */
 .menu, .vertical-tab-header {
