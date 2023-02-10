@@ -3,6 +3,7 @@
   --background-primary: rgb(255, 253, 253);
   --background-secondary: rgb(251, 247, 247);
   --background-dark: rgb(22, 32, 58);
+  --background-extra-dark: rgb(0, 10, 20);
   
   /* Accent Color Definitions */
   --accent-main: 225, 40, 40;
@@ -37,6 +38,7 @@
   --text-white: var(--background-primary);
   --text-on-accent: var(--text-white) !important;
   --text-selection: var(--accent-main-selection);
+  --text-highlight-bg: rgb(255, 230, 135);
   --text-error: rgb(240, 20, 50);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
@@ -47,7 +49,7 @@
   --code-peripheral: 255, 237, 237;
   --code-comment: rgba(var(--code-peripheral), 0.6);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.25);
-  --color-yellow: rgb(250, 225, 50);
+  ---color-yellow: rgb(250, 233, 50);
   --color-orange: rgb(225, 80, 0);
   --color-pink: rgb(240, 110, 255);
   --color-red: rgb(255, 60, 60);
@@ -66,6 +68,7 @@
   --background-primary: rgb(22, 29, 44);
   --background-secondary: rgb(33, 43, 61);
   --background-dark: rgb(10, 20, 29);
+  --background-extra-dark: rgb(0, 10, 20);
   
   /* Accent Color Definitions */
   --accent-main: 0, 202, 235;
@@ -100,6 +103,7 @@
   --text-white: var(--text-normal);
   --text-on-accent: var(--background-primary) !important;
   --text-selection: var(--accent-soft-selection);
+  --text-highlight-bg: rgb(50, 255, 190);
   --text-error: rgb(240, 20, 50);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
@@ -110,7 +114,7 @@
   --code-peripheral: 190, 210, 255;
   --code-comment: rgba(var(--code-peripheral), 0.5);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.2);
-  --color-yellow: rgb(240, 215, 50);
+  --color-yellow: rgb(240, 228, 50);
   --color-orange: rgb(225, 80, 0);
   --color-pink: rgb(240, 110, 255);
   --color-red: rgb(255, 60, 60);
@@ -186,6 +190,7 @@
   --checkbox-radius: var(--border-radius);
   --input-radius: var(--border-radius);
   --tag-radius: var(border-radius-large);
+  --hr-thickness: 2px;
 
   /* Kanban Plugin Styles */
   --button-radius: var(--border-radius);
@@ -225,7 +230,7 @@ table {
   color: var(--code-normal) !important;
 }
 .code-block-flair:hover {
-  background: rgb(0, 10, 20) !important;
+  background: var(--background-extra-dark) !important;
 }
 .HyperMD-codeblock .cm-indent::before {
   border-right: var(--indentation-guide-width) solid var(--code-indentation-guide-color) !important;
@@ -236,8 +241,11 @@ table {
 }
 .markdown-rendered button.copy-code-button:hover {
   color: var(--code-normal);
-  background-color: rgb(0, 10, 20);
+  background-color: var(--background-extra-dark);
   box-shadow: none;
+}
+hr, .markdown-rendered hr {
+  border-top: var(--hr-thickness) dashed;
 }
 
 /* Menu Settings */
@@ -308,6 +316,29 @@ button:not(.clickable-icon):hover {
 button:not(.clickable-icon), button:not(.clickable-icon):hover {
   box-shadow: 0px 0px 1px 0px var(--button-shadow);
   transition: 0s;
+}
+
+/* Code Execution Plugin */
+code.language-output hr {
+  margin: 1.5em 0 1.5em;
+}
+:not(.use-custom-output-color) code.language-output span.stdout {
+  color: var(--code-normal) !important;
+}
+code.language-output {
+  margin-bottom: 2.5em !important;
+}
+.run-code-button, .clear-button {
+  background: transparent !important;
+  border: 1px solid var(--code-normal) !important;
+  color: var(--code-normal) !important;
+}
+.run-code-button:hover, .clear-button:hover {
+  background: var(--code-normal) !important;
+  color: var(--background-dark) !important;
+}
+button.run-code-button, button.clear-button {
+  float: right;
 }
 
 /* Status Bar */
