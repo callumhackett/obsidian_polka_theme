@@ -20,6 +20,8 @@ The selector `.theme-dark` is for dark mode. Use `.theme-light` with light mode.
 
 The user is left to select which font families are loaded, although Polka is set up to make table content use whichever is your default monospace font. The font used in the preview image is Franklin Gothic, which is available as standard on Windows. A good free alternative is [Rubik](https://fonts.google.com/specimen/Rubik).
 
-## Extra Features
+## Features
 
-Polka comes with modifications to the default color settings of the [Kanban plugin](https://github.com/mgmeyers/obsidian-kanban), so that it fits the overall palette better.
+Polka keeps Obsidian's built-in color scheme for syntax highlighting in code blocks, though the colors have been refined for this theme.
+
+Polka also comes with modifications to the default colors of the [Kanban plugin](https://github.com/mgmeyers/obsidian-kanban).
