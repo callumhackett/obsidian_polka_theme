@@ -11,6 +11,7 @@
   --accent-main-background: rgba(var(--accent-main), 0.075);
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
+  --accent-main-selection: rgba(var(--accent-main), 0.67);
 
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
@@ -32,6 +33,7 @@
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--background-primary);
   --text-on-accent: var(--text-white) !important;
+  --text-selection: var(--accent-main-selection);
   --code-normal: var(--text-white);
   --text-error: rgb(240, 20, 50);
 
@@ -58,6 +60,7 @@
   --accent-main-background: rgba(var(--accent-main), 0.05);
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
+  --accent-soft-selection: rgba(var(--accent-soft), 0.2);
 
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
@@ -79,6 +82,7 @@
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
   --text-on-accent: var(--background-primary) !important;
+  --text-selection: var(--accent-soft-selection);
   --code-normal: var(--text-white);
   --text-error: rgb(240, 20, 50);
 
