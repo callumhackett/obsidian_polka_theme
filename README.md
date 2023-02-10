@@ -6,7 +6,7 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-Due to the way the theme shares color values between elements for coherence, Polka ignores the accent color in your Obsidian settings. You can choose your own accent color for the dots (and other elements which inherit the color) but you'll need to [create your own CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example:
+Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can choose your own accent color for the ribbon (and other elements which share the color) but you'll need to [create your own CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example, in dark mode:
 
 ```
 .theme-dark {
@@ -14,14 +14,17 @@ Due to the way the theme shares color values between elements for coherence, Pol
 }
 ```
 
-The selector `.theme-dark` is for dark mode. Use `.theme-light` with light mode.
+Replace `.theme-dark` with `.theme-light` for light mode.
 
 ## Fonts
 
-The user is left to select which font families are loaded, although Polka is set up to make table content use whichever is your default monospace font. The font used in the preview image is Franklin Gothic, which is available as standard on Windows. A good free alternative is [Rubik](https://fonts.google.com/specimen/Rubik).
+The user is left to select which font families are loaded, although Polka is set up to use your default monospace font in table content for better number formatting.
 
-## Features
+The font used in the preview image is Franklin Gothic, which is available as standard on Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
-Polka keeps Obsidian's built-in color scheme for syntax highlighting in code blocks, though the colors have been refined for this theme.
+## Plugin Support
 
-Polka also comes with modifications to the default colors of the [Kanban plugin](https://github.com/mgmeyers/obsidian-kanban).
+In addition to modifying your workspace, Polka's colors are adapted for Obsidian's UI and the whole suite of core plug-ins. Additional attention has been given to:
+
+- Syntax highlighting in code blocks (Polka keeps the built-in color scheme but refines the exact values).
+- [Kanban](https://github.com/mgmeyers/obsidian-kanban).
