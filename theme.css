@@ -2,7 +2,7 @@
   /* Background Color Definitions */
   --background-primary: rgb(255, 253, 253);
   --background-secondary: rgb(251, 247, 247);
-  --background-dark: rgb(25, 32, 62);
+  --background-dark: rgb(21, 31, 57);
   
   /* Accent Color Definitions */
   --accent-main: 225, 40, 40;
@@ -36,6 +36,20 @@
   --text-selection: var(--accent-main-selection);
   --code-normal: var(--text-white);
   --text-error: rgb(240, 20, 50);
+  --background-modifier-error: var(--text-error);
+  --background-modifier-error-hover: var(--text-error);
+
+    /* Syntax Highlighting */
+    --code-normal: var(--text-white);
+    --code-comment: rgba(255, 243, 243, 0.75);
+    --color-yellow: rgb(225, 225, 50);
+    --color-orange: rgb(225, 80, 0);
+    --color-pink: rgb(255, 110, 255);
+    --color-red: rgb(235, 40, 40);
+    --color-cyan: rgb(40, 202, 235);
+    --code-punctuation: rgba(var(--text-main), 0.8);
+    --color-green: rgb(30, 215, 65);
+    --color-purple: rgb(140, 110, 255);
 
   /* Kanban Plugin Colors */
       /* background-modifier-border also applies to menus */
@@ -51,7 +65,7 @@
   /* Background Color Definitions */
   --background-primary: rgb(22, 29, 44);
   --background-secondary: rgb(33, 43, 61);
-  --background-dark: rgb(0, 13, 22);
+  --background-dark: rgb(10, 20, 29);
   
   /* Accent Color Definitions */
   --accent-main: 40, 202, 235;
@@ -83,8 +97,21 @@
   --text-white: var(--text-normal);
   --text-on-accent: var(--background-primary) !important;
   --text-selection: var(--accent-soft-selection);
-  --code-normal: var(--text-white);
   --text-error: rgb(240, 20, 50);
+  --background-modifier-error: var(--text-error);
+  --background-modifier-error-hover: var(--text-error);
+
+  /* Syntax Highlighting */
+  --code-normal: var(--text-white);
+  --code-comment: rgba(190, 210, 255, 0.8);
+  --color-yellow: rgb(225, 225, 50);
+  --color-orange: rgb(225, 80, 0);
+  --color-pink: rgb(255, 110, 255);
+  --color-red: rgb(235, 40, 40);
+  --color-cyan: rgb(40, 202, 235);
+  --code-punctuation: rgba(var(--text-main), 0.8);
+  --color-green: rgb(30, 215, 65);
+  --color-purple: rgb(140, 110, 255);
 
   /* Kanban Plugin Colors */
       /* background-modifier-border also applies to menus */
@@ -191,6 +218,12 @@ table {
 .canvas-node-container {
   border: 2px solid var(--text-normal);
   border-radius: var(--border-radius-large);
+}
+.code-block-flair {
+  color: var(--code-normal) !important;
+}
+.code-block-flair:hover {
+  background: rgb(0, 10, 20) !important;
 }
 
 /* Menu Settings */
