@@ -2,7 +2,7 @@
   /* Background Color Definitions */
   --background-primary: rgb(255, 253, 253);
   --background-secondary: rgb(251, 247, 247);
-  --background-dark: rgb(21, 31, 57);
+  --background-dark: rgb(23, 32, 58);
   
   /* Accent Color Definitions */
   --accent-main: 225, 40, 40;
@@ -24,6 +24,9 @@
   --modal-border-color: var(--accent-soft-foreground);
   --code-background: var(--background-dark);
   --background-modifier-form-field: var(--accent-soft-background);
+  --background-modifier-border: var(--accent-soft-foreground);
+  --background-modifier-border-hover: var(--accent-soft-foreground);
+  --background-modifier-border-focus: var(--accent-soft-foreground);
 
   /* Font Colors */
   --text-main: 0, 0, 0;
@@ -39,23 +42,21 @@
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
 
-    /* Syntax Highlighting */
-    --code-normal: var(--text-white);
-    --code-comment: rgba(255, 243, 243, 0.75);
-    --color-yellow: rgb(225, 225, 50);
-    --color-orange: rgb(225, 80, 0);
-    --color-pink: rgb(255, 110, 255);
-    --color-red: rgb(235, 40, 40);
-    --color-cyan: rgb(40, 202, 235);
-    --code-punctuation: rgba(var(--text-main), 0.8);
-    --color-green: rgb(30, 215, 65);
-    --color-purple: rgb(140, 110, 255);
+  /* Syntax Highlighting */
+  --code-normal: var(--text-white);
+  --code-punctuation: var(--code-normal);
+  --code-peripheral: 255, 230, 230;
+  --code-comment: rgba(var(--code-peripheral), 0.6);
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.25);
+  --color-yellow: rgb(225, 225, 50);
+  --color-orange: rgb(225, 80, 0);
+  --color-pink: rgb(240, 110, 255);
+  --color-red: rgb(255, 60, 60);
+  --color-cyan: rgb(0, 202, 235);
+  --color-green: rgb(0, 215, 80);
+  --color-purple: rgb(140, 110, 255);
 
   /* Kanban Plugin Colors */
-      /* background-modifier-border also applies to menus */
-  --background-modifier-border: var(--accent-soft-foreground);
-  --background-modifier-border-hover: var(--accent-soft-foreground);
-  --background-modifier-border-focus: var(--accent-soft-foreground);
   --kanban-button-text: var(--text-normal);
   --kanban-button-text-hover: var(--text-white);
   --kanban-checkbox-border: var(--accent-soft-foreground);
@@ -68,7 +69,7 @@
   --background-dark: rgb(10, 20, 29);
   
   /* Accent Color Definitions */
-  --accent-main: 40, 202, 235;
+  --accent-main: 0, 202, 235;
   --accent-soft: 180, 205, 255;
   --accent-main-foreground: rgb(var(--accent-main));
   --accent-main-background: rgba(var(--accent-main), 0.05);
@@ -87,6 +88,9 @@
   --modal-border-color: var(--accent-soft-foreground);
   --code-background: var(--background-dark);
   --background-modifier-form-field: var(--background-dark);
+  --background-modifier-border: var(--accent-soft-foreground);
+  --background-modifier-border-hover: var(--accent-soft-foreground);
+  --background-modifier-border-focus: var(--accent-soft-foreground);
 
   /* Font Colors */
   --text-main: 250, 250, 250;
@@ -103,21 +107,19 @@
 
   /* Syntax Highlighting */
   --code-normal: var(--text-white);
-  --code-comment: rgba(190, 210, 255, 0.8);
+  --code-punctuation: var(--code-normal);
+  --code-peripheral: 190, 210, 255;
+  --code-comment: rgba(var(--code-peripheral), 0.67);
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.2);
   --color-yellow: rgb(225, 225, 50);
   --color-orange: rgb(225, 80, 0);
-  --color-pink: rgb(255, 110, 255);
-  --color-red: rgb(235, 40, 40);
-  --color-cyan: rgb(40, 202, 235);
-  --code-punctuation: rgba(var(--text-main), 0.8);
-  --color-green: rgb(30, 215, 65);
+  --color-pink: rgb(240, 110, 255);
+  --color-red: rgb(255, 60, 60);
+  --color-cyan: rgb(0, 202, 235);
+  --color-green: rgb(0, 215, 80);
   --color-purple: rgb(140, 110, 255);
 
   /* Kanban Plugin Colors */
-      /* background-modifier-border also applies to menus */
-  --background-modifier-border: var(--accent-soft-foreground);
-  --background-modifier-border-hover: var(--accent-soft-foreground);
-  --background-modifier-border-focus: var(--accent-soft-foreground);
   --kanban-button-text: var(--text-normal);
   --kanban-button-text-hover: var(--background-primary);
   --kanban-checkbox-border: var(--background-primary);
@@ -177,6 +179,7 @@
   --checkbox-border-color: var(--list-elements);
   --table-border-color: var(--list-elements);
   --table-header-border-color: var(--list-elements);
+  --indentation-guide-color: var(--text-normal) !important;
 
   /* Page Element Styles */
   --border-radius: 2px;
@@ -224,6 +227,18 @@ table {
 }
 .code-block-flair:hover {
   background: rgb(0, 10, 20) !important;
+}
+.HyperMD-codeblock .cm-indent::before {
+  border-right: var(--indentation-guide-width) solid var(--code-indentation-guide-color) !important;
+}
+.markdown-rendered button.copy-code-button {
+  color: var(--code-normal);
+  background-color: transparent;
+}
+.markdown-rendered button.copy-code-button:hover {
+  color: var(--code-normal);
+  background-color: rgb(0, 10, 20);
+  box-shadow: none;
 }
 
 /* Menu Settings */
