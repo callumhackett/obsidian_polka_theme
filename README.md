@@ -30,4 +30,4 @@ In addition to modifying your workspace, Polka's colors are adapted for Obsidian
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code).
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban).
 
-![Example](code_example.png)
+![Example](code_preview.png)
