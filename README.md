@@ -2,7 +2,7 @@
 
 This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon.
 
-![Screenshot](polka.png)
+![Preview](polka.png)
 
 ## Color Customization
 
