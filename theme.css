@@ -21,7 +21,7 @@
   /* Font Colors */
   --text-main: 0, 0, 0;
   --text-normal: rgba(var(--text-main), 1);
-  --text-highlight-bg: rgb(255, 230, 135);
+  --text-highlight-bg: rgb(255, 230, 90);
   --text-highlight-fg: var(--text-normal);
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
@@ -39,7 +39,7 @@
   --code-peripheral: 255, 237, 237;
   --code-comment: rgba(var(--code-peripheral), 0.6);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.25);
-  --color-yellow: rgb(250, 235, 80);
+  --color-yellow: rgb(250, 235, 30);
   --color-orange: rgb(225, 80, 0);
   --color-pink: rgb(240, 110, 255);
   --color-red: rgb(255, 60, 60);
