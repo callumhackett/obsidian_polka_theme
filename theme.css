@@ -13,12 +13,17 @@
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-main-selection: rgba(var(--accent-main), 0.67);
+  --success-callout-border: rgb(0, 175, 0);
+  --warning-callout-border: rgb(255, 190, 0);
+  --failure-callout-border: rgb(250, 20, 50);
+  --bug-callout-border: rgb(235, 0, 170);
 
   /* Font Colors */
   --text-main: 0, 0, 0;
   --text-normal: rgba(var(--text-main), 1);
   --text-highlight-bg: rgb(255, 230, 135);
-  --text-error: rgb(240, 20, 50);
+  --text-highlight-fg: var(--text-normal);
+  --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
@@ -67,7 +72,7 @@
   /* Background Color Definitions */
   --background-primary: rgb(22, 29, 44);
   --background-secondary: rgb(33, 43, 61);
-  --background-dark: rgb(10, 16, 30);
+  --background-dark: rgb(10, 18, 30);
   --background-extra-dark: rgb(0, 5, 10);
   
   /* Accent Color Definitions */
@@ -78,12 +83,17 @@
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-soft-selection: rgba(var(--accent-soft), 0.2);
+  --success-callout-border: rgb(0, 200, 0);
+  --warning-callout-border: rgb(210, 225, 0);
+  --failure-callout-border: rgb(250, 20, 50);
+  --bug-callout-border: rgb(240, 0, 125);
 
   /* Font Colors */
   --text-main: 250, 250, 250;
   --text-normal: rgba(var(--text-main), 1);
-  --text-highlight-bg: rgb(50, 255, 190);
-  --text-error: rgb(240, 20, 50);
+  --text-highlight-bg: rgb(50, 240, 200);
+  --text-highlight-fg: var(--background-primary);
+  --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
@@ -158,7 +168,7 @@
   --checkbox-border-color: var(--list-elements);
   --table-border-color: var(--list-elements);
   --table-header-border-color: var(--list-elements);
-  --indentation-guide-color: var(--text-normal) !important;
+  --indentation-guide-color: rgba(var(--text-main), 0.2) !important;
 
   /* Page Element Styles */
   --border-radius: 2px;
@@ -246,6 +256,18 @@
   background: transparent;
   padding: 1em;
 }
+.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] {
+  border: 2px dashed var(--success-callout-border) !important;
+}
+.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] {
+  border: 2px dashed var(--warning-callout-border) !important;
+}
+.callout[data-callout="failure"], .callout[data-callout="fail"], .callout[data-callout="missing"], .callout[data-callout="danger"], .callout[data-callout="error"] {
+  border: 2px dashed var(--failure-callout-border) !important;
+}
+.callout[data-callout="bug"] {
+  border: 2px dashed var(--bug-callout-border) !important;
+}
 .callout-title, .callout-icon .svg-icon {
   color: var(--text-normal);
 }
@@ -261,6 +283,9 @@ table {
 }
 hr, .markdown-rendered hr {
   border-top: var(--hr-thickness) dashed;
+}
+.suggestion-highlight, .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
+  color: var(--text-highlight-fg) !important;
 }
 
 /* Menu Settings */
@@ -342,9 +367,6 @@ code.language-output {
   background: var(--code-normal) !important;
   border: 1px solid var(--code-normal) !important;
   color: var(--background-dark) !important;
-}
-button.run-code-button, button.clear-button {
-  display: block;
 }
 
 /* Status Bar */
