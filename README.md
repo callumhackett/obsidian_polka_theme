@@ -29,3 +29,5 @@ In addition to modifying your workspace, Polka's colors are adapted for Obsidian
 - Syntax highlighting in code blocks (Polka uses the built-in color scheme but refines the hues).
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code).
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban).
+
+![Example](code_example.png)
