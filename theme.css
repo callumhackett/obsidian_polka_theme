@@ -9,12 +9,13 @@
   --accent-main: 225, 40, 40;
   --accent-soft: 75, 30, 30;
   --accent-main-foreground: rgb(var(--accent-main));
+  --color-accent: var(--accent-main-foreground);
   --accent-main-background: rgba(var(--accent-main), 0.075);
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
-  --accent-main-selection: rgba(var(--accent-main), 0.67);
+  --accent-on-selection: rgba(var(--accent-main), 0.2);
   --success-callout-border: rgb(0, 175, 0);
-  --warning-callout-border: rgb(255, 190, 0);
+  --warning-callout-border: rgb(250, 175, 0);
   --failure-callout-border: rgb(250, 20, 50);
   --bug-callout-border: rgb(235, 0, 170);
 
@@ -29,11 +30,12 @@
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--background-primary);
   --text-on-accent: var(--text-white) !important;
-  --text-selection: var(--accent-main-selection);
+  --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+  --hr-color: rgba(var(--text-main), 0.33);
 
   /* Syntax Highlighting */
   --code-peripheral: 255, 237, 237;
@@ -54,6 +56,7 @@
   --interactive-hover: var(--accent-soft-foreground);
   --interactive-accent: var(--accent-main-foreground);
   --interactive-accent-hover: var(--accent-main-foreground);
+  --tag-background: var(--accent-main-background);
   --prompt-border-color: var(--accent-soft-foreground);
   --modal-border-color: var(--accent-soft-foreground);
   --code-background: var(--background-dark);
@@ -79,10 +82,11 @@
   --accent-main: 0, 202, 235;
   --accent-soft: 180, 205, 255;
   --accent-main-foreground: rgb(var(--accent-main));
+  --color-accent: var(--accent-main-foreground);
   --accent-main-background: rgba(var(--accent-main), 0.05);
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
-  --accent-soft-selection: rgba(var(--accent-soft), 0.2);
+  --accent-on-selection: rgba(var(--accent-main), 0.2);
   --success-callout-border: rgb(0, 200, 0);
   --warning-callout-border: rgb(210, 225, 0);
   --failure-callout-border: rgb(250, 20, 50);
@@ -91,7 +95,7 @@
   /* Font Colors */
   --text-main: 250, 250, 250;
   --text-normal: rgba(var(--text-main), 1);
-  --text-highlight-bg: rgb(210, 65, 155);
+  --text-highlight-bg: rgb(255, 230, 90);
   --text-highlight-fg: var(--background-primary);
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
@@ -99,11 +103,12 @@
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
   --text-on-accent: var(--background-primary) !important;
-  --text-selection: var(--accent-soft-selection);
+  --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+  --hr-color: rgba(var(--text-main), 0.33);
 
   /* Syntax Highlighting */
   --code-peripheral: 190, 210, 255;
@@ -124,6 +129,7 @@
   --interactive-hover: var(--background-dark);
   --interactive-accent: var(--accent-main-foreground);
   --interactive-accent-hover: var(--accent-main-foreground);
+  --tag-background: var(--accent-main-background);
   --prompt-border-color: var(--accent-soft-foreground);
   --modal-border-color: var(--accent-soft-foreground);
   --code-background: var(--background-dark);
@@ -164,7 +170,6 @@
   --tag-color: var(--accent-main-foreground);
 
   /* Page Element Colors */
-  --tag-background: var(--accent-main-background);
   --checkbox-border-color: var(--list-elements);
   --table-border-color: var(--list-elements);
   --table-header-border-color: var(--list-elements);
@@ -176,7 +181,7 @@
   --checkbox-radius: var(--border-radius);
   --input-radius: var(--border-radius);
   --tag-radius: var(border-radius-large);
-  --hr-thickness: 2px;
+  --hr-thickness: 1px;
 
   /* Navigation Colors */
   --nav-item-background-hover: var(--accent-soft-background);
@@ -281,11 +286,27 @@ table {
   border: 2px solid var(--text-normal);
   border-radius: var(--border-radius-large);
 }
+.canvas-node.is-selected .canvas-node-container,
+.canvas-node.is-focused .canvas-node-container {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-stationary), var(--shadow-border-accent);
+}
+.canvas-node-container:focus {
+  border: 2px solid #fff;
+}
 hr, .markdown-rendered hr {
-  border-top: var(--hr-thickness) dashed;
+  border-top: var(--hr-color) var(--hr-thickness) dashed;
 }
 .suggestion-highlight, .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
+  background: var(--text-highlight-bg);
   color: var(--text-highlight-fg) !important;
+}
+.search-result-file-matched-text {
+  color: var(--text-highlight-fg);
+}
+.is-flashing {
+  caret-color: var(--text-highlight-fg);
+  color: var(--text-highlight-fg);
 }
 
 /* Menu Settings */
