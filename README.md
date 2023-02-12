@@ -14,7 +14,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-![Customization](custom_color_preview.png)
+![Customization](color_customization.png)
 
 Replace `.theme-dark` with `.theme-light` for light mode customizations.
 
