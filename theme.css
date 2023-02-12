@@ -31,7 +31,7 @@
   --text-highlight-fg: var(--text-normal);
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
-  --text-on-accent: var(--background-extra-dark) !important;
+  --text-on-accent: #000 !important;
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
@@ -110,7 +110,7 @@
   --text-highlight-fg: #000;
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
-  --text-on-accent: var(--background-extra-dark) !important;
+  --text-on-accent: #000 !important;
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
