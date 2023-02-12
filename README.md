@@ -20,7 +20,7 @@ Replace `.theme-dark` with `.theme-light` for light mode customizations.
 
 ## Fonts
 
-The user is left to select which font families are loaded, although Polka is set up to use your default monospace font in table content for better number formatting.
+The user is left to select which fonts are loaded, although Polka is set up to use your default monospace font in table content for better number formatting.
 
 The font used in the preview images is Franklin Gothic, which is available as standard on Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
