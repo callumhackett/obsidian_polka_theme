@@ -101,7 +101,7 @@
   --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
-  --text-main: 250, 250, 250;
+  --text-main: 250, 247, 245;
   --text-normal: rgba(var(--text-main), 1);
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
