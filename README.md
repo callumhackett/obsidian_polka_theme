@@ -6,17 +6,19 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can choose your own accent color to be used throughout the theme but you'll need to [create a CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example:
+Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can choose your own accent color for the theme to use in the ribbon and elsewhere but you'll need to [create a CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example:
 
 ```
 .theme-dark {
-  --accent-main: 0, 225, 60 !important;
+  --accent-main: 210, 65, 255 !important;
 }
 ```
 
+You can see the effect of the above in the preview below, which also displays the theme's callout formatting:
+
 ![Customization](color_customization.png)
 
-Replace `.theme-dark` with `.theme-light` for light mode customizations.
+If customizing light mode, use `.theme-light` instead `.theme-dark`.
 
 ## Fonts
 
