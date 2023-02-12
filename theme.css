@@ -460,6 +460,10 @@ button:not(.clickable-icon), button:not(.clickable-icon):hover {
   box-shadow: 0px 0px 1px 0px var(--button-shadow);
   transition: 0s;
 }
+.kanban-plugin__lane input[type=checkbox]:checked:after {
+  top: -2px;
+  left: -2px;
+}
 
 /* Status Bar */
 .status-bar {
