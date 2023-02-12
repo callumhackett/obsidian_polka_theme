@@ -106,7 +106,7 @@
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
-  --text-highlight-bg: rgb(235, 215, 50);
+  --text-highlight-bg: rgb(210, 197, 40);
   --text-highlight-fg: var(--background-primary);
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
