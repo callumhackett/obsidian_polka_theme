@@ -28,7 +28,7 @@ The font displayed in the preview images is Franklin Gothic, which is available 
 
 ## Plugin Support
 
-In addition to modifying your workspace, Polka's colors are adapted for Obsidian's UI and the whole suite of core plugins. Additional attention has been given to:
+In addition to modifying your workspace, Polka has color adaptations across Obsidian's UI and the whole suite of core plugins. Additional attention has also been given to:
 
 - Syntax highlighting in code blocks (Polka uses the built-in color scheme but refines the hues).
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin).
@@ -36,4 +36,4 @@ In addition to modifying your workspace, Polka's colors are adapted for Obsidian
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code).
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban).
 
-![Example](code_colors.png)
+![Example](code_example.png)
