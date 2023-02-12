@@ -405,7 +405,7 @@ input.document-replace-input.mod-no-match {
 
 /* Execute Code Plugin */
 code.language-output hr {
-  border-top: var(--code-indentation-guide-color) 1px solid !important;
+  border-top: var(--code-indentation-guide-color) 1px dashed !important;
   margin: 1.5em 0 1.5em;
 }
 :not(.use-custom-output-color) code.language-output span.stdout {
