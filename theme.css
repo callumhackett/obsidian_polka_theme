@@ -152,7 +152,7 @@
 
   /* Kanban Plugin Colors */
   --kanban-button-text: var(--text-normal);
-  --kanban-button-text-hover: var(--background-primary);
+  --kanban-button-text-hover: #000;
   --kanban-checkbox-border: var(--background-primary);
 }
 
