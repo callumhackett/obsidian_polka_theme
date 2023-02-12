@@ -6,7 +6,7 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can choose your own accent color for the theme but you'll need to [create your own CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example, in dark mode:
+Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can choose your own accent color for the theme but you'll need to [create a CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example:
 
 ```
 .theme-dark {
@@ -14,13 +14,15 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-Replace `.theme-dark` with `.theme-light` for light mode.
+![Customization](custom_color_preview.png)
+
+Replace `.theme-dark` with `.theme-light` for light mode customizations.
 
 ## Fonts
 
 The user is left to select which font families are loaded, although Polka is set up to use your default monospace font in table content for better number formatting.
 
-The font used in the preview image is Franklin Gothic, which is available as standard on Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+The font used in the preview images is Franklin Gothic, which is available as standard on Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
