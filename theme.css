@@ -1,52 +1,52 @@
 .theme-light {
-  /* Background Color Definitions */
+  /* Background Colors */
   --background-primary: rgb(255, 253, 253);
   --background-secondary: rgb(251, 247, 247);
   --background-dark: rgb(23, 34, 62);
   --background-extra-dark: rgb(0, 10, 20);
+  --background-primary-alt: var(--background-dark);
+  --background-secondary-alt: var(--background-dark);
   
-  /* Accent Color Definitions */
+  /* Accent Colors */
   --accent-main: 225, 40, 40;
   --accent-soft: 75, 30, 30;
   --accent-main-foreground: rgb(var(--accent-main));
-  --color-accent: var(--accent-main-foreground);
   --accent-main-background: rgba(var(--accent-main), 0.075);
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-on-selection: rgba(var(--accent-main), 0.2);
-  --success-callout-border: rgb(0, 175, 0);
-  --warning-callout-border: rgb(250, 175, 0);
-  --failure-callout-border: rgb(250, 20, 50);
-  --bug-callout-border: rgb(235, 0, 170);
+  --callout-border-sucess: rgb(0, 175, 0);
+  --callout-border-warning: rgb(245, 160, 0);
+  --callout-border-failure: rgb(250, 20, 50);
+  --callout-border-bug: rgb(235, 0, 170);
+  --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
   --text-main: 0, 0, 0;
   --text-normal: rgba(var(--text-main), 1);
-  --text-highlight-bg: rgb(255, 235, 90);
-  --text-highlight-fg: var(--text-normal);
-  --text-error: rgb(250, 20, 50);
-  --text-accent: var(--accent-main-foreground);
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--background-primary);
-  --text-on-accent: var(--text-white) !important;
+  --text-highlight-bg: rgb(250, 235, 50);
+  --text-highlight-fg: var(--text-normal);
+  --text-error: rgb(250, 20, 50);
+  --text-accent: var(--accent-main-foreground);
+  --text-on-accent: var(--background-extra-dark) !important;
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
-  --background-modifier-error: var(--text-error);
-  --background-modifier-error-hover: var(--text-error);
   --hr-color: rgba(var(--text-main), 0.33);
 
   /* Syntax Highlighting */
-  --code-peripheral: 255, 237, 237;
+  --code-peripheral: 255, 241, 241;
   --code-comment: rgba(var(--code-peripheral), 0.6);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.25);
-  --color-yellow: rgb(250, 235, 50);
-  --color-orange: rgb(225, 80, 0);
-  --color-pink: rgb(240, 110, 255);
-  --color-red: rgb(255, 60, 60);
+  --color-yellow: rgb(235, 225, 45);
+  --color-orange: rgb(220, 95, 0);
+  --color-pink: rgb(230, 100, 240);
+  --color-red: rgb(230, 65, 65);
   --color-cyan: rgb(0, 202, 235);
-  --color-green: rgb(0, 220, 80);
+  --color-green: rgb(30, 195, 75);
   --color-purple: rgb(140, 110, 255);
 
   /* Interface Colors */
@@ -64,6 +64,12 @@
   --background-modifier-border: var(--accent-soft-foreground);
   --background-modifier-border-hover: var(--accent-soft-foreground);
   --background-modifier-border-focus: var(--accent-soft-foreground);
+  --background-modifier-error: var(--text-error);
+  --background-modifier-error-hover: var(--text-error);
+
+  /* Dictionary Plugin Colors */
+  --dictionary-background-primary: var(--background-primary);
+  --dictionary-background-secondary: var(--background-secondary);
 
   /* Kanban Plugin Colors */
   --kanban-button-text: var(--text-normal);
@@ -72,54 +78,54 @@
 }
 
 .theme-dark {
-  /* Background Color Definitions */
+  /* Background Colors */
   --background-primary: rgb(22, 29, 44);
   --background-secondary: rgb(33, 43, 61);
   --background-dark: rgb(10, 18, 30);
   --background-extra-dark: rgb(0, 5, 10);
+  --background-primary-alt: var(--background-dark);
+  --background-secondary-alt: var(--background-dark);
   
-  /* Accent Color Definitions */
-  --accent-main: 0, 202, 235;
-  --accent-soft: 180, 205, 255;
+  /* Accent Colors */
+  --accent-main: 0, 212, 250;
+  --accent-soft: 180, 212, 250;
   --accent-main-foreground: rgb(var(--accent-main));
-  --color-accent: var(--accent-main-foreground);
   --accent-main-background: rgba(var(--accent-main), 0.05);
-  --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
+  --accent-soft-foreground: rgba(var(--accent-soft), 0.1);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-on-selection: rgba(var(--accent-main), 0.2);
-  --success-callout-border: rgb(0, 200, 0);
-  --warning-callout-border: rgb(210, 225, 0);
-  --failure-callout-border: rgb(250, 20, 50);
-  --bug-callout-border: rgb(240, 0, 125);
+  --callout-border-sucess: rgb(0, 200, 0);
+  --callout-border-warning: rgb(210, 225, 0);
+  --callout-border-failure: rgb(250, 20, 50);
+  --callout-border-bug: rgb(240, 0, 125);
+  --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
   --text-main: 250, 250, 250;
   --text-normal: rgba(var(--text-main), 1);
-  --text-highlight-bg: rgb(255, 235, 90);
-  --text-highlight-fg: var(--background-primary);
-  --text-error: rgb(250, 20, 50);
-  --text-accent: var(--accent-main-foreground);
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
-  --text-on-accent: var(--background-primary) !important;
+  --text-highlight-bg: rgb(235, 215, 50);
+  --text-highlight-fg: var(--background-primary);
+  --text-error: rgb(250, 20, 50);
+  --text-accent: var(--accent-main-foreground);
+  --text-on-accent: var(--background-extra-dark) !important;
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
-  --background-modifier-error: var(--text-error);
-  --background-modifier-error-hover: var(--text-error);
   --hr-color: rgba(var(--text-main), 0.33);
 
   /* Syntax Highlighting */
-  --code-peripheral: 190, 210, 255;
-  --code-comment: rgba(var(--code-peripheral), 0.5);
+  --code-peripheral: 185, 185, 255;
+  --code-comment: rgba(var(--code-peripheral), 0.75);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.2);
-  --color-yellow: rgb(250, 235, 50);
-  --color-orange: rgb(225, 80, 0);
-  --color-pink: rgb(240, 110, 255);
-  --color-red: rgb(255, 60, 60);
+  --color-yellow: rgb(235, 225, 45);
+  --color-orange: rgb(220, 95, 0);
+  --color-pink: rgb(230, 100, 240);
+  --color-red: rgb(230, 65, 65);
   --color-cyan: rgb(0, 202, 235);
-  --color-green: rgb(0, 220, 80);
+  --color-green: rgb(30, 195, 75);
   --color-purple: rgb(140, 110, 255);
 
   /* Interface Colors */
@@ -137,6 +143,12 @@
   --background-modifier-border: var(--accent-soft-foreground);
   --background-modifier-border-hover: var(--accent-soft-foreground);
   --background-modifier-border-focus: var(--accent-soft-foreground);
+  --background-modifier-error: var(--text-error);
+  --background-modifier-error-hover: var(--text-error);
+
+  /* Dictionary Plugin Colors */
+  --dictionary-background-primary: var(--background-secondary);
+  --dictionary-background-secondary: var(--background-primary);
 
   /* Kanban Plugin Colors */
   --kanban-button-text: var(--text-normal);
@@ -144,9 +156,15 @@
   --kanban-checkbox-border: var(--background-primary);
 }
 
-/* Main Content, Light & Dark */
 .workspace {
   /* Font Styles */
+  --inline-title-size: 1.625em;
+  --h1-size: 1.5em;
+  --h2-size: 1.375em;
+  --h3-size: 1.25em;
+  --h4-size: 1.125em;
+  --h5-size: 1em;
+  --h6-size: 1em;
   --h1-color: var(--text-normal);
   --h2-color: var(--text-normal);
   --h3-color: var(--text-normal);
@@ -161,8 +179,12 @@
   --vault-name-font-weight: bold;
   --table-header-font: var(--font-text), sans-serif;
   --table-body-font: var(--font-monospace), monospace;
+  --table-body-font-size: 0.875em;
+  --line-height-normal: 1.25em;
+  --list-spacing: calc(var(--line-height-normal)/5);
+  --list-indent: 1.25em;
 
-  /* Link Colors */
+  /* Link & Tag Colors */
   --link-color: var(--accent-main-foreground);
   --link-color-hover: var(--accent-main-foreground);
   --link-external-color: var(--accent-main-foreground);
@@ -212,19 +234,32 @@
   --button-shadow: rgba(var(--accent-soft), 1);
 }
 
-/* Ribbon Background  */
+/* Polka Dots  */
 .workspace-ribbon {
   background-image: 
-    radial-gradient(var(--accent-main-foreground) 20%, transparent 25%),
-    radial-gradient(var(--accent-main-foreground) 20%, transparent 30%);
-  background-position: 0px 0px, 3px 3px;
-  background-size: 6px 6px;
+    radial-gradient(var(--accent-main-foreground) 15%, transparent 20%),
+    radial-gradient(var(--accent-main-foreground) 17.5%, transparent 25%);
+  background-position: 1px 0px, 5px 4px;
+  background-size: 8px 8px;
 }
 .side-dock-ribbon-action, .side-dock-ribbon-action:hover {
   background: var(--background-secondary);
 }
 
 /* Page Element Style Overrides */
+.cm-header-5 {
+  font-weight: bold;
+}
+.cm-header-6 {
+  font-weight: normal;
+  font-style: italic;
+}
+.HyperMD-quote, .HyperMD-codeblock {
+  padding-left: 1.5em !important;
+}
+.cm-formatting-list, input[type=checkbox] {
+  margin-right: 0.25em;
+}
 .cm-hashtag {
   line-height: 2em;
 }
@@ -261,17 +296,20 @@
   background: transparent;
   padding: 1em;
 }
+.callout-title, .callout-icon .svg-icon {
+  font-size: var(--h6-size);
+}
 .callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] {
-  border: 2px dashed var(--success-callout-border) !important;
+  border: 2px dashed var(--callout-border-sucess) !important;
 }
 .callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] {
-  border: 2px dashed var(--warning-callout-border) !important;
+  border: 2px dashed var(--callout-border-warning) !important;
 }
 .callout[data-callout="failure"], .callout[data-callout="fail"], .callout[data-callout="missing"], .callout[data-callout="danger"], .callout[data-callout="error"] {
-  border: 2px dashed var(--failure-callout-border) !important;
+  border: 2px dashed var(--callout-border-failure) !important;
 }
 .callout[data-callout="bug"] {
-  border: 2px dashed var(--bug-callout-border) !important;
+  border: 2px dashed var(--callout-border-bug) !important;
 }
 .callout-title, .callout-icon .svg-icon {
   color: var(--text-normal);
@@ -280,6 +318,7 @@
   margin-bottom: 0;
 }
 table {
+  font-size: var(--table-body-font-size) !important;
   font-family: var(--table-body-font);
 }
 .canvas-node-container {
@@ -300,6 +339,7 @@ hr, .markdown-rendered hr {
 .suggestion-highlight, .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
   background: var(--text-highlight-bg);
   color: var(--text-highlight-fg) !important;
+  padding: 0 3px;
 }
 .search-result-file-matched-text {
   color: var(--text-highlight-fg);
@@ -309,7 +349,7 @@ hr, .markdown-rendered hr {
   color: var(--text-highlight-fg);
 }
 
-/* Menu Settings */
+/* Menus */
 .menu, .vertical-tab-header {
   background-color: var(--background-primary);
 }
@@ -337,37 +377,33 @@ input[type='password']:focus-visible,
 input[type='number']:focus-visible {
   box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
 }
-
-/* Kanban Plugin Styles */
-.kanban-plugin__lane {
-  border-radius: var(--border-radius);
-  background: var(--main-background);
-}
-.kanban-plugin__lane .task-list-item-checkbox {
-  background: var(--background-primary);
-  border: 1px solid var(--kanban-checkbox-border) !important;
-  filter: none !important;
-}
-.kanban-plugin__item-title-wrapper {
-  background: var(--background-secondary);
-}
-.kanban-plugin__item-tag {
-  border-radius: var(--border-radius) !important;
-}
-button:not(.clickable-icon) {
-  background: var(--accent-soft-background);
-  color: var(--kanban-button-text);
-}
-button:not(.clickable-icon):hover {
-  background: var(--accent-main-foreground);
-  color: var(--kanban-button-text-hover);
-}
-button:not(.clickable-icon), button:not(.clickable-icon):hover {
-  box-shadow: 0px 0px 1px 0px var(--button-shadow);
-  transition: 0s;
+input.document-search-input.mod-no-match,
+input.document-replace-input.mod-no-match {
+  background-color: var(--background-extra-dark);
 }
 
-/* Code Execution Plugin */
+/* Calendar Plugin */
+#calendar-container .year {
+  color: var(--text-normal);
+  font-weight: normal;
+}
+#calendar-container .day {
+  border-radius: 0;
+  border: 1px solid var(--accent-soft-foreground);
+}
+#calendar-container td {
+  padding: 2px;
+}
+
+/* Dictionary Plugin */
+.dictionary-view-content .main {
+  background: var(--dictionary-background-primary) !important;
+}
+.dictionary-view-content .container {
+  background: var(--dictionary-background-secondary) !important;
+}
+
+/* Execute Code Plugin */
 code.language-output hr {
   border-top: var(--code-indentation-guide-color) 1px solid !important;
   margin: 1.5em 0 1.5em;
@@ -388,6 +424,41 @@ code.language-output {
   background: var(--code-normal) !important;
   border: 1px solid var(--code-normal) !important;
   color: var(--background-dark) !important;
+}
+
+/* Kanban Plugin Styles */
+.kanban-plugin__lane {
+  border-radius: var(--border-radius);
+  background: var(--main-background);
+}
+.kanban-plugin__lane .task-list-item-checkbox {
+  background: var(--background-primary);
+  border: 1px solid var(--kanban-checkbox-border) !important;
+  filter: none !important;
+  transition: 0.05s;
+}
+.kanban-plugin__lane .task-list-item-checkbox:hover {
+  border: 1px solid transparent !important;
+  box-shadow: 0px 0px 0px 2px rgba(var(--accent-main), 0.67);
+  transition: 0.05s;
+}
+.kanban-plugin__item-title-wrapper {
+  background: var(--background-secondary);
+}
+.kanban-plugin__item-tag {
+  border-radius: var(--border-radius) !important;
+}
+button:not(.clickable-icon) {
+  background: var(--accent-soft-background);
+  color: var(--kanban-button-text);
+}
+button:not(.clickable-icon):hover {
+  background: var(--accent-main-foreground);
+  color: var(--kanban-button-text-hover);
+}
+button:not(.clickable-icon), button:not(.clickable-icon):hover {
+  box-shadow: 0px 0px 1px 0px var(--button-shadow);
+  transition: 0s;
 }
 
 /* Status Bar */
