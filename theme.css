@@ -31,6 +31,7 @@
   --text-highlight-fg: var(--text-normal);
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
+  --text-accent-hover: var(--text-normal);
   --text-on-accent: var(--text-white) !important;
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
@@ -57,6 +58,7 @@
   --interactive-accent: var(--accent-main-foreground);
   --interactive-accent-hover: var(--accent-main-foreground);
   --tag-background: var(--accent-main-background);
+  --tag-background-hover: rgba(var(--accent-main), 0.12);
   --prompt-border-color: var(--accent-soft-foreground);
   --modal-border-color: var(--accent-soft-foreground);
   --code-background: var(--background-dark);
@@ -113,6 +115,7 @@
   --text-highlight-fg: #000;
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
+  --text-accent-hover: var(--text-normal);
   --text-on-accent: #000 !important;
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
@@ -139,6 +142,7 @@
   --interactive-accent: var(--accent-main-foreground);
   --interactive-accent-hover: var(--accent-main-foreground);
   --tag-background: var(--accent-main-background);
+  --tag-background-hover: rgba(var(--accent-main), 0.08);
   --prompt-border-color: var(--accent-soft-foreground);
   --modal-border-color: var(--accent-soft-foreground);
   --code-background: var(--background-dark);
@@ -208,7 +212,7 @@
   --border-radius-large: 4px;
   --checkbox-radius: var(--border-radius);
   --input-radius: var(--border-radius);
-  --tag-radius: var(border-radius-large);
+  --tag-radius: var(--border-radius-large);
   --hr-thickness: 1px;
 
   /* Navigation Colors */
@@ -357,6 +361,10 @@ hr, .markdown-rendered hr {
 .is-flashing {
   caret-color: var(--text-highlight-fg);
   color: var(--text-highlight-fg);
+}
+.nav-folder-title.is-being-dragged-over {
+  color: var(--text-normal);
+  background: var(--accent-main-background);
 }
 
 /* Menus */
