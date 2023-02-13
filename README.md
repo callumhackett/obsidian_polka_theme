@@ -34,9 +34,9 @@ Syntax highlighting in code blocks follows the built-in color scheme but the hue
 
 ![Example](code_example.png)
 
-Additional attention has also been given to the following community plugins:
+Special attention has also been given to the following community plugins:
 
-- [Calendar](https://github.com/liamcain/obsidian-calendar-plugin).
-- [Dictionary](https://github.com/phibr0/obsidian-dictionary).
-- [Execute Code](https://github.com/twibiral/obsidian-execute-code).
-- [Kanban](https://github.com/mgmeyers/obsidian-kanban).
+- [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
+- [Dictionary](https://github.com/phibr0/obsidian-dictionary)
+- [Execute Code](https://github.com/twibiral/obsidian-execute-code)
+- [Kanban](https://github.com/mgmeyers/obsidian-kanban)
