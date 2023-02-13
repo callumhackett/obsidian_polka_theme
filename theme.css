@@ -117,8 +117,8 @@
   --hr-color: rgba(var(--text-main), 0.33);
 
   /* Syntax Highlighting */
-  --code-peripheral: 185, 175, 255;
-  --code-comment: rgba(var(--code-peripheral), 0.75);
+  --code-peripheral: 175, 175, 255;
+  --code-comment: rgba(var(--code-peripheral), 0.7);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.2);
   --color-yellow: rgb(235, 225, 45);
   --color-orange: rgb(220, 95, 0);
