@@ -15,10 +15,10 @@
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-on-selection: rgba(var(--accent-main), 0.2);
-  --callout-border-sucess: rgb(0, 175, 0);
-  --callout-border-warning: rgb(245, 160, 0);
-  --callout-border-failure: rgb(250, 20, 50);
-  --callout-border-bug: rgb(235, 0, 170);
+  --callout-success: rgb(0, 175, 0);
+  --callout-warning: rgb(245, 160, 0);
+  --callout-failure: rgb(250, 20, 50);
+  --callout-bug: rgb(235, 0, 170);
   --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
@@ -94,10 +94,10 @@
   --accent-soft-foreground: rgba(var(--accent-soft), 0.1);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-on-selection: rgba(var(--accent-main), 0.2);
-  --callout-border-sucess: rgb(0, 200, 0);
-  --callout-border-warning: rgb(210, 225, 0);
-  --callout-border-failure: rgb(250, 20, 50);
-  --callout-border-bug: rgb(240, 0, 125);
+  --callout-success: rgb(0, 200, 0);
+  --callout-warning: rgb(210, 225, 0);
+  --callout-failure: rgb(250, 20, 50);
+  --callout-bug: rgb(240, 0, 125);
   --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
@@ -300,16 +300,16 @@
   font-size: var(--h6-size);
 }
 .callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] {
-  border: 2px dashed var(--callout-border-sucess) !important;
+  border: 2px dashed var(--callout-success) !important;
 }
 .callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] {
-  border: 2px dashed var(--callout-border-warning) !important;
+  border: 2px dashed var(--callout-warning) !important;
 }
 .callout[data-callout="failure"], .callout[data-callout="fail"], .callout[data-callout="missing"], .callout[data-callout="danger"], .callout[data-callout="error"] {
-  border: 2px dashed var(--callout-border-failure) !important;
+  border: 2px dashed var(--callout-failure) !important;
 }
 .callout[data-callout="bug"] {
-  border: 2px dashed var(--callout-border-bug) !important;
+  border: 2px dashed var(--callout-bug) !important;
 }
 .callout-title, .callout-icon .svg-icon {
   color: var(--text-normal);
