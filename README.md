@@ -8,7 +8,7 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You *can* choose your own accent color to be used throughout the theme but you'll need to [create a CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example:
+Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can still choose your own accent color, which will be used throughout the theme, but you'll need to [create a CSS snippet](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) and override the `--accent-main` parameter with a raw RGB value. For example, this:
 
 ```
 .theme-dark {
@@ -16,7 +16,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-You can see the effect of the code above in the preview below, which also displays the theme's callout formatting for good measure:
+will have this effect (callouts are thrown in for good measure):
 
 ![Customization](color_customization.png)
 
@@ -24,15 +24,15 @@ If customizing light mode, use `.theme-light` instead of `.theme-dark`.
 
 ## Fonts
 
-The user is left to select which fonts are loaded, although Polka is set up to use your default monospace font in table content, just in case your body font doesn't have tabular numbers (you can override this with a CSS snippet by targeting the `--table-body-font` parameter).
+The user is left to select which fonts are loaded via the main settings page but Polka will use your default monospace font in table content, just in case your body font doesn't have tabular numbers (to override this with CSS, target the `--table-body-font` parameter).
 
-The font displayed in the preview images is Franklin Gothic, which is available as standard on Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+The font displayed in the preview images here is Franklin Gothic, which is available as standard on Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
-In addition to modifying your workspace, Polka has color adaptations that apply to Obsidian's UI and the whole suite of core plugins.
+In addition to modifying your workspace, Polka has color adaptations for Obsidian's UI and the whole suite of core plugins.
 
-Syntax highlighting in code blocks follows the built-in color scheme but the hues have been refined.
+Additionally, while syntax highlighting in code blocks follows the built-in color scheme, the hues have been refined.
 
 ![Example](code_example.png)
 
@@ -42,3 +42,7 @@ Special attention has also been given to the following community plugins:
 - [Dictionary](https://github.com/phibr0/obsidian-dictionary)
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
+
+## Requests
+
+Find anything sub-optimal or want some extra support? [Let me know](https://github.com/callumhackett/obsidian_polka_theme).
