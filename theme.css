@@ -66,6 +66,7 @@
   --background-modifier-border-focus: var(--accent-soft-foreground);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+  --radius-s: 2px;
   --radius-m: 4px;
   --input-radius: 4px;
 
@@ -147,6 +148,7 @@
   --background-modifier-border-focus: var(--accent-soft-foreground);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+  --radius-s: 2px;
   --radius-m: 4px;
   --input-radius: 4px;
 
