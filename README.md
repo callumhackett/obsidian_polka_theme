@@ -16,7 +16,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-will have this effect (callouts are thrown in for good measure):
+will have the following effects, among others (callouts are thrown in for good measure):
 
 ![Customization](color_customization.png)
 
