@@ -16,7 +16,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-The above would cause the following changes to accents, among others (the callouts are thrown in for good measure):
+You can see some of the effects that the above snippet would have in the preview below:
 
 ![Customization](color_customization.png)
 
