@@ -16,7 +16,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-The above would cause the following changes, among others in other views (the callouts are thrown in just as another example of the theme colors):
+The above would cause the following changes to accents, among others (the callouts are thrown in for good measure):
 
 ![Customization](color_customization.png)
 
@@ -26,7 +26,7 @@ If customizing light mode, use `.theme-light` instead of `.theme-dark`.
 
 The user is left to select which fonts are loaded via the main settings but Polka will use your default monospace font in table content, just in case your body font doesn't have tabular numbers (you can also override this with CSS by targeting the `--table-body-font` parameter).
 
-The font used in the preview images here is Franklin Gothic, which you have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
