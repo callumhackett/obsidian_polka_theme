@@ -188,7 +188,6 @@
   --status-bar-text-color: var(--text-normal);
   --vault-name-font-weight: bold;
   --table-header-font: var(--font-text), sans-serif;
-  --table-body-font-size: 0.875em;
   --line-height-normal: 1.25em;
   --list-spacing: calc(var(--line-height-normal)/5);
   --list-indent: 1.25em;
@@ -325,10 +324,6 @@
 }
 .callout p:last-child {
   margin-bottom: 0;
-}
-table {
-  font-size: var(--table-body-font-size) !important;
-  font-family: var(--table-body-font);
 }
 .canvas-node-container {
   border: 2px solid var(--text-normal);
