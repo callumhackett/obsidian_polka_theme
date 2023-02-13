@@ -22,15 +22,15 @@ If you compare with the main theme preview, you can see some of the effects that
 
 If customizing light mode, use the selector `.theme-light` instead of `.theme-dark`.
 
+Note that some UI features and community plugins may use the accent color as defined in your user settings (Appearance > Accent color), so if you change the theme accent with a CSS snippet, it's recommended that you use the same value in your user settings.
+
 ## Fonts
 
-The user is left to select which fonts are loaded via the main settings.
-
-The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+The user is left to select which fonts are loaded via the main settings. The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
-As well as modifying your workspace, Polka has color adaptations for Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors stick to the built-in color scheme, the hues have been refined.
+As well as modifying your workspace, Polka has color adaptations for Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors use the built-in color scheme, the hues have been refined.
 
 Special attention has also been given to the following community plugins:
 
