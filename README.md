@@ -14,7 +14,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-You can see the effect of the code above in the preview below, which also displays the theme's callout formatting:
+You can see the effect of the code above in the preview below, which also displays the theme's callout formatting for good measure:
 
 ![Customization](color_customization.png)
 
