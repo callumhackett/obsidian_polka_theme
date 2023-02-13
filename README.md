@@ -32,7 +32,7 @@ The user is left to select which fonts are loaded via the main settings. The fon
 
 As well as modifying your workspace, Polka has color adaptations for Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors use the built-in color scheme, the hues have been refined.
 
-Special attention has also been given to the following community plugins:
+Special attention has been given to the following community plugins (many others will fit in without issue):
 
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - [Dictionary](https://github.com/phibr0/obsidian-dictionary)
