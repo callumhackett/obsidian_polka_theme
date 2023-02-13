@@ -12,7 +12,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 
 ```
 .theme-dark {
-  --accent-main: 210, 65, 255 !important;
+  --accent-main: 225, 120, 255 !important;
 }
 ```
 
