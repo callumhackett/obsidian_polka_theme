@@ -14,20 +14,20 @@
   --accent-main-background: rgba(var(--accent-main), 0.075);
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
-  --accent-on-selection: rgba(var(--accent-main), 0.2);
-  --callout-success: rgb(0, 175, 0);
-  --callout-warning: rgb(245, 160, 0);
-  --callout-failure: rgb(250, 20, 50);
-  --callout-bug: rgb(235, 0, 170);
+  --accent-on-selection: rgb(255, 110, 110);
+  --callout-success: rgb(0, 180, 0);
+  --callout-warning: rgb(255, 160, 0);
+  --callout-failure: rgb(255, 20, 50);
+  --callout-bug: rgb(245, 0, 175);
   --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
   --text-main: 0, 0, 0;
-  --text-normal: rgba(var(--text-main), 1);
-  --text-muted: rgba(var(--text-main), 1);
-  --text-faint: rgba(var(--text-main), 1);
+  --text-normal: rgb(var(--text-main));
+  --text-muted: var(--text-main);
+  --text-faint: var(--text-main);
   --text-white: var(--background-primary);
-  --text-highlight-bg: rgb(250, 235, 50);
+  --text-highlight-bg: rgb(250, 237, 75);
   --text-highlight-fg: var(--text-normal);
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
@@ -36,13 +36,13 @@
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
-  --hr-color: rgba(var(--text-main), 0.33);
+  --hr-color: rgba(var(--text-main), 0.4);
 
   /* Syntax Highlighting */
-  --code-peripheral: 195, 210, 235;
+  --code-peripheral: 215, 210, 235;
   --code-comment: rgba(var(--code-peripheral), 0.7);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.25);
-  --color-yellow: rgb(235, 225, 45);
+  --color-yellow: rgb(240, 215, 50);
   --color-orange: rgb(220, 95, 0);
   --color-pink: rgb(230, 100, 240);
   --color-red: rgb(230, 65, 65);
@@ -98,11 +98,11 @@
   --accent-main-background: rgba(var(--accent-main), 0.05);
   --accent-soft-foreground: rgba(var(--accent-soft), 0.1);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
-  --accent-on-selection: rgba(var(--accent-main), 0.2);
+  --accent-on-selection: rgba(var(--accent-main), 0.35);
   --callout-success: rgb(0, 200, 0);
   --callout-warning: rgb(210, 225, 0);
   --callout-failure: rgb(250, 20, 50);
-  --callout-bug: rgb(240, 0, 125);
+  --callout-bug: rgb(245, 0, 150);
   --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
@@ -111,7 +111,7 @@
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
-  --text-highlight-bg: rgb(210, 197, 40);
+  --text-highlight-bg: rgb(210, 197, 50);
   --text-highlight-fg: #000;
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
@@ -120,13 +120,13 @@
   --text-selection: var(--accent-on-selection);
   --code-normal: var(--text-white);
   --code-punctuation: var(--code-normal);
-  --hr-color: rgba(var(--text-main), 0.33);
+  --hr-color: rgba(var(--accent-soft), 0.2);
 
   /* Syntax Highlighting */
   --code-peripheral: 175, 191, 255;
   --code-comment: rgba(var(--code-peripheral), 0.7);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.2);
-  --color-yellow: rgb(235, 225, 45);
+  --color-yellow: rgb(240, 215, 50);
   --color-orange: rgb(220, 95, 0);
   --color-pink: rgb(230, 100, 240);
   --color-red: rgb(230, 65, 65);
