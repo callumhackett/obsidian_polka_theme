@@ -16,7 +16,7 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-will cause the following change, among other effects (callouts are thrown in for good measure):
+will cause the following changes, among others (the callouts are thrown in for good measure):
 
 ![Customization](color_customization.png)
 
@@ -36,7 +36,7 @@ Additionally, while syntax highlighting in code blocks follows the built-in colo
 
 ![Example](code_example.png)
 
-*The code above uses [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), a fork of [IBM Plex](https://github.com/IBM/plex)*.
+*The font of the code above is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono); a fork of [IBM Plex](https://github.com/IBM/plex)*.
 
 Special attention has also been given to the following community plugins:
 
