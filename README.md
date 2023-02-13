@@ -30,7 +30,7 @@ The font used in the preview images here is Franklin Gothic, which you already h
 
 ## Plugin Support
 
-In addition to modifying your workspace, Polka has color adaptations throughout Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors use the built-in color scheme, the hues have been refined.
+As well as modifying your workspace, Polka has color adaptations for Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors stick to the built-in color scheme, the hues have been refined.
 
 Special attention has also been given to the following community plugins:
 
