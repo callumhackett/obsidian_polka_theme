@@ -16,15 +16,15 @@ Due to the way the theme shares color values between elements for cohesion, Polk
 }
 ```
 
-You can see some of the effects that the above snippet would have in the preview below:
+If you compare with the main theme preview, you can see some of the effects that the above snippet would have in the preview below:
 
 ![Customization](color_customization.png)
 
-If customizing light mode, use `.theme-light` instead of `.theme-dark`.
+If customizing light mode, use the selector `.theme-light` instead of `.theme-dark`.
 
 ## Fonts
 
-The user is left to select which fonts are loaded via the main settings but Polka will use your default monospace font in table content, just in case your body font doesn't have tabular numbers (you can also override this with CSS by targeting the `--table-body-font` parameter).
+The user is left to select which fonts are loaded via the main settings.
 
 The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 

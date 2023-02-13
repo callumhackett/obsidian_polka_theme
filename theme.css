@@ -188,7 +188,6 @@
   --status-bar-text-color: var(--text-normal);
   --vault-name-font-weight: bold;
   --table-header-font: var(--font-text), sans-serif;
-  --table-body-font: var(--font-monospace), monospace;
   --table-body-font-size: 0.875em;
   --line-height-normal: 1.25em;
   --list-spacing: calc(var(--line-height-normal)/5);
