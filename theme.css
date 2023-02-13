@@ -38,7 +38,7 @@
   --hr-color: rgba(var(--text-main), 0.33);
 
   /* Syntax Highlighting */
-  --code-peripheral: 180, 190, 255;
+  --code-peripheral: 195, 210, 235;
   --code-comment: rgba(var(--code-peripheral), 0.7);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.25);
   --color-yellow: rgb(235, 225, 45);
@@ -66,6 +66,8 @@
   --background-modifier-border-focus: var(--accent-soft-foreground);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+  --radius-m: 4px;
+  --input-radius: 4px;
 
   /* Dictionary Plugin Colors */
   --dictionary-background-primary: var(--background-primary);
@@ -145,6 +147,8 @@
   --background-modifier-border-focus: var(--accent-soft-foreground);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+  --radius-m: 4px;
+  --input-radius: 4px;
 
   /* Dictionary Plugin Colors */
   --dictionary-background-primary: var(--background-secondary);
@@ -337,6 +341,10 @@ hr, .markdown-rendered hr {
   border-top: var(--hr-color) var(--hr-thickness) dashed;
 }
 .suggestion-highlight, .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
+  background: var(--text-highlight-bg);
+  color: var(--text-highlight-fg) !important;
+}
+.markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
   background: var(--text-highlight-bg);
   color: var(--text-highlight-fg) !important;
   padding: 0 3px;
