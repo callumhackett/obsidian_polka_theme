@@ -247,9 +247,9 @@
 /* Polka Dots  */
 .workspace-ribbon {
   background-image: 
-  radial-gradient(var(--accent-main-foreground) 15%, transparent 25%),
+    radial-gradient(var(--accent-main-foreground) 15%, transparent 25%),
     radial-gradient(var(--accent-main-foreground) 17.5%, transparent 25%);
-  background-position: 1px 0px, 5px 4px;
+  background-position: 2px 0px, 6px 4px;
   background-size: 8px 8px;
 }
 .side-dock-ribbon-action, .side-dock-ribbon-action:hover {
