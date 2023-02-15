@@ -257,10 +257,10 @@
 }
 
 /* Page Element Style Overrides */
-.cm-header-5 {
+h5, .markdown-rendered h5, .HyperMD-header-5, .HyperMD-list-line .cm-header-5 {
   font-weight: bold;
 }
-.cm-header-6 {
+h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
   font-weight: normal;
   font-style: italic;
 }
