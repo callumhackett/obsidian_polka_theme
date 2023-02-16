@@ -170,6 +170,13 @@
   --kanban-checkbox-border: var(--background-primary);
 }
 
+/* Font Defaults */
+body {
+  --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-interface-theme: var(--font-default);
+  --font-monospace-default: 'iA Writer Mono S', 'IBM Plex Mono', Menlo, SFMono-Regular, 'Roboto Mono', Consolas, 'Source Code Pro', monospace;
+}
+
 .workspace {
   /* Font Styles */
   --inline-title-size: 1.625em;
