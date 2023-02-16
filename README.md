@@ -42,10 +42,10 @@ To set your own accent color (or to apply other modifications):
 3. If you don't know CSS but want to replace the accent color, copy and paste the snippet below. Replace `.theme-dark` with `.theme-light` if you want to customize light mode, and replace the numbers with your preferred RGB color:
 ```
 .theme-dark {
-  --accent-main: 225, 120, 255 !important;
+    --accent-main: 225, 120, 255 !important;
 }
 ```
-4. If you do know CSS, notice that the RGB color in the snippet above is not enclosed in brackets.
+4. If you're familiar with CSS, note that the RGB color in the snippet above is not enclosed in brackets.
 5. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file. If you don't see it, click the reload icon and it should appear.
 
 ## Notes
