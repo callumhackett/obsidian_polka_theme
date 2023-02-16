@@ -549,3 +549,14 @@ button:not(.clickable-icon), button:not(.clickable-icon):hover {
   top: -2px;
   left: -2px;
 }
+
+/* Mobile Fixes */
+.is-mobile {
+  --interactive-normal: var(--accent-soft-background);
+  --tag-background: var(--accent-main-background) !important;
+}
+
+.is-mobile.theme-dark {
+  --interactive-normal: var(--background-dark);
+  --tag-background: var(--accent-main-background) !important;
+}
