@@ -8,7 +8,7 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can still choose your own accent color, which will be applied in the ribbon and elsewhere, but you'll need to create a CSS snippet and override the `--accent-main` parameter with raw RGB values (scroll to the bottom for help on setting this up - it's easy!).
+Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can still choose your own accent color, which will appear in the ribbon and elsewhere, but you'll need to create a CSS snippet and override the `--accent-main` parameter with a raw RGB value (scroll to the bottom for help on setting this up—it's easy!).
 
 For example, you could replace the dark mode's default cyan accent with a pink one:
 
@@ -16,7 +16,7 @@ For example, you could replace the dark mode's default cyan accent with a pink o
 
 ## Fonts
 
-Theme and font taste don't always go together, so the user is left to select which fonts are loaded via the main settings. The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+Font taste is personal, so the user is left to select which fonts are loaded via the main settings. The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
