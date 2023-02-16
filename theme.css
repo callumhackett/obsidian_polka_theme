@@ -217,11 +217,9 @@ body {
   --indentation-guide-color: rgba(var(--text-main), 0.2) !important;
 
   /* Page Element Styles */
-  --border-radius: 2px;
-  --border-radius-large: 4px;
-  --checkbox-radius: var(--border-radius);
-  --input-radius: var(--border-radius);
-  --tag-radius: var(--border-radius-large);
+  --checkbox-radius: var(--radius-s);
+  --input-radius: var(--radius-s);
+  --tag-radius: var(--radius-m);
   --hr-thickness: 1px;
 
   /* Navigation Colors */
@@ -247,7 +245,7 @@ body {
   --divider-color: transparent;
 
   /* Kanban Plugin Styles */
-  --button-radius: var(--border-radius);
+  --button-radius: var(--radius-s);
   --button-shadow: rgba(var(--accent-soft), 1);
 }
 
@@ -263,7 +261,8 @@ body {
   background: var(--background-secondary);
 }
 
-/* Page Element Style Overrides */
+/* Element Style Overrides */
+/* Headings */
 h5, .markdown-rendered h5, .HyperMD-header-5, .HyperMD-list-line .cm-header-5 {
   font-weight: bold;
 }
@@ -271,20 +270,23 @@ h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
   font-weight: normal;
   font-style: italic;
 }
+/* Further Font Styles */
+hr, .markdown-rendered hr {
+  border-top: var(--hr-color) var(--hr-thickness) dashed;
+}
+/* Special Text Block Spacing */
 .HyperMD-quote, .HyperMD-codeblock {
   padding-left: 1.5em !important;
 }
 .cm-formatting-list, input[type=checkbox] {
   margin-right: 0.25em;
 }
-.cm-hashtag {
-  line-height: 2em;
-}
+/* Code Blocks */
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
-  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+  border-radius: var(--radius-s) var(--radius-s) 0px 0px;
 }
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  border-radius: 0px 0px var(--border-radius) var(--border-radius);
+  border-radius: 0px 0px var(--radius-s) var(--radius-s);
 }
 .code-block-flair {
   color: var(--code-normal) !important;
@@ -307,6 +309,7 @@ h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
 .HyperMD-codeblock {
   caret-color: var(--code-normal);
 }
+/* Callouts */
 .callout {
   border-radius: var(--border-radius);
   border: 2px dashed var(--text-normal);
@@ -334,6 +337,7 @@ h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
 .callout p:last-child {
   margin-bottom: 0;
 }
+/* Canvases */
 .canvas-selection, .canvas-selection.mod-group-selection, .canvas-card-menu .canvas-card-menu-button:hover, .canvas-controls-group button.is-active, .canvas-node.is-dummy .canvas-node-container, .canvas-placeholder-message {
   background: rgba(var(--accent-main), 0.1) !important;
 }
@@ -349,9 +353,11 @@ h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
 .canvas-node-container:focus {
   border: 2px solid #fff;
 }
-hr, .markdown-rendered hr {
-  border-top: var(--hr-color) var(--hr-thickness) dashed;
+/* Tags */
+.cm-hashtag {
+  line-height: 2em;
 }
+/* Highlights */
 .suggestion-highlight, .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
   background: var(--text-highlight-bg);
   color: var(--text-highlight-fg) !important;
@@ -378,7 +384,15 @@ hr, .markdown-rendered hr {
   color: var(--text-normal);
   background: var(--accent-main-background);
 }
-
+/* Empty Pages */
+.empty-state-action:hover {
+  cursor: pointer;
+  color: var(--text-normal);
+}
+/* Status Bar */
+.status-bar {
+  background-color: var(--background-secondary);
+}
 /* Menus */
 .menu, .vertical-tab-header {
   background-color: var(--background-primary);
@@ -410,10 +424,6 @@ input[type='number']:focus-visible {
 input.document-search-input.mod-no-match,
 input.document-replace-input.mod-no-match {
   background-color: var(--background-extra-dark);
-}
-.empty-state-action:hover {
-  cursor: pointer;
-  color: var(--text-normal);
 }
 
 /* Calendar Plugin */
@@ -513,9 +523,4 @@ button:not(.clickable-icon), button:not(.clickable-icon):hover {
 .kanban-plugin__lane input[type=checkbox]:checked:after {
   top: -2px;
   left: -2px;
-}
-
-/* Status Bar */
-.status-bar {
-  background-color: var(--background-secondary);
 }
