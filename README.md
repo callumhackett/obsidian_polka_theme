@@ -16,13 +16,13 @@ For example, you could replace the dark mode's default cyan accent with a pink o
 
 ## Fonts
 
-Font taste is personal. Polka has opinions on default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but your main font settings (`Appearance > Font`) will override these selections.
+Font taste is personal. Polka selects default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but your main font settings (`Appearance > Font`) will override these choices.
 
-Franklin Gothic is the font used in the prevew images here. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+Franklin Gothic is the font you see in the prevew images here. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're after a code font, I recommend [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a fork of [IBM Plex Mono](https://github.com/IBM/plex) with some minor character adjustments.
 
 ## Plugin Support
 
-As well as modifying your workspace, Polka has color adaptations for Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors use the built-in color scheme, the hues have been refined.
+As well as modifying your workspace, Polka makes color adaptations to Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors use the built-in color scheme, the hues have been refined.
 
 Special attention has been given to the following community plugins (many others will fit in without issue):
 
@@ -31,20 +31,23 @@ Special attention has been given to the following community plugins (many others
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 
+[Tell me](https://github.com/callumhackett/obsidian_polka_theme/issues) if I should support something else as well.
+
 ## CSS Snippets
 
-To choose your own accent color (or apply other modifications):
+To set your own accent color (or to apply other modifications):
 
 1. In a file explorer (not inside Obsidian), go to your main vault folder.
 2. From there, go to the `/.obsidian/snippets` folder and create a `.css` file with any name.
-3. Open the file and add your preferred styles. For replacing the accent color, you can use the template snippet below, substituting your own RGB values and `.theme-light` or `.theme-dark` as appropriate (if you're familiar with CSS, note that the RGB values here are not enclosed in brackets):
+3. Open the file and add your preferred styles.
+4. (Optional) To replace the accent color, you can copy and paste the snippet below, substituting your own RGB values and using `.theme-light` or `.theme-dark` depending on the mode you want your change to apply to (if you're familiar with CSS, note that the RGB values here are not enclosed in brackets):
 ```
 .theme-dark {
   --accent-main: 225, 120, 255 !important;
 }
 ```
-4. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file.
+5. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file. If you don't see it, click the reload icon and it should appear.
 
 ## Notes
 
-Some UI features and community plugins may use whichever accent color is defined in your user settings under `Appearance > Accent color`, rather than the color associated with the theme, so you might want to change the color in your settings to reflect the current theme accent. If you find an inconsistency like this, [let me know through GitHub](https://github.com/callumhackett/obsidian_polka_theme) and I'll patch it.
+Some UI features and community plugins may use the accent color as defined in your user settings under `Appearance > Accent color`, rather than the accent color of the theme. To avoid clashes, you might want to change the color in your settings to match the theme accent. If you find a conflict like this, [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) and I'll patch it. Using CSS snippets is strictly for dabblers and should not be required for a good user experience.
