@@ -75,7 +75,7 @@
   --input-radius: 4px;
 
   /* Dictionary Plugin Colors */
-  --dictionary-background-primary: var(--background-primary);
+  --dictionary-background-primary: var(--accent-soft-background);
   --dictionary-background-secondary: var(--background-secondary);
 
   /* Kanban Plugin Colors */
@@ -334,6 +334,9 @@ h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
 .callout p:last-child {
   margin-bottom: 0;
 }
+.canvas-selection, .canvas-selection.mod-group-selection, .canvas-card-menu .canvas-card-menu-button:hover, .canvas-controls-group button.is-active, .canvas-node.is-dummy .canvas-node-container, .canvas-placeholder-message {
+  background: rgba(var(--accent-main), 0.1) !important;
+}
 .canvas-node-container {
   border: 2px solid var(--text-normal);
   border-radius: var(--border-radius-large);
@@ -364,6 +367,12 @@ hr, .markdown-rendered hr {
 .is-flashing {
   caret-color: var(--text-highlight-fg);
   color: var(--text-highlight-fg);
+}
+.is-flashing .tag, .is-flashing p {
+  color: var(--text-highlight-fg);
+}
+.is-flashing .tag {
+  background: transparent;
 }
 .nav-folder-title.is-being-dragged-over {
   color: var(--text-normal);
@@ -402,15 +411,33 @@ input.document-search-input.mod-no-match,
 input.document-replace-input.mod-no-match {
   background-color: var(--background-extra-dark);
 }
+.empty-state-action:hover {
+  cursor: pointer;
+  color: var(--text-normal);
+}
 
 /* Calendar Plugin */
 #calendar-container .year {
   color: var(--text-normal);
   font-weight: normal;
 }
+#calendar-container .month, #calendar-container .year {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 #calendar-container .day {
   border-radius: 0;
   border: 1px solid var(--accent-soft-foreground);
+  font-size: 11px;
+  font-family: var(--font-text);
+}
+#calendar-container .reset-button {
+  font-size: 14px;
+}
+#calendar-container th {
+  font-family: var(--font-text);
+  font-size: 9px;
 }
 #calendar-container td {
   padding: 2px;
@@ -419,9 +446,11 @@ input.document-replace-input.mod-no-match {
 /* Dictionary Plugin */
 .dictionary-view-content .main {
   background: var(--dictionary-background-primary) !important;
+  border-radius: var(--border-radius) !important;
 }
 .dictionary-view-content .container {
   background: var(--dictionary-background-secondary) !important;
+  border-radius: var(--border-radius-large) !important;
 }
 
 /* Execute Code Plugin */
