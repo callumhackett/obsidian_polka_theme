@@ -26,7 +26,8 @@
   --callout-important: var(--accent-main-foreground);
   --callout-success: rgb(0, 180, 0);
   --callout-warning: rgb(255, 160, 0);
-  --callout-failure: rgb(255, 20, 50);
+  --callout-fail: rgb(255, 20, 50);
+  --callout-error: rgb(255, 20, 50);
   --callout-bug: rgb(245, 0, 175);
   --color-accent: var(--accent-main-foreground);
 
@@ -121,7 +122,8 @@
   --callout-important: var(--accent-main-foreground);
   --callout-success: rgb(0, 200, 0);
   --callout-warning: rgb(210, 225, 0);
-  --callout-failure: rgb(250, 20, 50);
+  --callout-fail: rgb(250, 20, 50);
+  --callout-error: rgb(250, 20, 50);
   --callout-bug: rgb(245, 0, 150);
   --color-accent: var(--accent-main-foreground);
 
@@ -329,7 +331,7 @@ hr, .markdown-rendered hr {
 }
 /* Callouts */
 .callout {
-  border-radius: var(--border-radius);
+  border-radius: var(--radius-s);
   border: 2px dashed var(--callout-color);
   background: transparent;
   padding: 1em;
@@ -349,7 +351,7 @@ hr, .markdown-rendered hr {
 }
 .canvas-node-container {
   border: 2px solid var(--text-normal);
-  border-radius: var(--border-radius-large);
+  border-radius: var(--radius-m);
 }
 .canvas-node.is-selected .canvas-node-container,
 .canvas-node.is-focused .canvas-node-container {
@@ -475,11 +477,11 @@ input.document-replace-input.mod-no-match {
 /* Dictionary Plugin */
 .dictionary-view-content .main {
   background: var(--dictionary-background-primary) !important;
-  border-radius: var(--border-radius) !important;
+  border-radius: var(--radius-s) !important;
 }
 .dictionary-view-content .container {
   background: var(--dictionary-background-secondary) !important;
-  border-radius: var(--border-radius-large) !important;
+  border-radius: var(--radius-m) !important;
 }
 
 /* Execute Code Plugin */
@@ -507,7 +509,7 @@ code.language-output {
 
 /* Kanban Plugin Styles */
 .kanban-plugin__lane {
-  border-radius: var(--border-radius);
+  border-radius: var(--radius-s);
   background: var(--main-background);
 }
 .kanban-plugin__lane .task-list-item-checkbox {
@@ -525,7 +527,7 @@ code.language-output {
   background: var(--background-secondary);
 }
 .kanban-plugin__item-tag {
-  border-radius: var(--border-radius) !important;
+  border-radius: var(--radius-s) !important;
 }
 button:not(.clickable-icon) {
   background: var(--accent-soft-background);
