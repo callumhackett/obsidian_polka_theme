@@ -8,15 +8,15 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can still choose your own accent color, which will be applied in the ribbon and elsewhere, but you'll need to create a CSS snippet that overrides the `--accent-main` parameter with a raw RGB value (scroll to the bottom for instructions on how to set this up).
+Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can still choose your own accent color, which will be applied in the ribbon and elsewhere, but you'll need to create a CSS snippet and override the `--accent-main` parameter with raw RGB values (scroll to the bottom for help on setting this up - it's easy!).
 
-For example, you could replace the default cyan accent in dark mode with a pink one:
+For example, you could replace the dark mode's default cyan accent with a pink one:
 
 ![Customization](color_customization.png)
 
 ## Fonts
 
-The user is left to select which fonts are loaded via the main settings. The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+Theme and font taste don't always go together, so the user is left to select which fonts are loaded via the main settings. The font used in the preview images here is Franklin Gothic, which you already have if you have Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
@@ -31,18 +31,17 @@ Special attention has been given to the following community plugins (many others
 
 ## CSS Snippets
 
-To choose your own accent color, or to otherwise modify the theme:
+To choose your own accent color (or apply other modifications):
 
 1. In a file explorer (not inside Obsidian), go to your main vault folder.
-2. From there, go to `/.obsidian/snippets` and create a `.css` file with any name.
-3. Add new styles to the file. To replace the accent color, use the following rule as a template, setting your own RGB values and using `.theme-light` or `.theme-dark` as appropriate:
+2. From there, go to the `/.obsidian/snippets` folder and create a `.css` file with any name.
+3. Open the file and add your preferred styles. For replacing the accent color, you can use the template snippet below, substituting your own RGB values and `.theme-light` or `.theme-dark` as appropriate (if you're familiar with CSS, note that the RGB values here are not enclosed in brackets):
 ```
 .theme-dark {
   --accent-main: 225, 120, 255 !important;
 }
 ```
-4. Note that the RGB values are not enclosed inside `rgb()` brackets (if you copied the snippet above, you'll be fine).
-5. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file.
+4. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file.
 
 ## Notes
 
