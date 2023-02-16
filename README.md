@@ -42,7 +42,7 @@ To set your own accent color:
 3. Copy and paste the code below into your CSS file:
 ```
 .theme-dark {
-    --accent-main: 225, 120, 255 !important;
+  --accent-main: 225, 120, 255 !important;
 }
 ```
 4. Replace the numbers with those of your preferred RGB color and, if you want to customize light mode, replace `.theme-dark` with `.theme-light` (if you're familiar with CSS, note that the color value is not enclosed in brackets).
