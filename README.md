@@ -39,7 +39,7 @@ To set your own accent color (or to apply other modifications):
 
 1. In a file explorer (not inside Obsidian), go to your main vault folder.
 2. From there, go to the `/.obsidian/snippets` folder and create a `.css` file with any name.
-3. If you don't know CSS but want to replace the accent color, copy and paste the snippet below. Replace `.theme-dark` with `.theme-light` if you want to customize light mode, and replace the numbers with your own RGB color:
+3. If you don't know CSS but want to replace the accent color, copy and paste the snippet below. Replace `.theme-dark` with `.theme-light` if you want to customize light mode, and replace the numbers with your preferred RGB color:
 ```
 .theme-dark {
   --accent-main: 225, 120, 255 !important;
