@@ -80,9 +80,13 @@
   --background-modifier-border-focus: var(--accent-soft-foreground);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+
+  /* Interface Styles */
   --radius-s: 2px;
   --radius-m: 4px;
-  --input-radius: 4px;
+  --radius-l: 6px;
+  --radius-xl: 8px;
+  --input-radius: var(--radius-m);
 
   /* Dictionary Plugin Colors */
   --dictionary-background-primary: var(--accent-soft-background);
@@ -176,9 +180,13 @@
   --background-modifier-border-focus: var(--accent-soft-foreground);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
+
+  /* Interface Styles */
   --radius-s: 2px;
   --radius-m: 4px;
-  --input-radius: 4px;
+  --radius-l: 6px;
+  --radius-xl: 8px;
+  --input-radius: var(--radius-m);
 
   /* Dictionary Plugin Colors */
   --dictionary-background-primary: var(--background-secondary);
@@ -190,8 +198,8 @@
   --kanban-checkbox-border: var(--background-primary);
 }
 
-/* Font Defaults */
 body {
+  /* Font Defaults */
   --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-interface-theme: var(--font-default);
   --font-monospace-default: 'iA Writer Mono S', 'IBM Plex Mono', Menlo, SFMono-Regular, 'Roboto Mono', Consolas, 'Source Code Pro', monospace;
@@ -241,6 +249,7 @@ body {
   --input-radius: var(--radius-s);
   --tag-radius: var(--radius-m);
   --hr-thickness: 1px;
+  --embed-border-left: 2px dashed var(--text-normal);
 
   /* Navigation Colors */
   --nav-item-background-hover: var(--accent-soft-background);
@@ -255,6 +264,7 @@ body {
   --icon-color-focused: var(--text-normal);
   --icon-color-active: var(--text-normal);
   --collapse-icon-color: var(--accent-main-foreground);
+  --icon-opacity: 1;
 
   /* Interface Colors */
   --ribbon-background: var(--background-secondary);
