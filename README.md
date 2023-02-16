@@ -16,7 +16,7 @@ For example, you could replace the dark mode's default cyan accent with a pink o
 
 ## Fonts
 
-Font taste is personal. Polka has opinions on default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but any fonts you select in your main settings (`Appearance > Font`) will override these.
+Font taste is personal. Polka has opinions on default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but your main font settings (`Appearance > Font`) will override these selections.
 
 Franklin Gothic is the font used in the prevew images here. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
