@@ -8,7 +8,7 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can still choose your own accent color, which will appear in the ribbon and elsewhere, but you'll need to create a CSS snippet and override the `--accent-main` parameter with a raw RGB value (scroll to the bottom for help on setting this up—it's easy!).
+Due to the way the theme shares color values between elements for cohesion, Polka ignores the accent color in your Obsidian settings. You can still choose your own accent color, which will appear in the ribbon and elsewhere, but you'll need to create a CSS snippet and override the `--accent-main` parameter with an RGB value (scroll to the bottom for help on setting this up—it's easy!).
 
 For example, you could replace the dark mode's default cyan accent with a pink one:
 
@@ -16,9 +16,9 @@ For example, you could replace the dark mode's default cyan accent with a pink o
 
 ## Fonts
 
-Font taste is personal. Polka selects default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but your main font settings (`Appearance > Font`) will override these.
+Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (`Appearance > Font`) will override these.
 
-Franklin Gothic is the font you see in the prevew images here. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're after a code font, try [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a fork of [IBM Plex Mono](https://github.com/IBM/plex) with some minor character adjustments.
+The font in the preview images is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're looking for a code font, my preference is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a fork of [IBM Plex Mono](https://github.com/IBM/plex) with some small character adjustments.
 
 ## Plugin Support
 
@@ -35,19 +35,19 @@ Many others will fit in without issue but [tell me](https://github.com/callumhac
 
 ## CSS Snippets
 
-To set your own accent color (or to apply other modifications):
+To set your own accent color:
 
-1. In a file explorer (not inside Obsidian), go to your main vault folder.
+1. In a file explorer (not Obsidian), go to your main vault folder.
 2. From there, go to the `/.obsidian/snippets` folder and create a `.css` file with any name.
-3. If you don't know CSS but want to replace the accent color, copy and paste the snippet below. Replace `.theme-dark` with `.theme-light` if you want to customize light mode, and replace the numbers with your preferred RGB color:
+3. Copy and paste the code below into your CSS file:
 ```
 .theme-dark {
     --accent-main: 225, 120, 255 !important;
 }
 ```
-4. If you're familiar with CSS, note that the RGB color in the snippet above is not enclosed in brackets.
+4. Replace the numbers with those of your preferred RGB color and, if you want to customize light mode, replace `.theme-dark` with `.theme-light` (if you're familiar with CSS, note that the color value is not enclosed in brackets).
 5. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file. If you don't see it, click the reload icon and it should appear.
 
 ## Notes
 
-Some UI features and community plugins may use the accent color as defined in your user settings (`Appearance > Accent color`), rather than the accent color of the theme. To avoid clashes, you might want to change the color in your settings to match the theme accent. If you find a color clash like this, [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) and I'll patch it. Using CSS snippets is strictly for dabblers and should not be required for a good user experience.
+Some UI features and community plugins may use the accent color as defined in your user settings (`Appearance > Accent color`), rather than the accent color of the theme. To avoid clashes, you might want to change the color in your settings to match the theme accent. If you find a color clash, [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) and I'll patch it; using CSS snippets is strictly for dabblers and shouldn't be required for a good user experience.
