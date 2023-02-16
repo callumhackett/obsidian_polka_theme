@@ -15,6 +15,7 @@
   --accent-soft-foreground: rgba(var(--accent-soft), 0.125);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-on-selection: rgb(255, 110, 110);
+  --callout-info: var(--text-normal);
   --callout-success: rgb(0, 180, 0);
   --callout-warning: rgb(255, 160, 0);
   --callout-failure: rgb(255, 20, 50);
@@ -101,6 +102,7 @@
   --accent-soft-foreground: rgba(var(--accent-soft), 0.1);
   --accent-soft-background: rgba(var(--accent-soft), 0.05);
   --accent-on-selection: rgba(var(--accent-main), 0.4);
+  --callout-info: var(--text-normal);
   --callout-success: rgb(0, 200, 0);
   --callout-warning: rgb(210, 225, 0);
   --callout-failure: rgb(250, 20, 50);
@@ -312,24 +314,12 @@ hr, .markdown-rendered hr {
 /* Callouts */
 .callout {
   border-radius: var(--border-radius);
-  border: 2px dashed var(--text-normal);
+  border: 2px dashed var(--callout-color);
   background: transparent;
   padding: 1em;
 }
 .callout-title, .callout-icon .svg-icon {
   font-size: var(--h6-size);
-}
-.callout[data-callout="success"], .callout[data-callout="check"], .callout[data-callout="done"] {
-  border: 2px dashed var(--callout-success) !important;
-}
-.callout[data-callout="warning"], .callout[data-callout="caution"], .callout[data-callout="attention"] {
-  border: 2px dashed var(--callout-warning) !important;
-}
-.callout[data-callout="failure"], .callout[data-callout="fail"], .callout[data-callout="missing"], .callout[data-callout="danger"], .callout[data-callout="error"] {
-  border: 2px dashed var(--callout-failure) !important;
-}
-.callout[data-callout="bug"] {
-  border: 2px dashed var(--callout-bug) !important;
 }
 .callout-title, .callout-icon .svg-icon {
   color: var(--text-normal);
@@ -384,6 +374,10 @@ hr, .markdown-rendered hr {
   color: var(--text-normal);
   background: var(--accent-main-background);
 }
+/* Slides */
+.reveal .controls button {
+  color: var(--accent-main-foreground);
+}
 /* Empty Pages */
 .empty-state-action:hover {
   cursor: pointer;
@@ -392,6 +386,15 @@ hr, .markdown-rendered hr {
 /* Status Bar */
 .status-bar {
   background-color: var(--background-secondary);
+}
+/* Divider */
+.workspace-leaf-resize-handle:hover {
+  background-color: var(--accent-main-foreground);
+  border-color: var(--accent-main-foreground);
+}
+.is-translucent .workspace-leaf-resize-handle:hover {
+  background-color: var(--accent-main-foreground);
+  border-color: var(--accent-main-foreground);
 }
 /* Menus */
 .menu, .vertical-tab-header {
