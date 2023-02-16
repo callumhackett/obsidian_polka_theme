@@ -16,22 +16,22 @@ For example, you could replace the dark mode's default cyan accent with a pink o
 
 ## Fonts
 
-Font taste is personal. Polka selects default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but your main font settings (`Appearance > Font`) will override these choices.
+Font taste is personal. Polka selects default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but your main font settings (`Appearance > Font`) will override these.
 
 Franklin Gothic is the font you see in the prevew images here. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're after a code font, I recommend [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a fork of [IBM Plex Mono](https://github.com/IBM/plex) with some minor character adjustments.
 
 ## Plugin Support
 
-As well as modifying your workspace, Polka makes color adaptations to Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors use the built-in color scheme, the hues have been refined.
+As well as modifying your workspace, Polka adapts the colors of Obsidian's user interface and the whole suite of core plugins. Additionally, though code syntax colors use the built-in color scheme, the hues have been refined.
 
-Special attention has been given to the following community plugins (many others will fit in without issue):
+Special attention has been given to the following community plugins:
 
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - [Dictionary](https://github.com/phibr0/obsidian-dictionary)
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 
-[Tell me](https://github.com/callumhackett/obsidian_polka_theme/issues) if I should support something else as well.
+Many others will fit in without issue but [tell me](https://github.com/callumhackett/obsidian_polka_theme/issues) if I should support something else.
 
 ## CSS Snippets
 
@@ -39,13 +39,13 @@ To set your own accent color (or to apply other modifications):
 
 1. In a file explorer (not inside Obsidian), go to your main vault folder.
 2. From there, go to the `/.obsidian/snippets` folder and create a `.css` file with any name.
-3. Open the file and add your preferred styles.
-4. (Optional) To replace the accent color, you can copy and paste the snippet below, substituting your own RGB values and using `.theme-light` or `.theme-dark` depending on the mode you want your change to apply to (if you're familiar with CSS, note that the RGB values here are not enclosed in brackets):
+3. If you don't know CSS but want to replace the accent color, copy and paste the snippet below. Replace `.theme-dark` with `.theme-light` if you want to customize light mode, and replace the numbers with your own RGB color:
 ```
 .theme-dark {
   --accent-main: 225, 120, 255 !important;
 }
 ```
+4. If you do know CSS, notice that the RGB color in the snippet above is not enclosed in brackets.
 5. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file. If you don't see it, click the reload icon and it should appear.
 
 ## Notes
