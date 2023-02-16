@@ -18,7 +18,7 @@ For example, you could replace the dark mode's default cyan accent with a pink o
 
 Font taste is personal. Polka selects default fonts for Windows (Franklin Gothic) and Mac (Helvetica Neue) but your main font settings (`Appearance > Font`) will override these.
 
-Franklin Gothic is the font you see in the prevew images here. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're after a code font, I recommend [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a fork of [IBM Plex Mono](https://github.com/IBM/plex) with some minor character adjustments.
+Franklin Gothic is the font you see in the prevew images here. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're after a code font, try [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a fork of [IBM Plex Mono](https://github.com/IBM/plex) with some minor character adjustments.
 
 ## Plugin Support
 
