@@ -50,4 +50,4 @@ To set your own accent color (or to apply other modifications):
 
 ## Notes
 
-Some UI features and community plugins may use the accent color as defined in your user settings under `Appearance > Accent color`, rather than the accent color of the theme. To avoid clashes, you might want to change the color in your settings to match the theme accent. If you find a conflict like this, [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) and I'll patch it. Using CSS snippets is strictly for dabblers and should not be required for a good user experience.
+Some UI features and community plugins may use the accent color as defined in your user settings (`Appearance > Accent color`), rather than the accent color of the theme. To avoid clashes, you might want to change the color in your settings to match the theme accent. If you find a color clash like this, [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) and I'll patch it. Using CSS snippets is strictly for dabblers and should not be required for a good user experience.
