@@ -41,7 +41,7 @@
   /* Syntax Highlighting */
   --code-peripheral: 152, 157, 190;
   --code-comment: rgb(var(--code-peripheral));
-  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.33);
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.5);
   --color-yellow: rgb(240, 215, 65);
   --color-orange: rgb(220, 95, 0);
   --color-pink: rgb(230, 100, 240);
@@ -127,7 +127,7 @@
   /* Syntax Highlighting */
   --code-peripheral: 175, 191, 255;
   --code-comment: rgba(var(--code-peripheral), 0.7);
-  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.33);
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.35);
   --color-yellow: rgb(240, 215, 65);
   --color-orange: rgb(220, 95, 0);
   --color-pink: rgb(230, 100, 240);
