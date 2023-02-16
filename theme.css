@@ -457,6 +457,10 @@ input.document-replace-input.mod-no-match {
   text-transform: uppercase;
   font-weight: bold;
 }
+#calendar-container .week-num {
+  font-size: 9px;
+  font-family: var(--font-text);
+}
 #calendar-container .day {
   border-radius: 0;
   border: 1px solid var(--accent-soft-foreground);
@@ -481,7 +485,10 @@ input.document-replace-input.mod-no-match {
 }
 .dictionary-view-content .container {
   background: var(--dictionary-background-secondary) !important;
-  border-radius: var(--radius-m) !important;
+  border-radius: var(--radius-s) !important;
+}
+.dictionary-view-content .contents {
+  border-bottom: 1px dashed var(--hr-color);
 }
 
 /* Execute Code Plugin */
