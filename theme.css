@@ -487,9 +487,6 @@ input.document-replace-input.mod-no-match {
   background: var(--dictionary-background-secondary) !important;
   border-radius: var(--radius-s) !important;
 }
-.dictionary-view-content .contents {
-  border-bottom: 1px dashed var(--hr-color);
-}
 
 /* Execute Code Plugin */
 code.language-output hr {
