@@ -198,7 +198,7 @@
   --background-modifier-form-field: hsl(var(--background-h), var(--background-s), calc(var(--background-l) / 1.33));
   --background-modifier-border: var(--accent-soft-dark);
   --background-modifier-border-hover: var(--accent-soft-dark);
-  --background-modifier-border-focus: var(--accent-soft-dark);
+  --background-modifier-border-focus: hsl(var(--background-h), var(--background-s), calc(var(--background-l) - 4%));
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
   --search-result-bg-hover: var(--background-modifier-form-field);
@@ -271,7 +271,7 @@ body {
   --input-radius: var(--radius-s);
   --tag-radius: var(--radius-m);
   --hr-thickness: 1px;
-  --embed-border-left: 1px dashed var(--hr-color);
+  --embed-border-left: 2px dashed var(--text-normal);
 
   /* Navigation Colors */
   --nav-item-background-hover: var(--accent-soft-light);
