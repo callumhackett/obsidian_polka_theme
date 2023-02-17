@@ -195,13 +195,13 @@
   --code-background: var(--background-dark);
   --background-modifier-hover: var(--accent-soft-light);
   --background-modifier-active-hover: var(--accent-soft-light);
-  --background-modifier-form-field: var(--background-dark);
+  --background-modifier-form-field: hsl(var(--background-h), var(--background-s), calc(var(--background-l) / 1.33));
   --background-modifier-border: var(--accent-soft-dark);
   --background-modifier-border-hover: var(--accent-soft-dark);
   --background-modifier-border-focus: var(--accent-soft-dark);
   --background-modifier-error: var(--text-error);
   --background-modifier-error-hover: var(--text-error);
-  --search-result-bg-hover: var(--background-dark);
+  --search-result-bg-hover: var(--background-modifier-form-field);
 
   /* Interface Styles */
   --radius-s: 2px;
