@@ -31,6 +31,7 @@ Special attention has been given to the following community plugins:
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - [Dictionary](https://github.com/phibr0/obsidian-dictionary)
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code)
+- [File Tree Alternative](https://github.com/ozntel/file-tree-alternative)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 
 Many others will fit in without issue but [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you think I should support something else.
