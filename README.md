@@ -18,7 +18,7 @@ For example, you could replace the dark mode's default cyan accent with a pink o
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (`Appearance > Font`) will override these.
 
-The font in the preview images is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're looking for a code font, my preference is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a fork of [IBM Plex Mono](https://github.com/IBM/plex) with some small character adjustments.
+The font in the preview images is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're looking for a code font, my preference (for what it's worth) is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a variant of [IBM Plex Mono](https://github.com/IBM/plex) with some small character adjustments.
 
 ## Plugin Support
 
@@ -50,4 +50,4 @@ To set your own accent color:
 
 ## Notes
 
-Some UI features and community plugins may use the accent color as defined in your user settings (`Appearance > Accent color`), rather than the accent color of the theme. To avoid clashes, you might want to change the color in your settings to match the theme accent. If you find a color clash, [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) and I'll patch it; using CSS snippets is strictly for dabblers and shouldn't be required for a good user experience.
+Some UI features and community plugins may use the accent color as defined in your user settings (`Appearance > Accent color`), rather than the accent color of the theme. To avoid clashes, you might want to change the color in your settings to match the theme accent. If you see a clash, [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) and I'll patch it; this will help keep CSS snippets unnecessary for those who are happy with the default settings.
