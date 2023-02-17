@@ -36,7 +36,7 @@ Special attention has been given to the following community plugins:
 
 Many others will fit in without issue but [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you think I should support something else.
 
-## CSS Snippets
+## Customization with CSS Snippets
 
 To set your own background colors (or to make other visual adjustments):
 
@@ -54,3 +54,7 @@ To set your own background colors (or to make other visual adjustments):
 5. Change the numbers to dial in your own color: `--background-h` ranges from 0-360 and represents a hue, such as red or blue; `--background-s` ranges from 0-100% and is your color's saturation; `--background-l` ranges from 0-100% and is your color's lightness. The color you choose applies directly to the background of the text editor but other colors in the theme are derived from it.
 
 Note: the default values are (0, 100%, 99.6%) in light mode and (221, 33.3%, 12.9%) in dark. If you like the overall tone of Polka and just want a different hue, use the default `s` and `l` values for your mode and experiment with the `h` value.
+
+## Roadmap
+
+In a future update, Polka will support the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, making it even less necessary for you to use CSS to get the appearance you want. Let me know [here](https://github.com/callumhackett/obsidian_polka_theme/issues/4) if there are any style variants you'd like the theme to support.
