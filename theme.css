@@ -22,13 +22,13 @@
   --callout-question: var(--text-normal);
   --callout-example: var(--text-normal);
   --callout-quote: var(--text-normal);
-  --callout-todo: rgb(0, 130, 255);
+  --callout-todo: rgb(0, 130, 235);
   --callout-important: var(--accent-main-foreground);
   --callout-success: rgb(0, 180, 0);
-  --callout-warning: rgb(255, 160, 0);
-  --callout-fail: rgb(255, 20, 50);
-  --callout-error: rgb(255, 20, 50);
-  --callout-bug: rgb(245, 0, 175);
+  --callout-warning: rgb(230, 135, 0);
+  --callout-fail: rgb(255, 30, 0);
+  --callout-error: rgb(255, 30, 0);
+  --callout-bug: rgb(245, 0, 170);
   --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
@@ -122,13 +122,14 @@
   --callout-question: var(--text-normal);
   --callout-example: var(--text-normal);
   --callout-quote: var(--text-normal);
-  --callout-todo: rgb(0, 115, 255);
+  --callout-todo: rgb(0, 130, 255);
   --callout-important: var(--accent-main-foreground);
-  --callout-success: rgb(0, 200, 0);
+  --callout-success: rgb(0, 190, 0);
   --callout-warning: rgb(210, 225, 0);
-  --callout-fail: rgb(250, 20, 50);
-  --callout-error: rgb(250, 20, 50);
-  --callout-bug: rgb(245, 0, 150);
+  --callout-fail: rgb(250, 30, 0);
+  --callout-error: rgb(250, 30, 0);
+  --callout-bug: rgb(245, 0, 170);
+  --callout-tip: rgb(255, 230, 125);
   --color-accent: var(--accent-main-foreground);
 
   /* Font Colors */
@@ -249,7 +250,7 @@ body {
   --input-radius: var(--radius-s);
   --tag-radius: var(--radius-m);
   --hr-thickness: 1px;
-  --embed-border-left: 2px dashed var(--text-normal);
+  --embed-border-left: 1px dashed var(--hr-color);
 
   /* Navigation Colors */
   --nav-item-background-hover: var(--accent-soft-background);
@@ -344,16 +345,38 @@ hr, .markdown-rendered hr {
   border-radius: var(--radius-s);
   border: 2px dashed var(--callout-color);
   background: transparent;
-  padding: 1em;
+  padding: 0.75em;
 }
 .callout-title, .callout-icon .svg-icon {
   font-size: var(--h6-size);
-}
-.callout-title, .callout-icon .svg-icon {
   color: var(--text-normal);
 }
 .callout p:last-child {
   margin-bottom: 0;
+}
+.callout[data-callout="note"] {
+  --callout-icon: lucide-info;
+}
+.callout[data-callout="important"] {
+  --callout-icon: lucide-flag;
+}
+.callout[data-callout="error"] {
+  --callout-icon: lucide-x;
+}
+.callout[data-callout="missing"] {
+  --callout-icon: lucide-help-circle;
+}
+.callout[data-callout="hint"], .callout[data-callout="tip"] {
+  --callout-icon: lucide-lightbulb;
+}
+.callout[data-callout="cite"] {
+  --callout-icon: lucide-bookmark;
+}
+.callout[data-callout="check"], .callout[data-callout="done"] {
+  --callout-icon: lucide-check-square;
+}
+.callout[data-callout="todo"] {
+  --callout-icon: lucide-clipboard-check;
 }
 /* Canvases */
 .canvas-selection, .canvas-selection.mod-group-selection, .canvas-card-menu .canvas-card-menu-button:hover, .canvas-controls-group button.is-active, .canvas-node.is-dummy .canvas-node-container, .canvas-placeholder-message {
