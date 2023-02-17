@@ -51,4 +51,6 @@ To set your own background colors (or to make other visual adjustments):
   --background-l: 25%;
 }
 ```
-5. Change the numbers to dial in your own color: `--background-h` ranges from 0-360 and represents a hue, such as red or blue; `--background-s` ranges from 0-100% and is your color's saturation; `--background-l` ranges from 0-100% and is your color's lightness. The color you choose applies directly to the background of the text editor but other colors in the theme are derived from it. You may find it easiest to use an independent HSL color picker.
+5. Change the numbers to dial in your own color: `--background-h` ranges from 0-360 and represents a hue, such as red or blue; `--background-s` ranges from 0-100% and is your color's saturation; `--background-l` ranges from 0-100% and is your color's lightness. The color you choose applies directly to the background of the text editor but other colors in the theme are derived from it.
+
+Note: the default values are (0, 100%, 99.6%) in light mode and (221, 33.3%, 12.9%) in dark. If you like the overall tone of Polka and just want a different hue, use the default `s` and `l` values for your mode and experiment with the `h` value.
