@@ -9,7 +9,7 @@
   --background-dark: rgb(23, 34, 62);
   --background-extra-dark: rgb(0, 10, 20);
   --background-primary-alt: var(--background-dark);
-  --background-secondary-alt: var(--background-dark);
+  --background-secondary-alt: var(--background-secondary);
 
   /* Background-Derivative Accents */
   --accent-soft-hsl: var(--background-h), calc(var(--accent-s) * 0.4), calc(var(--background-l) / 5);
@@ -120,7 +120,7 @@
   --background-dark: rgb(10, 18, 30);
   --background-extra-dark: rgb(0, 5, 10);
   --background-primary-alt: var(--background-dark);
-  --background-secondary-alt: var(--background-dark);
+  --background-secondary-alt: var(--background-secondary);
 
   /* Background-Derivative Accents */
   --accent-soft-hsl: var(--background-h), var(--background-s), 85%;
@@ -563,6 +563,31 @@ code.language-output {
   background: var(--code-normal) !important;
   border: 1px solid var(--code-normal) !important;
   color: var(--background-dark) !important;
+}
+
+/* File Tree Alternative Plugin */
+body {
+  --oz-fta-folder-font-size: var(--nav-item-size);
+  --oz-fta-file-font-size: var(--nav-item-size);
+}
+.oz-folder-name.is-root-folder, .oz-file-tree-header {
+  font-size: var(--nav-item-size) !important;
+  font-weight: bold;
+}
+.oz-folder-block, .oz-nav-file-title {
+  padding: 2px 0;
+}
+.oz-icon-div {
+  padding-top: 1px;
+}
+.oz-nav-file-tag {
+  background: var(--accent-soft-light);
+  border-radius: var(--radius-s);
+  font-size: calc(var(--nav-item-size) * 0.75);
+  font-weight: normal;
+}
+.oz-folder-contents {
+  border-left: 1px solid var(--color-accent);
 }
 
 /* Kanban Plugin Styles */
