@@ -1,6 +1,6 @@
 # Polka
 
-This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon.
+This customizable theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon.
 
 ![Preview](polka_full_size.png)
 
@@ -8,11 +8,11 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Color Customization
 
-As of v1.2, Polka responds to the accent color in your main settings (under `Appearance > Accent color`), which it will use for the dots in the ribbon, text accents and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan accent will be replaced in all the ways you can see below (and more):
+As of v1.2, Polka responds to the accent color in your main settings (under `Appearance > Accent color`), which it uses for the dots in the ribbon, text accents and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan accent will be replaced in all the ways you can see below (and more):
 
 ![Customization](color_customization.png)
 
-You can also change the main background color, although to do this you'll need to create a CSS snippet and play around with some HSL values (scroll to the bottom for help on setting this up—it's actually quite easy!). Here's an example of a different background tone achieved by changing just one number (much more fine-tuning is possible):
+It's also fairly straightforward to change the background color palette, although you'll need to create a CSS snippet and change some color values (scroll to the bottom for step-by-step instructions—it's very easy!). Here's an example of a different background palette you can achieve by changing just one number, while retaining cohesion across the entire interface:
 
 ![Backgrounds](background_customization.png)
 
