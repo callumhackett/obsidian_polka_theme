@@ -1,6 +1,6 @@
 # Polka
 
-This customizable theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon.
+This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon.
 
 ![Preview](polka_full_size.png)
 
@@ -8,11 +8,11 @@ This customizable theme adds some colorful minimalism to Obsidian in light and d
 
 ## Color Customization
 
-As of v1.2, Polka responds to the accent color in your main settings (under `Appearance > Accent color`), which it will use for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
+As of v1.2, Polka will respond to the accent color in your main settings (under `Appearance > Accent color`) and use it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
 
 ![Customization](color_customization.png)
 
-It's also straightforward to change the background color palette, although you'll need to create a CSS snippet (scroll to the bottom for step-by-step instructions—it's quite easy!). Here's an example of how you can change the tone with just one number and still retain cohesion across the entire interface:
+It's also straightforward to change the background color palette, although you'll need to create a CSS snippet (scroll to the bottom for step-by-step instructions—it's easy!). Here's an example of how you could alter the tone by changing just one parameter, while retaining cohesion across the whole interface:
 
 ![Backgrounds](background_customization.png)
 
@@ -20,7 +20,7 @@ It's also straightforward to change the background color palette, although you'l
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
-The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're looking for a code font, my own preference is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a variant of [IBM Plex](https://github.com/IBM/plex) with some small character adjustments.
+The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're looking for a code font, my own preference is for [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a variant of [IBM Plex](https://github.com/IBM/plex) with some small character adjustments.
 
 ## Plugin Support
 
@@ -42,7 +42,8 @@ To set your own background colors (or to make other visual adjustments):
 
 1. In a file explorer (not Obsidian), go to your main vault folder.
 2. From there, go to the `/.obsidian/snippets` folder and create a `.css` file with any name.
-3. Copy and paste the code below into your CSS file, replacing `.theme-dark` with `.theme-light` if you want to customize light mode:
+3. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file. If you don't see it, click the reload icon and it should appear.
+4. Copy and paste the code below into your CSS file, replacing `.theme-dark` with `.theme-light` if you want to customize light mode:
 ```
 .theme-dark {
   --background-h: 180;
@@ -50,5 +51,4 @@ To set your own background colors (or to make other visual adjustments):
   --background-l: 25%;
 }
 ```
-4. Change the numbers to dial in your own color: `--background-h` ranges from 0-360 and represents a hue, such as red or blue; `--background-s` ranges from 0-100% and is your color's saturation; `--background-l` ranges from 0-100% and is your color's lightness. The color you choose applies directly to the background of the text editor but other colors in the theme are derived from it. You may find it easiest to use an independent HSL color picker.
-5. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file. If you don't see it, click the reload icon and it should appear.
+5. Change the numbers to dial in your own color: `--background-h` ranges from 0-360 and represents a hue, such as red or blue; `--background-s` ranges from 0-100% and is your color's saturation; `--background-l` ranges from 0-100% and is your color's lightness. The color you choose applies directly to the background of the text editor but other colors in the theme are derived from it. You may find it easiest to use an independent HSL color picker.
