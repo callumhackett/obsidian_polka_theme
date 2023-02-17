@@ -138,7 +138,7 @@
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
-  --text-highlight-bg: rgb(210, 197, 50);
+  --text-highlight-bg: rgb(220, 191, 45);
   --text-highlight-fg: #000;
   --text-error: rgb(250, 20, 50);
   --text-accent: var(--accent-main-foreground);
