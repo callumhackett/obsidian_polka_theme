@@ -48,7 +48,7 @@
   --text-muted: var(--text-main);
   --text-faint: var(--text-main);
   --text-white: var(--background-primary);
-  --text-highlight-bg: rgb(250, 231, 75);
+  --text-highlight-bg: hsl(calc(var(--accent-h) + 10), 100%, 75%);
   --text-highlight-fg: var(--text-normal);
   --text-error: rgb(250, 30, 0);
   --text-accent-hover: var(--text-normal);
@@ -161,7 +161,7 @@
   --text-muted: rgba(var(--text-main), 1);
   --text-faint: rgba(var(--text-main), 1);
   --text-white: var(--text-normal);
-  --text-highlight-bg: rgb(220, 193, 45);
+  --text-highlight-bg: hsl(calc(var(--accent-h) + 10), 100%, 65%);
   --text-highlight-fg: #000;
   --text-error: rgb(250, 30, 0);
   --text-accent-hover: var(--text-normal);
@@ -613,18 +613,22 @@ body {
   border-radius: var(--radius-s) !important;
 }
 button:not(.clickable-icon) {
+  border-radius: var(--radius-s);
   background: var(--accent-soft-light);
   color: var(--kanban-button-text);
 }
 button:not(.clickable-icon):hover {
+  border-radius: var(--radius-s);
   background: var(--color-accent);
   color: var(--kanban-button-text-hover);
 }
 button:not(.clickable-icon) {
+  border-radius: var(--radius-s);
   box-shadow: 0px 0px 1px 0px var(--button-shadow);
   transition: 0s;
 }
 button:not(.clickable-icon):hover {
+  border-radius: var(--radius-s);
   box-shadow: 0px 0px 1px 0px var(--button-shadow-hover);
   transition: 0s;
 }
