@@ -36,7 +36,7 @@ The body font in the preview images here is Franklin Gothic, which is distribute
 
 ### Additional Options
 
-The Style Settings plugin also gives control over the following parameters:
+The Style Settings plugin also gives you control over the following parameters:
 
 - Main text color
 - Accent color vs. traditional yellow highlights
