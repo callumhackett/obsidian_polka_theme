@@ -6,11 +6,15 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 <a href="https://www.buymeacoffee.com/callumhackett" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-## Color Customization
+## Customization
+
+#### Accents
 
 Polka responds to the accent color in your main settings (under `Appearance > Accent color`) by using it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
 
 ![Color Customization](assets/accent_customization.png)
+
+#### Backgrounds
 
 If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, you will also get access to a menu that allows you to customize the background color palette, with independent settings for light and dark modes.
 
@@ -18,11 +22,17 @@ Once installed, under `Style Settings > Polka Theme`, you can use sliders to adj
 
 ![Style Examples](assets/background_customization.png)
 
-## Code Block Customization
+#### Code Blocks
 
 The menu available through Style Settings also gives you a list of dedicated sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors but you can also use well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized. [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if there's another palette you'd like me to include.
 
-## Additional Customization Options
+#### Fonts
+
+Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
+
+The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+
+#### Additional Options
 
 As well as the above, the style settings plugin gives you access to the following parameters:
 
@@ -31,12 +41,6 @@ As well as the above, the style settings plugin gives you access to the followin
 - Roundness of page elements
 - Circular vs. square checkboxes
 - Monospace font in tables
-
-## Fonts
-
-Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
-
-The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
