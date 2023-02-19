@@ -32,9 +32,7 @@ The Style Settings menu also features a list of sub-themes that apply exclusivel
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
-The body font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
-
-The code font in the sub-theme previews is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), a derivative of [IBM Plex Mono](https://github.com/IBM/plex) with small character adjustments.
+The body font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). The code font in the sub-theme previews above is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), a derivative of [IBM Plex Mono](https://github.com/IBM/plex) with small character adjustments.
 
 ### Additional Options
 
