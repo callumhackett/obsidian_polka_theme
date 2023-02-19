@@ -1,6 +1,6 @@
 # Polka
 
-This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a **fully customizable color scheme** and independent selection of **sub-themes for code blocks**.
+This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a **highly customizable color scheme** and independent selection of **sub-themes for code blocks**.
 
 ![Preview](assets/polka_full_size.png)
 
@@ -24,7 +24,9 @@ You can easily adjust the hue, saturation, lightness and contrast of the backgro
 
 #### Code Blocks
 
-The Style Settings menu also grants access to a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized.
+The Style Settings menu also features a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized.
+
+![Code Block Examples](assets/code_examples.png)
 
 #### Fonts
 
@@ -34,13 +36,13 @@ The font in the preview images here is Franklin Gothic, which is distributed wit
 
 #### Additional Options
 
-As well as the above, the Style Settings plugin gives you access to the following parameters:
+As well as the above, the Style Settings plugin grants control over the following parameters:
 
 - Main text color
 - Traditional yellow vs. accent color highlights
 - Circular vs. square checkboxes
-- Roundness of page elements
-- Monospace font in tables
+- Default vs. monospace font in tables
+- Roundness of page elements and menus
 
 ## Plugin Support
 
@@ -56,8 +58,8 @@ Many others will fit in without issue.
 
 ## Feature Requests
 
-[Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you spot any issues or would like extra features, especially plugin support or code block themes.
+[Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you spot any issues or would like extra features, especially new plugin support or code block themes.
 
-Polka tries to strike a balance between minimalist aesthetic, simplicity of use and customizability, so the style settings are meant to give you flexibility but not total control. If you're looking to tweak things like heading colors or the relationship between primary and secondary background colors, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
+Polka tries to strike a balance between colorful minimalism, simplicity of use and customizability, so its options menu is meant to give you flexibility but not total control. If you're looking to tweak things like heading styles or the relationship between primary and secondary background colors, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
 
-[^1]: Looking for a code font? My vote goes to [IBM Plex Mono](https://github.com/IBM/plex) and its derivatives, especially [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono).]
+[^1]: Looking for a code font? My vote goes to [IBM Plex Mono](https://github.com/IBM/plex) and its derivatives, especially [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono).
