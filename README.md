@@ -1,26 +1,32 @@
 # Polka
 
-This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon.
+This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a fully customizable color scheme and independent selection of themes for code blocks.
 
 ![Preview](polka_full_size.png)
 
 <a href="https://www.buymeacoffee.com/callumhackett" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-## Color Customization
+## Accent Color Customization
 
-As of v1.2, Polka will respond to the accent color in your main settings (under `Appearance > Accent color`) and use it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
+Polka responds to the accent color in your main settings (under `Appearance > Accent color`) by using it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
 
 ![Customization](color_customization.png)
 
-It's also straightforward to change the background color palette, although you'll need to create a CSS snippet (scroll to the bottom for step-by-step instructions—it's easy!). Here's an example of how you could alter the tone by changing just one parameter, while retaining cohesion across the whole interface:
+If you prefer text highlights to use a traditional yellow background regardless of your accent color, you can switch this on with style settings.
 
-![Backgrounds](background_customization.png)
+## Background Color Customization
+
+With the style settings plugin, you can access sliders for the hue, saturation and lightness of the background color palette, giving you full control over the color scheme. As well as letting you choose the base color for a whole palette that retains cohesion across the interface, you can also alter the contrast between primary and secondary background colors.
+
+## Code Block Customization
 
 ## Fonts
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
-The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). If you're looking for a code font, my own preference is for [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), which is a variant of [IBM Plex](https://github.com/IBM/plex) with some small character adjustments.
+The style settings plugin provides a toggle to use your default monospace font in tables, which can be useful for numeric content that doesn't suit all body fonts.
+
+The font in the preview images is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
@@ -35,26 +41,3 @@ Special attention has been given to the following community plugins:
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 
 Many others will fit in without issue but [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you think I should support something else.
-
-## Customization with CSS Snippets
-
-To set your own background colors (or to make other visual adjustments):
-
-1. In a file explorer (not Obsidian), go to your main vault folder.
-2. From there, go to the `/.obsidian/snippets` folder and create a `.css` file with any name.
-3. In your main Obsidian settings, go to `Appearance > CSS snippets` and enable your file. If you don't see it, click the reload icon and it should appear.
-4. Copy and paste the code below into your CSS file, replacing `.theme-dark` with `.theme-light` if you want to customize light mode:
-```
-.theme-dark {
-  --background-h: 180;
-  --background-s: 50%;
-  --background-l: 25%;
-}
-```
-5. Change the numbers to dial in your own color: `--background-h` ranges from 0-360 and represents a hue, such as red or blue; `--background-s` ranges from 0-100% and is your color's saturation; `--background-l` ranges from 0-100% and is your color's lightness. The color you choose applies directly to the background of the text editor but other colors in the theme are derived from it.
-
-Note: the default values are (0, 100%, 99.6%) in light mode and (221, 33.3%, 12.9%) in dark. If you like the overall tone of Polka and just want a different hue, use the default `s` and `l` values for your mode and experiment with the `h` value.
-
-## Roadmap
-
-In a future update, Polka will support the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, making it even less necessary for you to use CSS to get the appearance you want. Let me know [here](https://github.com/callumhackett/obsidian_polka_theme/issues/4) if there are any style variants you'd like the theme to support.
