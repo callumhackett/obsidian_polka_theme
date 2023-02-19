@@ -18,13 +18,13 @@ Polka responds to the accent color in your main settings (under `Appearance > Ac
 
 If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, a new menu will appear (in `Style Settings > Polka Theme`) that allows you to customize the background color palette, with independent settings for light and dark modes.
 
-You can easily adjust the hue, saturation, lightness and contrast of the background colors, and you never have to worry about color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples of customizations that took less than ten seconds to dial in:
+You can easily adjust the hue, saturation, lightness and contrast of the background colors, and you don't have to worry about color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples of customizations that took around ten seconds to dial in:
 
 ![Style Examples](assets/background_customization.png)
 
 #### Code Blocks
 
-The Style Settings menu also features a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized.
+The Style Settings menu also features a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to popular schemes like Dracula, Gruvbox, Nord, One Dark and Solarized.
 
 ![Code Block Examples](assets/code_examples.png)
 
@@ -36,10 +36,10 @@ The font in the preview images here is Franklin Gothic, which is distributed wit
 
 #### Additional Options
 
-As well as the above, the Style Settings plugin grants control over the following parameters:
+The Style Settings plugin also gives control over the following parameters:
 
 - Main text color
-- Traditional yellow vs. accent color highlights
+- Accent color vs. traditional yellow highlights
 - Circular vs. square checkboxes
 - Default vs. monospace font in tables
 - Roundness of page elements and menus
