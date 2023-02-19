@@ -60,4 +60,4 @@ Many others will fit in without issue.
 
 [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you spot any issues or would like extra features, especially new plugin support or code block themes.
 
-Polka tries to strike a balance between colorful minimalism, simplicity of use and customizability, so its options menu is meant to give you flexibility but not total control. If you're looking to tweak things like heading styles or the relationship between primary and secondary background colors, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
+Polka tries to strike a balance between colorful minimalism, simplicity of use and customizability, so its options menu is meant to give you flexibility but not endless control. If you're looking to tweak things like heading styles or you want a more complex background setup, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
