@@ -10,7 +10,7 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 Polka responds to the accent color in your main settings (under `Appearance > Accent color`) by using it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
 
-![Color Customization](assets/color_customization.png)
+![Color Customization](assets/accent_customization.png)
 
 If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, you will also get access to a menu that allows you to customize the background color palette, with independent settings for light and dark modes.
 
