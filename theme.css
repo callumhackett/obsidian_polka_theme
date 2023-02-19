@@ -1,11 +1,22 @@
 .theme-light {
-  /* Background Colors */
-  --background-h: 0;
-  --background-s: 100%;
-  --background-l: 99.6%;
-  --background-hsl: var(--background-h), var(--background-s), var(--background-l);
-  --background-primary: hsl(var(--background-hsl));
-  --background-secondary: hsl(var(--background-h), calc(var(--background-s) / 3), calc(var(--background-l) - 2%));
+  /* Style Settings Parameters */
+  --ss-light-h: 0;
+  --ss-light-s: 3.8%;
+  --ss-light-l: 9.86%;
+  --ss-light-contrast: 0%;
+  --ss-light-text-main: 0, 0, 0;
+  --ss-light-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
+
+  /* Background Color Components */
+  --background-h: var(--ss-light-h);
+  --background-s: calc(var(--ss-light-s) * 10);
+  --background-l: calc(var(--ss-light-l) * 5 + 50%);
+  --background-secondary-s: calc(var(--background-s) / 1.15);
+  --background-secondary-l: calc(var(--background-l) - 2% - var(--ss-light-contrast) * 5);
+
+  /* Background Color Definitions */
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
   --background-dark: rgb(23, 34, 62);
   --background-extra-dark: rgb(0, 10, 20);
   --background-primary-alt: var(--background-dark);
@@ -22,9 +33,27 @@
   --accent-l: 52%;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: var(--color-accent);
-  --color-accent-background: hsla(var(--color-accent-hsl), 0.075);
-  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.125);
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
+
+  /* Font Colors */
+  --text-normal: rgb(var(--ss-light-text-main));
+  --text-muted: var(--text-normal);
+  --text-faint: var(--text-normal);
+  --text-white: rgb(254, 252, 252);
+  --text-highlight-bg: var(--ss-light-highlight-bg);
+  --text-highlight-fg: #000;
+  --text-error: rgb(250, 30, 0);
+  --text-accent-hover: #000;
+  --text-on-accent: var(--text-white) !important;
+  --text-selection: var(--accent-on-selection);
+  --hr-color: rgba(var(--ss-light-text-main), 0.4);
+
+  /* Code Blocks */
+  --code-peripheral: 159, 157, 190;
+  --code-comment: rgb(var(--code-peripheral));
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.5);
 
   /* Callout Colors */
   --callout-default: var(--text-normal);
@@ -41,34 +70,6 @@
   --callout-fail: rgb(235, 0, 0);
   --callout-error: rgb(235, 0, 0);
   --callout-bug: rgb(245, 0, 165);
-
-  /* Font Colors */
-  --text-main: 0, 0, 0;
-  --text-normal: rgb(var(--text-main));
-  --text-muted: var(--text-main);
-  --text-faint: var(--text-main);
-  --text-white: var(--background-primary);
-  --text-highlight-bg: hsl(calc(var(--accent-h) + 10), 100%, 75%);
-  --text-highlight-fg: var(--text-normal);
-  --text-error: rgb(250, 30, 0);
-  --text-accent-hover: var(--text-normal);
-  --text-on-accent: var(--text-white) !important;
-  --text-selection: var(--accent-on-selection);
-  --code-normal: var(--text-white);
-  --code-punctuation: var(--code-normal);
-  --hr-color: rgba(var(--text-main), 0.4);
-
-  /* Syntax Highlighting */
-  --code-peripheral: 159, 157, 190;
-  --code-comment: rgb(var(--code-peripheral));
-  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.5);
-  --color-yellow: rgb(240, 215, 65);
-  --color-orange: rgb(220, 95, 0);
-  --color-pink: rgb(230, 100, 240);
-  --color-red: rgb(230, 65, 65);
-  --color-cyan: rgb(0, 202, 235);
-  --color-green: rgb(30, 195, 75);
-  --color-purple: rgb(140, 110, 255);
 
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
@@ -91,13 +92,6 @@
   --background-modifier-error-hover: var(--text-error);
   --search-result-bg-hover: var(--accent-soft-dark);
 
-  /* Interface Styles */
-  --radius-s: 2px;
-  --radius-m: 4px;
-  --radius-l: 6px;
-  --radius-xl: 8px;
-  --input-radius: var(--radius-m);
-
   /* Dictionary Plugin Colors */
   --dictionary-background-primary: var(--accent-soft-light);
   --dictionary-background-secondary: var(--background-secondary);
@@ -110,13 +104,24 @@
 }
 
 .theme-dark {
-  /* Background Colors */
-  --background-h: 221;
-  --background-s: 33.3%;
-  --background-l: 12.9%;
-  --background-hsl: var(--background-h), var(--background-s), var(--background-l);
-  --background-primary: hsl(var(--background-hsl));
-  --background-secondary: hsl(var(--background-h), calc(var(--background-s) - 4.5%), calc(var(--background-l) + 5.5%));
+  /* Style Settings Parameters */
+  --ss-dark-h: 221;
+  --ss-dark-s: 0.333%;
+  --ss-dark-l: 0.258%;
+  --ss-dark-contrast: 0.073%;
+  --ss-dark-text-main: 250, 247, 245;
+  --ss-dark-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
+
+  /* Background Color Components */
+  --background-h: var(--ss-dark-h);
+  --background-s: calc(var(--ss-dark-s) * 100);
+  --background-l: calc(var(--ss-dark-l) * 50);
+  --background-secondary-s: calc(var(--background-s) / 1.15);
+  --background-secondary-l: calc(var(--background-l) + 2% + var(--ss-dark-contrast) * 48);
+
+  /* Background Color Definitions */
+  --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
+  --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
   --background-dark: rgb(10, 18, 30);
   --background-extra-dark: rgb(0, 5, 10);
   --background-primary-alt: var(--background-dark);
@@ -134,9 +139,26 @@
   --accent-l: 49%;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: var(--color-accent);
-  --color-accent-background: hsla(var(--color-accent-hsl), 0.067);
-  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.125);
+  --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
+  --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
+
+  /* Font Colors */
+  --text-normal: rgba(var(--ss-dark-text-main), 1);
+  --text-muted: var(--text-normal);
+  --text-faint: var(--text-normal);
+  --text-white: rgb(250, 247, 245);
+  --text-highlight-bg: var(--ss-dark-highlight-bg);
+  --text-highlight-fg: #000;
+  --text-error: rgb(250, 30, 0);
+  --text-accent-hover: var(--text-white);
+  --text-on-accent: #000 !important;
+  --text-selection: var(--accent-on-selection);
+
+  /* Code Blocks */
+  --code-peripheral: 175, 191, 255;
+  --code-comment: rgba(var(--code-peripheral), 0.7);
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.35);
 
   /* Callout Colors */
   --callout-default: var(--text-normal);
@@ -155,33 +177,6 @@
   --callout-bug: rgb(245, 0, 170);
   --callout-tip: rgb(255, 220, 120);
 
-  /* Font Colors */
-  --text-main: 250, 247, 245;
-  --text-normal: rgba(var(--text-main), 1);
-  --text-muted: rgba(var(--text-main), 1);
-  --text-faint: rgba(var(--text-main), 1);
-  --text-white: var(--text-normal);
-  --text-highlight-bg: hsl(calc(var(--accent-h) + 10), 100%, 65%);
-  --text-highlight-fg: #000;
-  --text-error: rgb(250, 30, 0);
-  --text-accent-hover: var(--text-normal);
-  --text-on-accent: #000 !important;
-  --text-selection: var(--accent-on-selection);
-  --code-normal: var(--text-white);
-  --code-punctuation: var(--code-normal);
-
-  /* Syntax Highlighting */
-  --code-peripheral: 175, 191, 255;
-  --code-comment: rgba(var(--code-peripheral), 0.7);
-  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.35);
-  --color-yellow: rgb(240, 215, 65);
-  --color-orange: rgb(220, 95, 0);
-  --color-pink: rgb(230, 100, 240);
-  --color-red: rgb(230, 65, 65);
-  --color-cyan: rgb(0, 202, 235);
-  --color-green: rgb(30, 195, 75);
-  --color-purple: rgb(140, 110, 255);
-
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
   --titlebar-background-focused: var(--background-secondary);
@@ -192,7 +187,6 @@
   --tag-background-hover: var(--color-accent-background-hover);
   --prompt-border-color: var(--accent-soft-dark);
   --modal-border-color: var(--accent-soft-dark);
-  --code-background: var(--background-dark);
   --background-modifier-hover: var(--accent-soft-light);
   --background-modifier-active-hover: var(--accent-soft-light);
   --background-modifier-form-field: hsl(var(--background-h), var(--background-s), calc(var(--background-l) / 1.33));
@@ -203,36 +197,26 @@
   --background-modifier-error-hover: var(--text-error);
   --search-result-bg-hover: var(--background-modifier-form-field);
 
-  /* Interface Styles */
-  --radius-s: 2px;
-  --radius-m: 4px;
-  --radius-l: 6px;
-  --radius-xl: 8px;
-  --input-radius: var(--radius-m);
-
   /* Dictionary Plugin Colors */
   --dictionary-background-primary: var(--background-secondary);
   --dictionary-background-secondary: var(--background-primary);
 
   /* Kanban Plugin Colors */
   --kanban-button-text: var(--text-normal);
-  --kanban-button-text-hover: #000;
+  --kanban-button-text-hover: var(--text-on-accent);
   --kanban-checkbox-border: var(--background-primary);
   --button-shadow-hover: rgba(255, 255, 255, 0.67);
 }
 
-/* Font Defaults */
 body {
+  /* Style Settings Parameters */
+  --ss-border-radius: 0.1px;
+  --ss-embed-border-style: 2px dashed var(--text-normal);
+
+  /* Font Defaults */
   --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-interface-theme: var(--font-default);
   --font-monospace-default: 'iA Writer Mono S', 'IBM Plex Mono', 'Roboto Mono', Menlo, SFMono-Regular, Consolas, 'Source Code Pro', monospace;
-  --font-ui-smallest: 12px;
-  --font-ui-smaller: 13px;
-  --font-ui-small: 14px;
-}
-
-.workspace {
-  /* Font Styles */
   --inline-title-size: 1.625em;
   --h1-size: 1.5em;
   --h2-size: 1.375em;
@@ -246,33 +230,30 @@ body {
   --h4-color: var(--text-normal);
   --h5-color: var(--text-normal);
   --h6-color: var(--text-normal);
+  --font-ui-smallest: 12px;
+  --font-ui-smaller: 13px;
+  --font-ui-small: 14px;
+  --table-body-font: var(--font-text);
+  --table-body-font-size: 1em;
   --heading-formatting: var(--text-normal);
   --list-elements: var(--text-normal);
   --list-marker-color: var(--list-elements);
   --nav-item-color: var(--text-normal);
   --status-bar-text-color: var(--text-normal);
   --vault-name-font-weight: bold;
-  --table-header-font: var(--font-text), sans-serif;
+  --table-header-font: var(--font-text);
   --line-height-normal: 1.25em;
   --list-spacing: calc(var(--line-height-normal)/5);
   --list-indent: 1.25em;
-
-  /* Link & Tag Colors */
-  --link-color-hover: var(--color-accent);
-  --link-external-color-hover: var(--color-accent);
-
-  /* Page Element Colors */
-  --checkbox-border-color: var(--list-elements);
-  --table-border-color: var(--list-elements);
-  --table-header-border-color: var(--list-elements);
-  --indentation-guide-color: rgba(var(--text-main), 0.2) !important;
-
-  /* Page Element Styles */
-  --checkbox-radius: var(--radius-s);
-  --input-radius: var(--radius-s);
-  --tag-radius: var(--radius-m);
   --hr-thickness: 1px;
-  --embed-border-left: 2px dashed var(--text-normal);
+
+  /* Border Radii */
+  --radius-s: calc(var(--ss-border-radius) * 20) !important;
+  --radius-m: calc(var(--radius-s) * 2) !important;
+  --radius-l: calc(var(--radius-s) * 3) !important;
+  --radius-xl: calc(var(--radius-s) * 4) !important;
+  --input-radius: var(--radius-m) !important;
+  --tag-radius: var(--radius-m);
 
   /* Navigation Colors */
   --nav-item-background-hover: var(--accent-soft-light);
@@ -289,13 +270,33 @@ body {
   --collapse-icon-color: var(--color-accent);
   --icon-opacity: 1;
 
+  /* Code Blocks */
+  --code-background: var(--background-dark) !important;
+  --code-normal: hsl(0, 0%, 89%) !important;
+  --code-punctuation: var(--code-normal) !important;;
+  --color-yellow: rgb(230, 205, 90) !important;
+  --color-orange: rgb(220, 95, 0) !important;
+  --color-pink: rgb(220, 100, 210) !important;
+  --color-red: rgb(220, 65, 65) !important;
+  --color-cyan: rgb(0, 202, 235) !important;
+  --color-green: rgb(30, 169, 67) !important;
+  --color-purple: rgb(140, 110, 240) !important;
+
+  /* Other Page Elements */
+  --divider-color: transparent;
+  --checkbox-radius: var(--radius-s);
+  --checkbox-border-color: var(--list-elements);
+  --table-border-color: var(--list-elements);
+  --table-header-border-color: var(--list-elements);
+  --indentation-guide-color: var(--hr-color) !important;
+  --embed-border-left: var(--ss-embed-border-style);
+
   /* Interface Colors */
   --ribbon-background: var(--background-secondary);
   --tab-background-active: var(--background-primary);
   --tab-outline-color: var(--color-accent);
   --scrollbar-thumb-bg: var(--accent-soft-light);
   --scrollbar-active-thumb-bg: var(--accent-soft-dark);
-  --divider-color: transparent;
 
   /* Kanban Plugin Styles */
   --button-radius: var(--radius-s);
@@ -310,58 +311,83 @@ body {
   background-position: 2px 0px, 6px 4px;
   background-size: 8px 8px;
 }
+
 .side-dock-ribbon-action, .side-dock-ribbon-action:hover {
   background: var(--background-secondary);
+  border-radius: 2px;
 }
 
-/* Element Style Overrides */
-/* Headings */
+/* Tab Shape */
+.workspace-tab-header {
+  border-top-left-radius: var(--radius-s);
+  border-top-right-radius: var(--radius-s);
+}
+
+/* Font Styles */
 h5, .markdown-rendered h5, .HyperMD-header-5, .HyperMD-list-line .cm-header-5 {
   font-weight: bold;
 }
+
 h6, .markdown-rendered h6, .HyperMD-header-6, .HyperMD-list-line .cm-header-6 {
   font-weight: normal;
   font-style: italic;
 }
-/* Further Font Styles */
+
 hr, .markdown-rendered hr {
   border-top: var(--hr-color) var(--hr-thickness) dashed;
 }
-/* Special Text Block Spacing */
+
+/* Text Block Spacing */
 .HyperMD-quote, .HyperMD-codeblock {
   padding-left: 1.5em !important;
 }
+
 .cm-formatting-list, input[type=checkbox] {
   margin-right: 0.25em;
 }
+
+/* Tables */
+table {
+  font-family: var(--table-body-font);
+  font-size: var(--table-body-font-size);
+}
+
 /* Code Blocks */
 .cm-s-obsidian div.HyperMD-codeblock-begin-bg {
   border-radius: var(--radius-s) var(--radius-s) 0px 0px;
 }
+
 .cm-s-obsidian div.HyperMD-codeblock-end-bg {
   border-radius: 0px 0px var(--radius-s) var(--radius-s);
 }
+
 .code-block-flair {
   color: var(--code-normal) !important;
 }
+
 .code-block-flair:hover {
   background: var(--background-extra-dark) !important;
 }
+
 .markdown-rendered button.copy-code-button {
   color: var(--code-normal);
   background-color: transparent;
 }
+
 .markdown-rendered button.copy-code-button:hover {
   color: var(--code-normal);
   background-color: var(--background-extra-dark);
   box-shadow: none;
 }
+
 .HyperMD-codeblock .cm-indent::before {
   border-right: var(--indentation-guide-width) solid var(--code-indentation-guide-color) !important;
 }
+
 .HyperMD-codeblock {
   caret-color: var(--code-normal);
 }
+
 /* Callouts */
 .callout {
   border-radius: var(--radius-s);
@@ -369,120 +395,152 @@ hr, .markdown-rendered hr {
   background: transparent;
   padding: 0.75em;
 }
+
 .callout-title, .callout-icon .svg-icon {
   font-size: var(--h6-size);
   color: var(--text-normal);
 }
+
 .callout p:last-child {
   margin-bottom: 0;
 }
+
 .callout[data-callout="note"] {
   --callout-icon: lucide-info;
 }
+
 .callout[data-callout="important"] {
   --callout-icon: lucide-flag;
 }
+
 .callout[data-callout="error"] {
   --callout-icon: lucide-x;
 }
+
 .callout[data-callout="missing"] {
   --callout-icon: lucide-help-circle;
 }
+
 .callout[data-callout="hint"], .callout[data-callout="tip"] {
   --callout-icon: lucide-lightbulb;
 }
+
 .callout[data-callout="cite"] {
   --callout-icon: lucide-bookmark;
 }
+
 .callout[data-callout="check"], .callout[data-callout="done"] {
   --callout-icon: lucide-check-square;
 }
+
 .callout[data-callout="todo"] {
   --callout-icon: lucide-clipboard-check;
 }
+
 /* Canvases */
 .canvas-node-container {
   border: 2px solid var(--text-normal);
   border-radius: var(--radius-m);
 }
+
 .canvas-node.is-selected .canvas-node-container,
 .canvas-node.is-focused .canvas-node-container {
   border-color: var(--color-accent);
   box-shadow: var(--shadow-stationary), var(--shadow-border-accent);
 }
+
 .canvas-node-container:focus {
   border: 2px solid var(--text-normal);
 }
+
 /* Tags */
 .cm-hashtag {
   line-height: 2em;
 }
+
 /* Highlights */
 .suggestion-highlight, .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
   background: var(--text-highlight-bg);
   color: var(--text-highlight-fg) !important;
 }
+
 .markdown-rendered mark, .cm-s-obsidian .cm-highlight, .cm-formatting-highlight {
   background: var(--text-highlight-bg);
+  border-radius: 0.5px;
   color: var(--text-highlight-fg) !important;
-  padding: 0 3px;
+  padding: 0 3.5px;
 }
+
 .search-result-file-match:hover {
   background: var(--search-result-bg-hover);
 }
+
 .search-result-file-matched-text {
   color: var(--text-highlight-fg);
 }
+
 .is-flashing {
   caret-color: var(--text-highlight-fg);
   color: var(--text-highlight-fg);
 }
+
 .is-flashing .tag, .is-flashing p {
   color: var(--text-highlight-fg);
 }
+
 .is-flashing .tag {
   background: transparent;
 }
+
 .nav-folder-title.is-being-dragged-over {
   color: var(--text-normal);
   background: var(--color-accent-background);
 }
-/* Slides */
-.reveal .controls button {
-  color: var(--color-accent);
-}
+
 /* Gutters */
 .markdown-source-view.mod-cm6 .cm-gutters {
   color: var(--hr-color) !important;
   font-family: var(--font-monospace);
   font-size: var(--font-ui-smallest);
 }
+
+/* Slides */
+.reveal .controls button {
+  color: var(--color-accent);
+}
+
 /* Empty Pages */
 .empty-state-action:hover {
   cursor: pointer;
   color: var(--text-normal);
 }
+
 /* Status Bar */
 .status-bar {
   background-color: var(--background-secondary);
 }
+
 /* Divider */
 .workspace-leaf-resize-handle:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
+
 .is-translucent .workspace-leaf-resize-handle:hover {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
+
 /* Menus */
-.menu, .vertical-tab-header {
+.menu {
   background-color: var(--background-primary);
 }
+
 select, .dropdown, select:focus,
 .dropdown:focus {
-  box-shadow: 0 0 0px 1px var(--background-modifier-border-focus);
+  box-shadow: 0 0 1px 0px var(--background-modifier-border-focus);
 }
+
 textarea:active,
 input[type='text']:active,
 input[type='search']:active,
@@ -501,8 +559,9 @@ input[type='search']:focus-visible,
 input[type='email']:focus-visible,
 input[type='password']:focus-visible,
 input[type='number']:focus-visible {
-  box-shadow: 0 0 0 1px var(--background-modifier-border-focus);
+  box-shadow: 0 0 0 0.75px var(--background-modifier-border-focus);
 }
+
 input.document-search-input.mod-no-match,
 input.document-replace-input.mod-no-match {
   background-color: var(--background-extra-dark);
@@ -513,28 +572,34 @@ input.document-replace-input.mod-no-match {
   color: var(--text-normal);
   font-weight: normal;
 }
+
 #calendar-container .month, #calendar-container .year {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
 }
+
 #calendar-container .week-num {
   font-size: 9px;
   font-family: var(--font-text);
 }
+
 #calendar-container .day {
   border-radius: 0;
   border: 1px solid var(--accent-soft-dark);
   font-size: 11px;
   font-family: var(--font-text);
 }
+
 #calendar-container .reset-button {
   font-size: 14px;
 }
+
 #calendar-container th {
   font-family: var(--font-text);
   font-size: 9px;
 }
+
 #calendar-container td {
   padding: 2px;
 }
@@ -544,6 +609,7 @@ input.document-replace-input.mod-no-match {
   background: var(--dictionary-background-primary) !important;
   border-radius: var(--radius-s) !important;
 }
+
 .dictionary-view-content .container {
   background: var(--dictionary-background-secondary) !important;
   border-radius: var(--radius-s) !important;
@@ -554,18 +620,22 @@ code.language-output hr {
   border-top: var(--code-indentation-guide-color) 1px dashed !important;
   margin: 1.5em 0 1.5em;
 }
+
 :not(.use-custom-output-color) code.language-output span.stdout {
   color: var(--code-normal) !important;
 }
+
 code.language-output {
   margin-bottom: 4em !important;
 }
+
 .run-code-button, .clear-button {
   background: transparent !important;
   border: 1px solid var(--code-normal) !important;
   color: var(--code-normal) !important;
   margin: 16px !important;
 }
+
 .run-code-button:hover, .clear-button:hover {
   background: var(--code-normal) !important;
   border: 1px solid var(--code-normal) !important;
@@ -577,22 +647,27 @@ body {
   --oz-fta-folder-font-size: var(--nav-item-size);
   --oz-fta-file-font-size: var(--nav-item-size);
 }
+
 .oz-folder-name.is-root-folder, .oz-file-tree-header {
   font-size: var(--nav-item-size) !important;
   font-weight: bold;
 }
+
 .oz-folder-block, .oz-nav-file-title {
   padding: 2px 0;
 }
+
 .oz-icon-div {
   padding-top: 1px;
 }
+
 .oz-nav-file-tag {
   background: var(--accent-soft-light);
   border-radius: var(--radius-s);
   font-size: calc(var(--nav-item-size) * 0.75);
   font-weight: normal;
 }
+
 .oz-folder-contents {
   border-left: 1px solid var(--color-accent);
 }
@@ -602,55 +677,455 @@ body {
   border-radius: var(--radius-s);
   background: var(--main-background);
 }
+
 .kanban-plugin__lane .task-list-item-checkbox {
   background: var(--background-primary);
   border: 1px solid var(--kanban-checkbox-border) !important;
   filter: none !important;
   transition: 0.05s;
 }
+
 .kanban-plugin__lane .task-list-item-checkbox:hover {
   border: 1px solid transparent !important;
   box-shadow: 0px 0px 0px 2px hsla(var(--color-accent-hsl), 0.5);
   transition: 0.05s;
 }
+
 .kanban-plugin__item-title-wrapper {
   background: var(--background-secondary);
 }
+
 .kanban-plugin__item-tag {
   border-radius: var(--radius-s) !important;
 }
+
 button:not(.clickable-icon) {
   border-radius: var(--radius-s);
   background: var(--accent-soft-light);
   color: var(--kanban-button-text);
 }
+
 button:not(.clickable-icon):hover {
   border-radius: var(--radius-s);
-  background: var(--color-accent);
+  background: hsla(var(--color-accent-hsl), 0.9);
   color: var(--kanban-button-text-hover);
 }
+
 button:not(.clickable-icon) {
   border-radius: var(--radius-s);
   box-shadow: 0px 0px 1px 0px var(--button-shadow);
   transition: 0s;
 }
+
 button:not(.clickable-icon):hover {
   border-radius: var(--radius-s);
   box-shadow: 0px 0px 1px 0px var(--button-shadow-hover);
   transition: 0s;
 }
+
 .kanban-plugin__lane input[type=checkbox]:checked:after {
   top: -2px;
   left: -2px;
 }
 
-/* Mobile Fixes */
-.is-mobile {
-  --interactive-normal: var(--accent-soft-light);
-  --tag-background: var(--color-accent-background) !important;
+/* Style Settings Plugin */
+.setting-item-description code {
+  background: var(--code-background);
+  color: var(--code-normal);
 }
 
-.is-mobile.theme-dark {
-  --interactive-normal: var(--background-dark);
-  --tag-background: var(--color-accent-background) !important;
+.theme-light.ss-light-zero-contrast {
+  --background-secondary: var(--background-primary);
+  --divider-color: var(--accent-soft-light) !important;
+  --kanban-checkbox-border: var(--accent-soft-dark);
 }
+
+.ss-light-highlights {
+  --ss-light-highlight-bg: rgb(250, 231, 75);
+}
+
+.theme-dark.ss-dark-zero-contrast {
+  --background-secondary: var(--background-primary);
+  --divider-color: var(--accent-soft-light) !important;
+  --kanban-checkbox-border: var(--accent-soft-dark);
+}
+
+.ss-dark-highlights {
+  --ss-dark-highlight-bg: rgb(220, 193, 45);
+}
+
+.ss-table-monospace {
+  --table-body-font: var(--font-monospace);
+  --table-body-font-size: 0.875em;
+}
+
+.ss-round-checkboxes {
+  --checkbox-radius: 50px !important;
+}
+
+.ss-tab-outline {
+  --tab-outline-color: transparent;
+}
+
+.ss-embed-borders {
+  --ss-embed-border-style: none;
+  --embed-padding: 0;
+}
+
+/* Obsidian/Plugin Bugs */
+.markdown-rendered pre {
+  color: var(--code-normal);
+}
+
+.dracula-code-colors {
+  --code-background: #282A36 !important;
+  --code-normal: #F8F8F2 !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #6272A4 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #F1FA8C !important;
+  --color-orange: #FFB86C !important;
+  --color-pink: #FF79C6 !important;
+  --color-red: #FF5555 !important;
+  --color-cyan: #8BE9FD !important;
+  --color-green: #50FA7B !important;
+  --color-purple: #BD93F9 !important;
+}
+
+.gruvbox-dark-code-colors {
+  --code-background: #282828 !important;
+  --code-normal: #ebdbb2 !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #928374 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #fabd2f !important;
+  --color-orange: #fe8019 !important;
+  --color-pink: #d3869b !important;
+  --color-red: #fb4934 !important;
+  --color-cyan: #83a598 !important;
+  --color-green: #b8bb26 !important;
+  --color-purple: #BD93F9 !important;
+}
+
+.gruvbox-light-code-colors {
+  --code-background: #fbf1c7 !important;
+  --code-normal: #3c3836 !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #928374 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #b57614 !important;
+  --color-orange: #af3a03 !important;
+  --color-pink: #8f3f71 !important;
+  --color-red: #9d0006 !important;
+  --color-cyan: #076678 !important;
+  --color-green: #79740e !important;
+  --color-purple: #8352c6 !important;
+}
+
+.nord-code-colors {
+  --code-background: #2e3440 !important;
+  --code-normal: #d8dee9 !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #697590 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #ebcb8b !important;
+  --color-orange: #d08770 !important;
+  --color-pink: #b48ead !important;
+  --color-red: #bf616a !important;
+  --color-cyan: #88c0d0 !important;
+  --color-green: #a3be8c !important;
+  --color-purple: #9c7fe5 !important;
+}
+
+.one-dark-code-colors {
+  --code-background: #272b34 !important;
+  --code-normal: #dcddde !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #888 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #e5c07b !important;
+  --color-orange: #d19a66 !important;
+  --color-pink: #c678dd !important;
+  --color-red: #e06c75 !important;
+  --color-cyan: #56b6c2 !important;
+  --color-green: #98c379 !important;
+  --color-purple: #846ef1 !important;
+}
+
+.one-light-code-colors {
+  --code-background: #fafafa !important;
+  --code-normal: #383a42 !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #8e8e90 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #e35649 !important;
+  --color-orange: #986800 !important;
+  --color-pink: #a625a4 !important;
+  --color-red: #e75545 !important;
+  --color-cyan: #0084bc !important;
+  --color-green: #4ea24c !important;
+  --color-purple: #5c28df !important;
+}
+
+.polka-code-colors {
+  --code-background: var(--background-dark) !important;
+  --code-normal: hsl(0, 0%, 89%) !important;
+  --code-punctuation: var(--code-normal) !important;
+  --color-yellow: rgb(230, 205, 90) !important;
+  --color-orange: rgb(220, 95, 0) !important;
+  --color-pink: rgb(220, 100, 210) !important;
+  --color-red: rgb(220, 65, 65) !important;
+  --color-cyan: rgb(0, 202, 235) !important;
+  --color-green: rgb(30, 169, 67) !important;
+  --color-purple: rgb(140, 110, 240) !important;
+}
+
+.solarized-dark-code-colors {
+  --code-background: #002b36 !important;
+  --code-normal: #93a1a1 !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #586e75 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #b58900 !important;
+  --color-orange: #cb4b16 !important;
+  --color-pink: #d33682 !important;
+  --color-red: #dc322f !important;
+  --color-cyan: #2aa198 !important;
+  --color-green: #859900 !important;
+  --color-purple: #6c71c4 !important;
+}
+
+.solarized-light-code-colors {
+  --code-background: #eee8d5 !important;
+  --code-normal: #839496 !important;
+  --code-punctuation: var(--code-normal) !important;
+  --code-comment: #586e75 !important;
+  --code-indentation-guide-color: var(--code-comment) !important;
+  --color-yellow: #b58900 !important;
+  --color-orange: #cb4b16 !important;
+  --color-pink: #d33682 !important;
+  --color-red: #dc322f !important;
+  --color-cyan: #2aa198 !important;
+  --color-green: #859900 !important;
+  --color-purple: #6c71c4 !important;
+}
+
+/* Style Settings Plugin */
+/* @settings
+
+name: Polka Light Theme Customization
+id: ss-light-customization
+settings:
+
+*/
+
+/* @settings
+
+name: Polka Theme
+id: polka
+settings:
+    -
+      id: ss-light-customization
+      title: Light Mode Colors
+      type: heading
+      level: 2
+      collapsed: true
+    -
+      id: ss-light-h
+      title: Background Hue
+      description: Cycle through the color wheel to select a base for background colors. In light mode, you'll need to reduce the default Background Lightness to see a big difference.
+      type: variable-number-slider
+      default: 0
+      min: 0
+      max: 360
+      step: 1
+    -
+      id: ss-light-s
+      title: Background Saturation
+      description: Set the saturation level of background colors.
+      type: variable-number-slider
+      default: 3.8
+      format: '%'
+      min: 0
+      max: 10
+      step: 0.01
+    -
+      id: ss-light-l
+      title: Background Lightness
+      description: Set the lightness level of background colors. In light mode, this has a lower limit to prevent you from accidentally making the interface illegible. Switch to dark mode to go darker.
+      type: variable-number-slider
+      default: 9.86
+      format: '%'
+      min: 0
+      max: 10
+      step: 0.01
+    -
+      id: ss-light-contrast
+      title: Background Contrast
+      description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below.
+      type: variable-number-slider
+      default: 0
+      format: '%'
+      min: 0
+      max: 10
+      step: 0.01
+    -
+      id: ss-light-zero-contrast
+      title: Background Zero Contrast Mode
+      description: Choose whether to use only the primary background color.
+      type: class-toggle
+    - 
+      id: ss-light-text-main
+      title: Main Text Color
+      description: Select a color for main text.
+      type: variable-color
+      opacity: false
+      format: rgb-values
+      default: '#000000'
+    -
+      id: ss-light-highlights
+      title: Yellow Text Highlights
+      description: Choose whether to use a generic yellow for text highlights instead of your accent color.
+      type: class-toggle
+    -
+      id: ss-dark-customization
+      title: Dark Mode Colors
+      type: heading
+      level: 2
+      collapsed: true
+    -
+      id: ss-dark-h
+      title: Background Hue
+      description: Cycle through the color wheel to select a base for background colors.
+      type: variable-number-slider
+      default: 221
+      min: 0
+      max: 360
+      step: 1
+    -
+      id: ss-dark-s
+      title: Background Saturation
+      description: Set the saturation level of background colors.
+      type: variable-number-slider
+      default: 0.333
+      format: '%'
+      min: 0
+      max: 1
+      step: 0.001
+    -
+      id: ss-dark-l
+      title: Background Lightness
+      description: Set the lightness level of background colors. In dark mode, this has an upper limit to prevent you from accidentally making the interface illegible. Switch to light mode to go lighter.
+      type: variable-number-slider
+      default: 0.258
+      format: '%'
+      min: 0
+      max: 1
+      step: 0.001
+    -
+      id: ss-dark-contrast
+      title: Background Contrast
+      description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below.
+      type: variable-number-slider
+      default: 0.073
+      format: '%'
+      min: 0
+      max: 1
+      step: 0.001
+    -
+      id: ss-dark-zero-contrast
+      title: Background Zero Contrast Mode
+      description: Choose whether to use only the primary background color.
+      type: class-toggle
+    - 
+      id: ss-dark-text-main
+      title: Text Color
+      description: Select a color for main text.
+      type: variable-color
+      opacity: false
+      format: rgb-values
+      default: '#FAF7F5'
+    -
+      id: ss-dark-highlights
+      title: Yellow Text Highlights
+      description: Choose whether to use a generic yellow for text highlights instead of your accent color.
+      type: class-toggle
+    -
+      id: ss-content-styles
+      title: Content Styles
+      type: heading
+      level: 2
+      collapsed: true
+    - 
+      id: ss-codeblock-color-scheme
+      title: Codeblock Color Scheme
+      description: Style your codeblocks independently by selecting a dedicated color scheme for syntax highlighting.
+      type: class-select
+      allowEmpty: false
+      default: polka-code-colors
+      options:
+        -
+          label: Dracula
+          value: dracula-code-colors
+        -
+          label: Gruvbox Dark
+          value: gruvbox-dark-code-colors
+        -
+          label: Gruvbox Light
+          value: gruvbox-light-code-colors
+        -
+          label: Nord
+          value: nord-code-colors
+        -
+          label: One Dark
+          value: one-dark-code-colors
+        -
+          label: One Light
+          value: one-light-code-colors
+        -
+          label: Polka
+          value: polka-code-colors
+        -
+          label: Solarized Dark
+          value: solarized-dark-code-colors
+        -
+          label: Solarized Light
+          value: solarized-light-code-colors
+    -
+      id: ss-border-radius
+      title: Roundness
+      description: Set the roundness level for corners of text blocks, boxes, buttons and menus.
+      type: variable-number-slider
+      default: 0.1
+      format: px
+      min: 0
+      max: 1
+      step: 0.05
+    -
+      id: ss-round-checkboxes
+      title: Circular Checkboxes
+      description: Choose whether to use circular checkboxes instead of square ones.
+      type: class-toggle
+    -
+      id: ss-table-monospace
+      title: Monospace Font in Tables
+      description: Choose whether to use a monospace font in tables (excluding headers). This can be useful if your body font doesn't have tabular (i.e. evenly-spaced) numbers.
+      type: class-toggle
+    -
+      id: ss-embed-borders
+      title: Remove File Embed Styling
+      description: Choose whether to remove the styling that distinguishes file embeds from the rest of a note.
+      type: class-toggle
+    -
+      id: ss-tab-outline
+      title: Remove Tab Outline
+      description: Choose whether to remove the accent color from the tab outline.
+      type: class-toggle
+    - 
+      id: ss-info
+      title: Fonts and Accents
+      description: Looking to customize your font choices or accent color? Go to `Appearance` in the main menu.
+      type: info-text
+      markdown: true
+
+*/
