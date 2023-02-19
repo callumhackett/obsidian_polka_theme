@@ -32,7 +32,9 @@ The Style Settings menu also features a list of sub-themes that apply exclusivel
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
-The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).[^1]
+The body font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+
+The code font in the sub-theme previews is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), a derivative of [IBM Plex Mono](https://github.com/IBM/plex) with small character adjustments.
 
 ### Additional Options
 
@@ -61,5 +63,3 @@ Many others will fit in without issue.
 [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you spot any issues or would like extra features, especially new plugin support or code block themes.
 
 Polka tries to strike a balance between colorful minimalism, simplicity of use and customizability, so its options menu is meant to give you flexibility but not total control. If you're looking to tweak things like heading styles or the relationship between primary and secondary background colors, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
-
-[^1]: Looking for a code font? My vote goes to [IBM Plex Mono](https://github.com/IBM/plex) and its derivatives, especially [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono).
