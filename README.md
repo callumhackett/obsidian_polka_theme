@@ -8,13 +8,13 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ## Customization
 
-#### Accents
+### Accents
 
 Polka responds to the accent color in your main settings (under `Appearance > Accent color`) by using it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
 
 ![Color Customization](assets/accent_customization.png)
 
-#### Backgrounds
+### Backgrounds
 
 If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, a new menu will appear (in `Style Settings > Polka Theme`) that allows you to customize the background color palette, with independent settings for light and dark modes.
 
@@ -22,19 +22,19 @@ You can easily adjust the hue, saturation, lightness and contrast of the backgro
 
 ![Style Examples](assets/background_customization.png)
 
-#### Code Blocks
+### Code Blocks
 
 The Style Settings menu also features a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to popular schemes like Dracula, Gruvbox, Nord, One Dark and Solarized.
 
 ![Code Block Examples](assets/code_examples.png)
 
-#### Fonts
+### Fonts
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
 The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).[^1]
 
-#### Additional Options
+### Additional Options
 
 The Style Settings plugin also gives control over the following parameters:
 
