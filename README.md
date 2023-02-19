@@ -16,30 +16,30 @@ Polka responds to the accent color in your main settings (under `Appearance > Ac
 
 #### Backgrounds
 
-If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, you will also get access to a menu that allows you to customize the background color palette, with independent settings for light and dark modes.
+If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, a new menu will appear (in `Style Settings > Polka Theme`) that allows you to customize the background color palette, with independent settings for light and dark modes.
 
-Once installed, under `Style Settings > Polka Theme`, you can use sliders to adjust the hue, saturation, lightness and contrast of the background colors. You never have to worry about avoiding color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples that took less than ten seconds to dial in:
+You can easily adjust the hue, saturation, lightness and contrast of the background colors, and you never have to worry about color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples of customizations that took less than ten seconds to dial in:
 
 ![Style Examples](assets/background_customization.png)
 
 #### Code Blocks
 
-The menu available through Style Settings also gives you a list of dedicated sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors but you can also use well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized. [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if there's another palette you'd like me to include.
+The Style Settings menu also grants access to a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized.
 
 #### Fonts
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
-The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).[^1]
 
 #### Additional Options
 
-As well as the above, the style settings plugin gives you access to the following parameters:
+As well as the above, the Style Settings plugin gives you access to the following parameters:
 
 - Main text color
-- Text highlight color
-- Roundness of page elements
+- Traditional yellow vs. accent color highlights
 - Circular vs. square checkboxes
+- Roundness of page elements
 - Monospace font in tables
 
 ## Plugin Support
@@ -52,4 +52,12 @@ As well as modifying your workspace, Polka adapts the colors of Obsidian's user 
 - [File Tree Alternative](https://github.com/ozntel/file-tree-alternative)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
 
-Many others will fit in without issue but [let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you think I should support something else.
+Many others will fit in without issue.
+
+## Feature Requests
+
+[Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you spot any issues or would like extra features, especially plugin support or code block themes.
+
+Polka tries to strike a balance between minimalist aesthetic, simplicity of use and customizability, so the style settings are meant to give you flexibility but not total control. If you're looking to tweak things like heading colors or the relationship between primary and secondary background colors, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
+
+[^1]: Looking for a code font? My vote goes to [IBM Plex Mono](https://github.com/IBM/plex) and its derivatives, especially [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono).]
