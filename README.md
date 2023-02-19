@@ -1,6 +1,6 @@
 # Polka
 
-This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a fully customizable color scheme and independent selection of themes for code blocks.
+This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a fully customizable color scheme and independent selection of sub-themes for code blocks.
 
 ![Preview](assets/polka_full_size.png)
 
@@ -14,13 +14,13 @@ Polka responds to the accent color in your main settings (under `Appearance > Ac
 
 If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, you will also get access to a menu that allows you to customize the background color palette, with independent settings for light and dark modes.
 
-Once installed, under `Style Settings > Polka Theme`, you can use sliders to adjust the hue, saturation, lightness and contrast of the background colors. You never have to worry about setting things up just right to avoid clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples that took less than ten seconds to dial in:
+Once installed, under `Style Settings > Polka Theme`, you can use sliders to adjust the hue, saturation, lightness and contrast of the background colors. You never have to worry about avoiding color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples that took less than ten seconds to dial in:
 
 ![Style Examples](assets/background_customization.png)
 
 ## Code Block Customization
 
-When you install Style Settings, the menu also gives you a list of dedicated sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors but you can also use well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized. [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if there's another palette you'd like me to include.
+The menu available through Style Settings also gives you a list of dedicated sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors but you can also use well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized. [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if there's another palette you'd like me to include.
 
 ## Additional Customization Options
 
