@@ -16,7 +16,7 @@ If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-s
 
 Once installed, under `Style Settings > Polka Theme`, you can use sliders to adjust the hue, saturation, lightness and contrast of the background colors. You never have to worry about setting things up just right to avoid clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples that took less than ten seconds to dial in:
 
-![Style Examples](assets/style_settings_examples.png)
+![Style Examples](assets/background_customization.png)
 
 ## Code Block Customization
 
