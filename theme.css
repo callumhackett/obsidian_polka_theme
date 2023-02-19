@@ -59,7 +59,6 @@
   --callout-default: var(--text-normal);
   --callout-info: var(--text-normal);
   --callout-summary: var(--text-normal);
-  --callout-tip: var(--text-normal);
   --callout-question: var(--text-normal);
   --callout-example: var(--text-normal);
   --callout-quote: var(--text-normal);
@@ -70,6 +69,7 @@
   --callout-fail: rgb(235, 0, 0);
   --callout-error: rgb(235, 0, 0);
   --callout-bug: rgb(245, 0, 165);
+  --callout-tip: rgb(225, 190, 0);
 
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
@@ -106,18 +106,18 @@
 .theme-dark {
   /* Style Settings Parameters */
   --ss-dark-h: 221;
-  --ss-dark-s: 0.333%;
-  --ss-dark-l: 0.258%;
-  --ss-dark-contrast: 0.073%;
+  --ss-dark-s: 3.33%;
+  --ss-dark-l: 2.58%;
+  --ss-dark-contrast: 0.73%;
   --ss-dark-text-main: 250, 247, 245;
   --ss-dark-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
 
   /* Background Color Components */
   --background-h: var(--ss-dark-h);
-  --background-s: calc(var(--ss-dark-s) * 100);
-  --background-l: calc(var(--ss-dark-l) * 50);
+  --background-s: calc(var(--ss-dark-s) * 10);
+  --background-l: calc(var(--ss-dark-l) * 5);
   --background-secondary-s: calc(var(--background-s) / 1.15);
-  --background-secondary-l: calc(var(--background-l) + 2% + var(--ss-dark-contrast) * 48);
+  --background-secondary-l: calc(var(--background-l) + 2% + var(--ss-dark-contrast) * 4.8);
 
   /* Background Color Definitions */
   --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
@@ -773,8 +773,10 @@ button:not(.clickable-icon):hover {
 }
 
 /* Obsidian/Plugin Bugs */
-.markdown-rendered pre {
+pre, .markdown-rendered pre {
   color: var(--code-normal);
+  font-family: var(--font-monospace);
+  font-size: 0.875em;
 }
 
 .dracula-code-colors {
@@ -933,7 +935,7 @@ settings:
     -
       id: ss-light-h
       title: Background Hue
-      description: Cycle through the color wheel to select a base for background colors. In light mode, you'll need to reduce the default Background Lightness to see a big difference.
+      description: Cycle through the color wheel to select a base for background colors. In light mode, you'll need to reduce the default Background Lightness to see a big difference (0-360).
       type: variable-number-slider
       default: 0
       min: 0
@@ -942,7 +944,7 @@ settings:
     -
       id: ss-light-s
       title: Background Saturation
-      description: Set the saturation level of background colors.
+      description: Set the saturation level of background colors (0-10).
       type: variable-number-slider
       default: 3.8
       format: '%'
@@ -952,7 +954,7 @@ settings:
     -
       id: ss-light-l
       title: Background Lightness
-      description: Set the lightness level of background colors. In light mode, this has a lower limit to prevent you from accidentally making the interface illegible. Switch to dark mode to go darker.
+      description: Set the lightness level of background colors. In light mode, this has a lower limit to prevent you from accidentally making the interface illegible. Switch to dark mode to go darker (0-10).
       type: variable-number-slider
       default: 9.86
       format: '%'
@@ -962,7 +964,7 @@ settings:
     -
       id: ss-light-contrast
       title: Background Contrast
-      description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below.
+      description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below (0-10).
       type: variable-number-slider
       default: 0
       format: '%'
@@ -996,7 +998,7 @@ settings:
     -
       id: ss-dark-h
       title: Background Hue
-      description: Cycle through the color wheel to select a base for background colors.
+      description: Cycle through the color wheel to select a base for background colors (0-360).
       type: variable-number-slider
       default: 221
       min: 0
@@ -1005,33 +1007,33 @@ settings:
     -
       id: ss-dark-s
       title: Background Saturation
-      description: Set the saturation level of background colors.
+      description: Set the saturation level of background colors (0-10).
       type: variable-number-slider
-      default: 0.333
+      default: 3.33
       format: '%'
       min: 0
-      max: 1
-      step: 0.001
+      max: 10
+      step: 0.01
     -
       id: ss-dark-l
       title: Background Lightness
-      description: Set the lightness level of background colors. In dark mode, this has an upper limit to prevent you from accidentally making the interface illegible. Switch to light mode to go lighter.
+      description: Set the lightness level of background colors. In dark mode, this has an upper limit to prevent you from accidentally making the interface illegible. Switch to light mode to go lighter (0-10).
       type: variable-number-slider
-      default: 0.258
+      default: 2.58
       format: '%'
       min: 0
-      max: 1
-      step: 0.001
+      max: 10
+      step: 0.01
     -
       id: ss-dark-contrast
       title: Background Contrast
-      description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below.
+      description: Set the contrast level of the secondary background color. If you want to remove the secondary color entirely, use the switch below (0-10).
       type: variable-number-slider
-      default: 0.073
+      default: 0.73
       format: '%'
       min: 0
-      max: 1
-      step: 0.001
+      max: 10
+      step: 0.01
     -
       id: ss-dark-zero-contrast
       title: Background Zero Contrast Mode
@@ -1059,7 +1061,7 @@ settings:
     - 
       id: ss-codeblock-color-scheme
       title: Codeblock Color Scheme
-      description: Style your codeblocks independently by selecting a dedicated color scheme for syntax highlighting.
+      description: Style your codeblocks independently by selecting a dedicated color scheme.
       type: class-select
       allowEmpty: false
       default: polka-code-colors
@@ -1094,7 +1096,7 @@ settings:
     -
       id: ss-border-radius
       title: Roundness
-      description: Set the roundness level for corners of text blocks, boxes, buttons and menus.
+      description: Set the roundness level for corners of text blocks, boxes, buttons and menus (0-1).
       type: variable-number-slider
       default: 0.1
       format: px
