@@ -6,33 +6,43 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 <a href="https://www.buymeacoffee.com/callumhackett" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-## Accent Color Customization
+## Color Customization
 
 Polka responds to the accent color in your main settings (under `Appearance > Accent color`) by using it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
 
-![Customization](color_customization.png)
+![Color Customization](color_customization.png)
 
-If you prefer text highlights to use a traditional yellow background regardless of your accent color, you can switch this on with style settings.
+If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, you will also get access to a menu that allows you to customize the background color palette, with independent settings for light and dark modes.
 
-## Background Color Customization
+Once installed, under `Style Settings > Polka Theme`, you can use sliders to adjust the hue, saturation and lightness of the background color scheme, and you can alter the contrast of the secondary color. You never have to worry about dialling things in just right to avoid color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples:
 
-With the style settings plugin, you can access sliders for the hue, saturation and lightness of the background color palette, giving you full control over the color scheme. As well as letting you choose the base color for a whole palette that retains cohesion across the interface, you can also alter the contrast between primary and secondary background colors.
+![Style Examples](style_settings_examples.png)
 
 ## Code Block Customization
+
+The style settings menu (under `Content Styles`) also gives you a list of dedicated sub-themes that apply exclusively to code blocks. Polka has carefully chosen default colors but you can also use well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized. [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if there's another palette you'd like me to include.
+
+![Code](code_examples.png)
+
+## Additional Customization Options
+
+As well as the above, the style settings plugin will give you access to these parameters:
+
+- Main text color
+- Yellow text highlights (instead of your accent color)
+- Roundness of page elements
+- Circular vs. square checkboxes
+- Monospace font in tables
 
 ## Fonts
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
-The style settings plugin provides a toggle to use your default monospace font in tables, which can be useful for numeric content that doesn't suit all body fonts.
-
-The font in the preview images is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
+The font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ## Plugin Support
 
-As well as modifying your workspace, Polka adapts the colors of Obsidian's user interface and the whole suite of core plugins. Additionally, code syntax highlighting uses the built-in color scheme but the hues have been refined.
-
-Special attention has been given to the following community plugins:
+As well as modifying your workspace, Polka adapts the colors of Obsidian's user interface and the whole suite of core plugins. Additional special attention has been given to the following community plugins:
 
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - [Dictionary](https://github.com/phibr0/obsidian-dictionary)
