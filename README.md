@@ -1,6 +1,6 @@
 # Polka
 
-This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a fully customizable color scheme and independent selection of sub-themes for code blocks.
+This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a **fully customizable color scheme** and independent selection of **sub-themes for code blocks**.
 
 ![Preview](assets/polka_full_size.png)
 
