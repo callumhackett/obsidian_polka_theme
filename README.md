@@ -22,8 +22,6 @@ Once installed, under `Style Settings > Polka Theme`, you can use sliders to adj
 
 When you install Style Settings, the menu also gives you a list of dedicated sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors but you can also use well-known schemes like Dracula, Gruvbox, Nord, One Dark and Solarized. [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if there's another palette you'd like me to include.
 
-![Code](assets/code_examples.png)
-
 ## Additional Customization Options
 
 As well as the above, the style settings plugin gives you access to the following parameters:
