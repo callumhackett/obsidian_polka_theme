@@ -69,7 +69,7 @@
   --callout-fail: rgb(235, 0, 0);
   --callout-error: rgb(235, 0, 0);
   --callout-bug: rgb(245, 0, 165);
-  --callout-tip: rgb(225, 190, 0);
+  --callout-tip: rgb(240, 195, 0);
 
   /* Interface Colors */
   --titlebar-background: var(--background-secondary);
@@ -678,6 +678,10 @@ body {
   background: var(--main-background);
 }
 
+.kanban-plugin__lane-header-wrapper {
+  background: var(--background-secondary);
+}
+
 .kanban-plugin__lane .task-list-item-checkbox {
   background: var(--background-primary);
   border: 1px solid var(--kanban-checkbox-border) !important;
@@ -691,8 +695,16 @@ body {
   transition: 0.05s;
 }
 
-.kanban-plugin__item-title-wrapper {
-  background: var(--background-secondary);
+.kanban-plugin__item {
+  border-radius: var(--radius-s);
+}
+
+.theme-light .kanban-plugin__item-title-wrapper {
+  background: var(--accent-soft-light);
+}
+
+.theme-dark .kanban-plugin__item-title-wrapper {
+  background: var(--accent-soft-dark);
 }
 
 .kanban-plugin__item-tag {
@@ -702,24 +714,16 @@ body {
 button:not(.clickable-icon) {
   border-radius: var(--radius-s);
   background: var(--accent-soft-light);
-  color: var(--kanban-button-text);
-}
-
-button:not(.clickable-icon):hover {
-  border-radius: var(--radius-s);
-  background: hsla(var(--color-accent-hsl), 0.9);
-  color: var(--kanban-button-text-hover);
-}
-
-button:not(.clickable-icon) {
-  border-radius: var(--radius-s);
   box-shadow: 0px 0px 1px 0px var(--button-shadow);
+  color: var(--kanban-button-text);
   transition: 0s;
 }
 
 button:not(.clickable-icon):hover {
   border-radius: var(--radius-s);
+  background: hsla(var(--color-accent-hsl), 0.9);
   box-shadow: 0px 0px 1px 0px var(--button-shadow-hover);
+  color: var(--kanban-button-text-hover);
   transition: 0s;
 }
 
