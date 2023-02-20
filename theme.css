@@ -52,8 +52,8 @@
 
   /* Code Blocks */
   --code-peripheral: 159, 157, 190;
-  --code-comment: rgb(var(--code-peripheral));
-  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.5);
+  --code-comment: rgba(var(--code-peripheral));
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.33);
 
   /* Callout Colors */
   --callout-default: var(--text-normal);
@@ -158,7 +158,7 @@
   /* Code Blocks */
   --code-peripheral: 175, 191, 255;
   --code-comment: rgba(var(--code-peripheral), 0.7);
-  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.35);
+  --code-indentation-guide-color: rgba(var(--code-peripheral), 0.23);
 
   /* Callout Colors */
   --callout-default: var(--text-normal);
@@ -780,7 +780,6 @@ button:not(.clickable-icon):hover {
 pre, .markdown-rendered pre {
   color: var(--code-normal);
   font-family: var(--font-monospace);
-  font-size: 0.875em;
 }
 
 .dracula-code-colors {
