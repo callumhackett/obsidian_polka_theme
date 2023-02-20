@@ -24,7 +24,7 @@ You can easily adjust the hue, saturation, lightness and contrast of the backgro
 
 ### Code Blocks
 
-The Style Settings menu also features a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to popular schemes like Dracula, Gruvbox, Nord, One Dark and Solarized.
+The Style Settings menu also features a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to popular alternatives like Dracula, Gruvbox, Nord, One Dark and Solarized.
 
 ![Code Block Examples](assets/code_examples.png)
 
