@@ -1,6 +1,6 @@
 # Polka
 
-This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a **highly customizable color scheme** and independent selection of **sub-themes for code blocks**.
+This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a **highly customizable color scheme** and independent selection of **themes for code blocks**.
 
 ![Preview](assets/polka_full_size.png)
 
@@ -24,7 +24,7 @@ You can easily adjust the hue, saturation, lightness and contrast of the backgro
 
 ### Code Blocks
 
-The Style Settings menu also features a list of sub-themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to popular alternatives like Dracula, Gruvbox, Nord, One Dark and Solarized.
+The Style Settings menu also features a list of themes that apply exclusively to code blocks. Polka has nicely contrastive default colors for syntax highlighting but you can switch to popular alternatives like Dracula, Gruvbox, Nord, One Dark and Solarized.
 
 ![Code Block Examples](assets/code_examples.png)
 
@@ -43,6 +43,7 @@ The Style Settings plugin also gives you control over the following parameters:
 - Circular vs. square checkboxes
 - Default vs. monospace font in tables
 - Roundness of page elements and menus
+- Polka dots on/off
 
 ## Plugin Support
 
