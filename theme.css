@@ -1,56 +1,61 @@
 .theme-light {
-  /* Style Settings Parameters */
+  /* Background parameters from Style Settings */
   --ss-light-h: 0;
-  --ss-light-s: 3.8%;
+  /* saturation is normalized to 0-10 and multiplied by 10, range 0-100 */
+  --ss-light-s: 3.92%;
+  /* lightness is normalized to 0-10 and multiplied by 5 + 50, range 50-100 */
   --ss-light-l: 9.86%;
+  /* contrast is normalized to 0-10 and multiplied by 4.8, range 0-48 (adds to min. contrast of 2) */
   --ss-light-contrast: 0%;
-  --ss-light-text-main: 0, 0, 0;
-  --ss-light-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
 
   /* Background Color Components */
   --background-h: var(--ss-light-h);
   --background-s: calc(var(--ss-light-s) * 10);
   --background-l: calc(var(--ss-light-l) * 5 + 50%);
-  --background-secondary-s: calc(var(--background-s) / 1.15);
-  --background-secondary-l: calc(var(--background-l) - 2% - var(--ss-light-contrast) * 5);
+  --background-contrast: calc(var(--ss-light-contrast) * 4.8);
+  --background-secondary-s: calc(var(--background-s) * 0.875);
+  --background-secondary-l: calc(var(--background-l) - 2% - var(--background-contrast));
 
   /* Background Color Definitions */
   --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
   --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
-  --background-dark: rgb(23, 34, 62);
-  --background-extra-dark: rgb(0, 10, 20);
+  --background-dark: rgb(23, 35, 62);
+  --background-extra-dark: #000;
   --background-primary-alt: var(--background-dark);
   --background-secondary-alt: var(--background-secondary);
 
   /* Background-Derivative Accents */
-  --accent-soft-hsl: var(--background-h), calc(var(--accent-s) * 0.4), calc(var(--background-l) / 5);
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s) * 0.5), 15%;
   --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
   --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
   
   /* Main Accent Colors */
   --accent-h: 0;
-  --accent-s: 75.5%;
+  --accent-s: 75%;
   --accent-l: 52%;
   --color-accent: hsl(var(--accent-h), var(--accent-s), var(--accent-l));
   --color-accent-1: var(--color-accent);
   --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
   --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
+  --text-selection: var(--accent-on-selection);
+  /* default text highlights are accent color with additional saturation and lightness */
+  --ss-light-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
+  --text-highlight-bg: var(--ss-light-highlight-bg);
 
   /* Font Colors */
+  --ss-light-text-main: 0, 0, 0;
   --text-normal: rgb(var(--ss-light-text-main));
   --text-muted: var(--text-normal);
   --text-faint: var(--text-normal);
   --text-white: rgb(254, 252, 252);
-  --text-highlight-bg: var(--ss-light-highlight-bg);
   --text-highlight-fg: #000;
   --text-error: rgb(250, 30, 0);
   --text-accent-hover: #000;
   --text-on-accent: var(--text-white) !important;
-  --text-selection: var(--accent-on-selection);
   --hr-color: rgba(var(--ss-light-text-main), 0.4);
 
-  /* Code Blocks */
+  /* Code Blocks (light specific colors only) */
   --code-peripheral: 159, 157, 190;
   --code-comment: rgba(var(--code-peripheral));
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.33);
@@ -81,7 +86,6 @@
   --tag-background-hover: var(--color-accent-background-hover);
   --prompt-border-color: var(--accent-soft-dark);
   --modal-border-color: var(--accent-soft-dark);
-  --code-background: var(--background-dark);
   --background-modifier-hover: var(--accent-soft-light);
   --background-modifier-active-hover: var(--accent-soft-light);
   --background-modifier-form-field: var(--accent-soft-light);
@@ -104,34 +108,35 @@
 }
 
 .theme-dark {
-  /* Style Settings Parameters */
+  /* Background parameters from Style Settings */
   --ss-dark-h: 221;
+  /* saturation is normalized to 0-10 and multiplied by 10, range 0-100 */
   --ss-dark-s: 3.33%;
+  /* lightness is normalized to 0-10 and multiplied by 5, range 0-50 */
   --ss-dark-l: 2.58%;
+  /* contrast is normalized to 0-10 and multiplied by 4.8, range 0-48 (adds to min. contrast of 2) */
   --ss-dark-contrast: 0.73%;
-  --ss-dark-text-main: 250, 247, 245;
-  --ss-dark-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
 
   /* Background Color Components */
   --background-h: var(--ss-dark-h);
   --background-s: calc(var(--ss-dark-s) * 10);
   --background-l: calc(var(--ss-dark-l) * 5);
-  --background-secondary-s: calc(var(--background-s) / 1.15);
-  --background-secondary-l: calc(var(--background-l) + 2% + var(--ss-dark-contrast) * 4.8);
+  --background-contrast: calc(var(--ss-dark-contrast) * 4.8);
+  --background-secondary-s: calc(var(--background-s) * 0.875);
+  --background-secondary-l: calc(var(--background-l) + 2% + var(--background-contrast));
 
   /* Background Color Definitions */
   --background-primary: hsl(var(--background-h), var(--background-s), var(--background-l));
   --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
   --background-dark: rgb(10, 18, 30);
-  --background-extra-dark: rgb(0, 5, 10);
+  --background-extra-dark: #000;
   --background-primary-alt: var(--background-dark);
   --background-secondary-alt: var(--background-secondary);
 
   /* Background-Derivative Accents */
-  --accent-soft-hsl: var(--background-h), var(--background-s), 85%;
+  --accent-soft-hsl: var(--background-h), calc(var(--background-s) * 0.5), 85%;
   --accent-soft-dark: hsla(var(--accent-soft-hsl), 0.1);
   --accent-soft-light: hsla(var(--accent-soft-hsl), 0.05);
-  --hr-color: hsla(var(--accent-soft-hsl), 0.25);
 
   /* Main Accent Colors */
   --accent-h: 189;
@@ -142,20 +147,24 @@
   --color-accent-background: hsla(var(--color-accent-hsl), 0.1);
   --color-accent-background-hover: hsla(var(--color-accent-hsl), 0.2);
   --accent-on-selection: hsla(var(--color-accent-hsl), 0.4);
+  --text-selection: var(--accent-on-selection);
+  /* default text highlights are accent color with additional saturation and lightness */
+  --ss-dark-highlight-bg: hsl(var(--accent-h), calc(var(--accent-s) * 1.1), calc(var(--accent-l) * 1.1 + 10%));
+  --text-highlight-bg: var(--ss-dark-highlight-bg);
 
   /* Font Colors */
-  --text-normal: rgba(var(--ss-dark-text-main), 1);
+  --ss-dark-text-main: 250, 247, 245;
+  --text-normal: rgb(var(--ss-dark-text-main));
   --text-muted: var(--text-normal);
   --text-faint: var(--text-normal);
   --text-white: rgb(250, 247, 245);
-  --text-highlight-bg: var(--ss-dark-highlight-bg);
   --text-highlight-fg: #000;
   --text-error: rgb(250, 30, 0);
   --text-accent-hover: var(--text-white);
   --text-on-accent: #000 !important;
-  --text-selection: var(--accent-on-selection);
+  --hr-color: rgba(var(--ss-dark-text-main), 0.1);
 
-  /* Code Blocks */
+  /* Code Blocks (dark specific colors only) */
   --code-peripheral: 175, 191, 255;
   --code-comment: rgba(var(--code-peripheral), 0.7);
   --code-indentation-guide-color: rgba(var(--code-peripheral), 0.23);
@@ -189,7 +198,7 @@
   --modal-border-color: var(--accent-soft-dark);
   --background-modifier-hover: var(--accent-soft-light);
   --background-modifier-active-hover: var(--accent-soft-light);
-  --background-modifier-form-field: hsl(var(--background-h), var(--background-s), calc(var(--background-l) / 1.33));
+  --background-modifier-form-field: var(--background-dark);
   --background-modifier-border: var(--accent-soft-dark);
   --background-modifier-border-hover: var(--accent-soft-dark);
   --background-modifier-border-focus: hsl(var(--background-h), var(--background-s), calc(var(--background-l) - 4%));
@@ -304,17 +313,31 @@ body {
 }
 
 /* Polka Dots  */
+body {
+  --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
+  radial-gradient(var(--color-accent) 17.5%, transparent 25%);
+  --ribbon-button-hover: var(--background-secondary);
+}
+
+.ss-polka-dots {
+  --polka-dots: none;
+  --ribbon-button-hover: var(--accent-soft-light);
+}
+
 .workspace-ribbon {
-  background-image: 
-    radial-gradient(var(--color-accent) 15%, transparent 25%),
-    radial-gradient(var(--color-accent) 17.5%, transparent 25%);
+  background-image: var(--polka-dots);
   background-position: 2px 0px, 6px 4px;
   background-size: 8px 8px;
 }
 
-.side-dock-ribbon-action, .side-dock-ribbon-action:hover {
+.side-dock-ribbon-action {
   background: var(--background-secondary);
-  border-radius: 2px;
+  border-radius: var(--radius-s);
+}
+
+.side-dock-ribbon-action:hover {
+  background: var(--ribbon-button-hover);
+  border-radius: var(--radius-s);
 }
 
 /* Tab Shape */
@@ -949,7 +972,7 @@ settings:
       title: Background Saturation
       description: Set the saturation level of background colors (0-10).
       type: variable-number-slider
-      default: 3.8
+      default: 3.92
       format: '%'
       min: 0
       max: 10
@@ -1125,6 +1148,11 @@ settings:
       id: ss-tab-outline
       title: Remove Tab Outline
       description: Choose whether to remove the accent color from the tab outline.
+      type: class-toggle
+    -
+      id: ss-polka-dots
+      title: Remove Polka Dots
+      description: Choose whether to turn off the dots in the ribbon.
       type: class-toggle
     - 
       id: ss-info
