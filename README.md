@@ -16,7 +16,7 @@ Polka responds to the accent color in your main settings (under `Appearance > Ac
 
 ### Backgrounds
 
-If you install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, a new menu will appear (in `Style Settings > Polka Theme`) that allows you to customize the background color palette, with independent settings for light and dark modes.
+If you optionally install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, a new menu will appear (in `Style Settings > Polka Theme`) that allows you to customize the background color palette, with independent settings for light and dark modes.
 
 You can easily adjust the hue, saturation, lightness and contrast of the background colors, and you don't have to worry about color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples of customizations that took around ten seconds to dial in:
 
