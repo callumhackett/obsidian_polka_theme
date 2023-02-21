@@ -32,14 +32,14 @@ The Style Settings menu also features a list of sub-themes that apply exclusivel
 
 Font taste is personal. Polka selects nice default fonts for Mac and PC but your main font settings (under `Appearance > Font`) will override these.
 
-The body font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik). The code font in the sub-theme previews above is [iA Writer Mono](https://github.com/iaolo/iA-Fonts/tree/master/iA%20Writer%20Mono), a derivative of [IBM Plex Mono](https://github.com/IBM/plex) with small character adjustments.
+The body font in the preview images here is Franklin Gothic, which is distributed with Windows. If you want a good, free alternative, try [Rubik](https://fonts.google.com/specimen/Rubik).
 
 ### Additional Options
 
 The Style Settings plugin also gives you control over the following parameters:
 
 - Main text color
-- Accent color vs. traditional yellow highlights
+- Text highlights in yellow vs. accent color
 - Circular vs. square checkboxes
 - Default vs. monospace font in tables
 - Roundness of page elements and menus
@@ -60,4 +60,4 @@ Many others will fit in without issue.
 
 [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you spot any issues or would like extra features, especially new plugin support or code block themes.
 
-Polka tries to strike a balance between colorful minimalism, simplicity of use and customizability, so its options menu is meant to give you flexibility but not endless control. If you're looking to tweak things like heading styles or you want a more complex background setup, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
+Polka tries to strike a balance between colorful minimalism, simplicity of use and customizability, so its options menu is meant to give you flexibility but not endless control. If you're looking to tweak things like heading styles, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
