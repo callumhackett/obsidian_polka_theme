@@ -317,17 +317,20 @@ body {
   --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
   radial-gradient(var(--color-accent) 17.5%, transparent 25%);
   --ribbon-button-hover: var(--background-secondary);
+  --ribbon-border: none;
 }
 
 .ss-polka-dots {
   --polka-dots: none;
   --ribbon-button-hover: var(--accent-soft-light);
+  --ribbon-border: var(--divider-width) solid var(--accent-soft-light);
 }
 
 .workspace-ribbon {
   background-image: var(--polka-dots);
   background-position: 2px 0px, 6px 4px;
   background-size: 8px 8px;
+  border-right: var(--ribbon-border);
 }
 
 .side-dock-ribbon-action {
