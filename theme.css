@@ -218,9 +218,10 @@
 }
 
 body {
-  /* Style Settings Parameters */
-  --ss-border-radius: 0.1px;
-  --ss-embed-border-style: 2px dashed var(--text-normal);
+  /* Polka Dots */
+  --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
+  radial-gradient(var(--color-accent) 17.5%, transparent 25%);
+  --ribbon-border: none;
 
   /* Font Defaults */
   --font-default: 'Franklin Gothic Book', 'Rubik', 'Helvetica Neue', ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -257,6 +258,8 @@ body {
   --hr-thickness: 1px;
 
   /* Border Radii */
+  /* border radius is normalized to 0-10 and multiplied by 20 */
+  --ss-border-radius: 0.1px;
   --radius-s: calc(var(--ss-border-radius) * 20) !important;
   --radius-m: calc(var(--radius-s) * 2) !important;
   --radius-l: calc(var(--radius-s) * 3) !important;
@@ -292,6 +295,7 @@ body {
   --color-purple: rgb(140, 110, 240) !important;
 
   /* Other Page Elements */
+  --ss-embed-border-style: 2px dashed var(--text-normal);
   --divider-color: transparent;
   --checkbox-radius: var(--radius-s);
   --checkbox-border-color: var(--list-elements);
@@ -312,17 +316,10 @@ body {
   --button-shadow: hsl(var(--accent-soft-hsl), 0.6);
 }
 
-/* Polka Dots  */
-body {
-  --polka-dots: radial-gradient(var(--color-accent) 15%, transparent 25%),
-  radial-gradient(var(--color-accent) 17.5%, transparent 25%);
-  --ribbon-button-hover: var(--background-secondary);
-  --ribbon-border: none;
-}
 
+/* Ribbon */
 .ss-polka-dots {
   --polka-dots: none;
-  --ribbon-button-hover: var(--accent-soft-light);
   --ribbon-border: var(--divider-width) solid var(--accent-soft-light);
 }
 
@@ -339,11 +336,11 @@ body {
 }
 
 .side-dock-ribbon-action:hover {
-  background: var(--ribbon-button-hover);
+  background: hsl(var(--background-h), var(--background-secondary-s), calc(var(--background-l) - 5%));
   border-radius: var(--radius-s);
 }
 
-/* Tab Shape */
+/* Tabs */
 .workspace-tab-header {
   border-top-left-radius: var(--radius-s);
   border-top-right-radius: var(--radius-s);
