@@ -491,7 +491,6 @@ table {
   background: var(--text-highlight-bg);
   border-radius: 0.5px;
   color: var(--text-highlight-fg) !important;
-  padding: 0 3.5px;
 }
 
 .search-result-file-match:hover {
