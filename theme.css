@@ -633,6 +633,55 @@ input.document-replace-input.mod-no-match {
   border-radius: var(--radius-s) !important;
 }
 
+/* Emoji Picker */
+.emoji-mart-title-label {
+  color: var(--text-normal);
+  font-size: var(--h4-size);
+}
+
+.emoji-mart {
+  background: var(--background-secondary);
+  border: 1px solid var(--modal-border-color);
+  border-radius: var(--radius-m);
+}
+
+.emoji-mart-bar {
+  border-bottom: none;
+  border-top: none;
+}
+
+.emoji-mart-preview {
+  border-top: 1px solid var(--modal-border-color);
+}
+
+#emoji-modal {
+  border: none;
+  border-radius: var(--radius-m) !important;
+}
+
+.emoji-mart-anchors {
+  border-bottom: 1px solid var(--modal-border-color);
+  padding-bottom: 12px;
+}
+
+.emoji-mart-search-icon {
+  display: none;
+}
+
+.emoji-mart-dark .emoji-mart-search input {
+  background: var(--background-modifier-form-field);
+  border: 1px solid var(--modal-border-color);
+  border-radius: var(--radius-m);
+}
+
+.emoji-mart-category-label span {
+  background: var(--background-secondary) !important;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+
 /* Execute Code Plugin */
 code.language-output hr {
   border-top: var(--code-indentation-guide-color) 1px dashed !important;
