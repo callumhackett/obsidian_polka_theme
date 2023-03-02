@@ -21,7 +21,7 @@
   --background-secondary: hsl(var(--background-h), var(--background-secondary-s), var(--background-secondary-l));
   --background-dark: rgb(23, 35, 62);
   --background-extra-dark: #000;
-  --background-primary-alt: var(--background-dark);
+  --background-primary-alt: var(--background-secondary);
   --background-secondary-alt: var(--background-secondary);
 
   /* Background-Derivative Accents */
@@ -361,10 +361,6 @@ hr, .markdown-rendered hr {
 }
 
 /* Text Block Spacing */
-.HyperMD-quote, .HyperMD-codeblock {
-  padding-left: 1.5em !important;
-}
-
 .cm-formatting-list, input[type=checkbox] {
   margin-right: 0.25em;
 }
@@ -477,8 +473,8 @@ table {
 }
 
 /* Tags */
-.cm-hashtag {
-  line-height: 2em;
+.tag, .cm-hashtag {
+  line-height: 2em !important;
 }
 
 /* Highlights */
