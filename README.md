@@ -51,6 +51,7 @@ As well as modifying your workspace, Polka adapts the colors of Obsidian's user 
 
 - [Calendar](https://github.com/liamcain/obsidian-calendar-plugin)
 - [Dictionary](https://github.com/phibr0/obsidian-dictionary)
+- [Emoji Toolbar](https://github.com/oliveryh/obsidian-emoji-toolbar)
 - [Execute Code](https://github.com/twibiral/obsidian-execute-code)
 - [File Tree Alternative](https://github.com/ozntel/file-tree-alternative)
 - [Kanban](https://github.com/mgmeyers/obsidian-kanban)
