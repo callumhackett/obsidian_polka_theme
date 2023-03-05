@@ -776,6 +776,8 @@ body {
 
 .kanban-plugin__item-tag {
   border-radius: var(--radius-s) !important;
+  line-height: 1em !important;
+  padding: 4px 6px !important;
 }
 
 button:not(.clickable-icon) {
