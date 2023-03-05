@@ -1,6 +1,6 @@
 # Polka
 
-This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic dots in the ribbon. Major features include a **highly customizable color scheme** and independent selection of **themes for code blocks**.
+This theme adds some colorful minimalism to Obsidian in light and dark modes, with characteristic (optional) dots in the ribbon. Major features include a **highly customizable color scheme** and independent selection of **themes for code blocks**.
 
 ![Preview](assets/polka_full_size.png)
 
@@ -10,13 +10,13 @@ This theme adds some colorful minimalism to Obsidian in light and dark modes, wi
 
 ### Accents
 
-Polka responds to the accent color in your main settings (under `Appearance > Accent color`) by using it for links, highlights, the dots in the ribbon and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
+Polka responds to the accent color in your main settings (under `Appearance > Accent color`) by using it for links, highlights and much else besides. For example, if you choose a pink accent color while in dark mode, the default cyan will be replaced in all the ways you can see below (and more):
 
 ![Color Customization](assets/accent_customization.png)
 
 ### Backgrounds
 
-If you optionally install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, a new menu will appear (in `Style Settings > Polka Theme`) that allows you to customize the background color palette, with independent settings for light and dark modes.
+If you optionally install the [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin, a new menu will appear (in `Style Settings > Polka Theme`) that allows you to customize the background color palette.
 
 You can easily adjust the hue, saturation, lightness and contrast of the background colors, and you don't have to worry about color clashes, as your base color is used to generate a palette that applies to the whole user interface. Here are some examples of customizations that took around ten seconds to dial in:
 
@@ -61,8 +61,6 @@ Many others will fit in without issue.
 ## Feature Requests
 
 [Let me know](https://github.com/callumhackett/obsidian_polka_theme/issues) if you spot any issues or would like extra features, especially new plugin support or code block themes.
-
-Polka tries to strike a balance between colorful minimalism, simplicity of use and customizability, so its options menu is meant to give you flexibility but not endless control. If you're looking to tweak things like heading styles, I recommend that you [create your own CSS snippets](https://help.obsidian.md/Extending+Obsidian/CSS+snippets) but I'm always happy to hear suggestions.
 
 ## Extras
 
