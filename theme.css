@@ -323,7 +323,7 @@ body {
   --ribbon-border: var(--divider-width) solid var(--accent-soft-light);
 }
 
-.workspace-ribbon {
+.workspace-ribbon, .side-dock-ribbon {
   background-image: var(--polka-dots);
   background-position: 2px 0px, 6px 4px;
   background-size: 8px 8px;
