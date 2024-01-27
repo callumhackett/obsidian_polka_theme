@@ -866,7 +866,7 @@ pre, .markdown-rendered pre {
   --color-purple: #BD93F9 !important;
 }
 
-.gruvbox-dark-code-colors {
+.theme-dark.gruvbox-code-colors {
   --code-background: #282828 !important;
   --code-normal: #ebdbb2 !important;
   --code-punctuation: var(--code-normal) !important;
@@ -881,7 +881,7 @@ pre, .markdown-rendered pre {
   --color-purple: #BD93F9 !important;
 }
 
-.gruvbox-light-code-colors {
+.theme-light.gruvbox-code-colors {
   --code-background: #fbf1c7 !important;
   --code-normal: #3c3836 !important;
   --code-punctuation: var(--code-normal) !important;
@@ -911,7 +911,7 @@ pre, .markdown-rendered pre {
   --color-purple: #9c7fe5 !important;
 }
 
-.one-dark-code-colors {
+.theme-dark.one-code-colors {
   --code-background: #272b34 !important;
   --code-normal: #dcddde !important;
   --code-punctuation: var(--code-normal) !important;
@@ -926,7 +926,7 @@ pre, .markdown-rendered pre {
   --color-purple: #846ef1 !important;
 }
 
-.one-light-code-colors {
+.theme-light.one-code-colors {
   --code-background: #fafafa !important;
   --code-normal: #383a42 !important;
   --code-punctuation: var(--code-normal) !important;
@@ -954,7 +954,7 @@ pre, .markdown-rendered pre {
   --color-purple: rgb(140, 110, 240) !important;
 }
 
-.solarized-dark-code-colors {
+.theme-dark.solarized-code-colors {
   --code-background: #002b36 !important;
   --code-normal: #93a1a1 !important;
   --code-punctuation: var(--code-normal) !important;
@@ -969,7 +969,7 @@ pre, .markdown-rendered pre {
   --color-purple: #6c71c4 !important;
 }
 
-.solarized-light-code-colors {
+.theme-light.solarized-code-colors {
   --code-background: #eee8d5 !important;
   --code-normal: #839496 !important;
   --code-punctuation: var(--code-normal) !important;
@@ -1139,32 +1139,23 @@ settings:
       default: polka-code-colors
       options:
         -
-          label: Dracula
+          label: Dracula (dark)
           value: dracula-code-colors
         -
-          label: Gruvbox Dark
-          value: gruvbox-dark-code-colors
+          label: Gruvbox (light & dark)
+          value: gruvbox-code-colors
         -
-          label: Gruvbox Light
-          value: gruvbox-light-code-colors
-        -
-          label: Nord
+          label: Nord (dark)
           value: nord-code-colors
         -
-          label: One Dark
-          value: one-dark-code-colors
+          label: One (light & dark)
+          value: one-code-colors
         -
-          label: One Light
-          value: one-light-code-colors
-        -
-          label: Polka
+          label: Polka (dark)
           value: polka-code-colors
         -
-          label: Solarized Dark
-          value: solarized-dark-code-colors
-        -
-          label: Solarized Light
-          value: solarized-light-code-colors
+          label: Solarized (light & dark)
+          value: solarized-code-colors
     -
       id: ss-border-radius
       title: Roundness
